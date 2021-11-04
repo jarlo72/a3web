@@ -1,0 +1,8 @@
+* { /*comments here to describe the style block */
+    font-family: 'Century Gothic', 'Sans-seriff';
+}
+h1 { /*overrides the site font, resets size */
+    font-family: 'Tahoma';
+    font-size: 32px; /*If you need to comment on a specific item, do it at the end of the line */
+}
+/* again, we can discuss all this later */
