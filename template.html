@@ -1,14 +1,69 @@
 <!DOCTYPE html>
 <!--Jon Marlo Delicano-->
 <html>
-    <head>
-        <title>A template</title>
-        <link rel="stylesheet" href="/css/stylesMain.css"> <!-- we don't need a template for stylesheet I don't think,
+        <head>
+        <title>Title</title>
+        <!-- Nov 14 (Christie): Since I'm calling a CSS page for the menu bar, I'm going to comment out this request-->
+        <!--<link rel="stylesheet" href="/css/stylesMain.css">--> <!-- we don't need a template for stylesheet I don't think,
         since it's just one stylesheet for the entire site, it will update as we go-->
+        <!-- -->
+        <!--Nov 14 (Christie):We can choose whether we want a horizontal menu bar or a hamburger icon--> 
+        <!-- Nov 14: Christie inserted navigation bar based on suggestion from 
+        https://www.w3schools.com/howto/howto_css_icon_bar.asp-->
+        <!-- -->
+        <!--This is a horizontal menu bar-->
+        <!-- Nov 14: (Christie): meta element describes metadata within HTML document.  This uses responsive design.
+        The viewport is the visible area of a web page.  To make the website look good on all devices setting the
+        "width=device-width" and "intial-scale=1.0" instructs the page to use the screen width of the device 
+        (tablet, phone, laptop) at a scale of 1-->
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!-- Nov14 (Christie):this refers to w3schools CSS document but of course we will use our own for the final submission-->   
+        <link rel="stylesheet" href="/css/stylesMain.css">
+        
+        <!-- Nov 14 (Christie):For our final submission all this style info will be in a CSS document but for now it's here
+        because, frankly, although I input it into our CSS document I couldn't get it to work properly.  I will spend more 
+        time on it later.  For now this gives you an idea of what we can do-->
+        <style>
+        /* Nov 14 (Christie): Horizontal Menu Bar*/
+        body {
+            margin:0;
+        }   
+            .icon-bar {
+                width: 100%;
+                background-color: #555; /* default inactive menu item colour*/
+                overflow: auto;
+            }
+                    
+            .icon-bar a {
+                float: left;
+                width: 16%; /* use whatever percentage is needed to align all items across top of page*/
+                text-align: center;
+                padding: 12px 0;
+                transition: all 0.3s ease; /* colour transition*/
+                color: white; /* text colour*/
+                font-size: 20px;
+            }
+                    
+            .icon-bar a:hover {
+                background-color: rgb(238, 15, 15); /* colour of menu tab when mouse hovers over it*/
+            }
+                    
+            .active {
+                background-color: #0f7fe9; /* colour of the active menu tab*/
+            }    
+                </style>
+        
     </head>
     <body>
-        <!-- we would probably code in a navbar somewhere here. Save it in the template, then it 
-        will be consistent for each page-->
+        <div class="icon-bar"> 
+            <a class="active" href="#Home">Home</a> 
+            <a href="#About ">About Us</a> 
+            <a href="#Why">Why Hire Us</a> 
+            <a href="#Projects">Projects</a>
+            <a href="#Involved">Get Involved</a> 
+            <a href="#Blag">Blag</a>
+        </div>        
+        
         <!--I agree, I am just practicing pushes here too. November 11, 2021-->
         <h1>This is the primary header.</h1>
             <h2>These are the main subheaders.</h2>

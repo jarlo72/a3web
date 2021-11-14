@@ -1,10 +1,48 @@
-* { /*comments here to describe the style block */
+*{ /*comments here to describe the style block */
     font-family: 'Century Gothic', 'Sans-seriff';
 }
 h1 { /*overrides the site font, resets size */
     font-family: 'Tahoma';
     font-size: 32px; /*If you need to comment on a specific item, do it at the end of the line */
 }
+/*Nov 14 (Christie): Horizontal Menu Bar  All this is commented out because presently I can't get it to run
+from the CSS file.  The same code is in the HTML document
+
+body {
+    margin:0;
+}   
+    .icon-bar {
+        width: 100%;
+        background-color: #555; 
+        overflow: auto;
+    }
+            
+    .icon-bar a {
+        float: left;
+        width: 16%; 
+        text-align: center;
+        padding: 12px 0;
+        transition: all 0.3s ease; 
+        color: white; 
+        font-size: 20px;
+    } 
+            
+    .icon-bar a:hover {
+        background-color: rgb(238, 15, 15); 
+    }
+            
+    .active {
+        background-color: #0f7fe9; 
+    } 
+                
+    <div class="icon-bar"> 
+        <a class="active" href="#Home">Home</a> 
+        <a href="#About ">About Us</a> 
+        <a href="#Why">Why Hire Us</a> 
+        <a href="#Projects">Projects</a>
+           <a href="#Involved">Get Involved</a> 
+        <a href="#Blag">Blag</a>
+    </div> */
 /* again, we can discuss all this later */
 
 /*Stephen VanDam */
