@@ -5,7 +5,7 @@
             <meta name="viewport" content="width=device-width, initial-scale=1.0"><!--AHunter Responsive onto it all -->
             @media only screen and (max-width: 620px) {
                 /* For mobile phones: */
-                .menu, .main, .right {
+                .left, .main, .right {
                   width: 100%;
                 }<!--AH added this, it essentially makes a 3 column section switch to sitting ontop of themselves, instead of columns, once the screen size drops to 620px.
                      I'm unclear exactly where in the doc this goes and I do believe it ought to go in the CSS not HTML-->
@@ -59,6 +59,32 @@
             .active {
                 background-color: #0f7fe9; /* colour of the active menu tab*/
             }    
+            
+            /* AH Adds some style to the columns below*/
+            .left {
+  background-color: #4e7a50;
+  float: left;
+  width: 20%;
+  padding: 15px;
+  margin-top: 7px;
+  text-align: center;
+}
+}
+
+.main {
+  float: left;
+  width: 60%;
+  padding: 0 20px;
+}
+
+.right {
+  background-color: ##4e7a50;
+  float: left;
+  width: 20%;
+  padding: 15px;
+  margin-top: 7px;
+  text-align: center;
+}
                 </style>
         
     </head>
@@ -76,6 +102,28 @@
         <h1 style="font-size:10vw;">This is the primary header, it's also responsive- just this one.</h1><!--Responsive h1 AH-->
             <h2>These are the main subheaders.</h2>
                 <p>Some paragraph styling.</p>
+                
+                
+                <!--AH Swoops in for the fancy award of the year-->
+                <div class="left">
+                    <h2>Left Column </h2>
+                    <p> Who doesn't love a good soil sample map? I ask you this. </p>
+                  </div>
+                <div class="main">
+                    <h2>Main Column Responsive in the CSS above</h2>
+                    <p>Lorem ipsum all over the place. Look over there! An environmentalist in their natural habitat</p>
+                  </div>
+                  <div class="right">
+                    <h2>Right Column</h2>
+                    <p> Ess En double 0h Pee Dee oh double Gee</p>
+                  </div>
+
+
+
+
+
+
+
             <h2>Oh look, another h2 subheader</h2>
                 <p>Another thing to agree on are the usage of tabs in the code.</p>
                 <p>I recently learned that I've been using h tags incorrectly, and saw this tab method
