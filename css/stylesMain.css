@@ -1,5 +1,5 @@
-* { /*comments here to describe the style block */
-    font-family: 'Century Gothic', 'Sans-seriff';
+* { /* SV - settings for every possible element on the page */
+    font-family: 'Tahoma', 'Sans-seriff';
     margin:0;
     box-sizing: border-box; /*SV - as per w3schools, changes calculation of total size of elements to give better CSS control */
 }
@@ -10,50 +10,52 @@
     }
 }
 
-nav {
+/* element settings */
+h1 { /* CP, moved to new tag by SV */
+    font-size: 5vw;
+}
+
+/* section settings */
+header { /* SV */
+    background-color:blue;
+    padding:15px;
+    text-align:center;
+    font-size: 4em;
+}
+.overFlow { /* SV */
+    overflow: auto; /* as per w3schools */
+}
+
+nav { /* CP */
     width: 20%;
     float: left;
     background-color: #555; 
     overflow: auto;
 }
             
-nav a {
-    /*width: 16%; */
+nav a { /* CP */
     text-align: center;
     padding: 12px 0;
-    transition: all .3s ease; /* Christie - what does this do? SV */
+    transition: all .3s ease;
     color: white; 
     font-size: 20px;
 } 
             
-nav a:hover {
+nav a:hover { /* CP */
     background-color: rgb(238, 15, 15); 
 }
             
-.active {
+.active { /* CP */
      background-color: #0f7fe9; 
 }
 
-.overFlow {
-    overflow: auto;
-}
-/* AH Adds some style to the columns below
-.left {
-    background-color: #4e7a50;
-    float: left;
-    width: 20%;
-    padding: 20px;
-    margin: 0;
-    text-align: center;
-}
-  */
-main {
+main { /* AH - modified by SV */
     float: left;
     width: 60%;
     padding: 20px;
 }
 
-.right {
+aside { /* AH - modified by SV */
     background-color: #4e7a50;
     float: left;
     width: 20%;
