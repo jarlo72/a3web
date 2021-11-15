@@ -6,7 +6,7 @@ h1 { /*overrides the site font, resets size */
     font-size: 32px; /*If you need to comment on a specific item, do it at the end of the line */
 }
 /*Nov 14 (Christie): Horizontal Menu Bar  All this is commented out because presently I can't get it to run
-from the CSS file.  The same code is in the HTML document
+from the CSS file.  The same code is in the HTML document */
 
 body {
     margin:0;
@@ -34,7 +34,7 @@ body {
     .active {
         background-color: #0f7fe9; 
     } 
-                
+          /*      
     <div class="icon-bar"> 
         <a class="active" href="#Home">Home</a> 
         <a href="#About ">About Us</a> 
@@ -43,6 +43,3 @@ body {
            <a href="#Involved">Get Involved</a> 
         <a href="#Blag">Blag</a>
     </div> */
-/* again, we can discuss all this later */
-
-/*Stephen VanDam */
