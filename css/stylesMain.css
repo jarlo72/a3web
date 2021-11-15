@@ -27,7 +27,7 @@ header { /* SV */
 }
 
 nav { /* CP */
-    width: 20%;
+    width: 12%;
     float: left;
     text-align: center;
     background-color: #555; 
@@ -52,7 +52,7 @@ nav a:hover { /* CP */
 
 main { /* AH - modified by SV */
     float: left;
-    width: 60%;
+    width: 68%;
     padding: 20px;
 }
 
