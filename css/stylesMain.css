@@ -1,4 +1,14 @@
-* { /* SV - settings for every possible element on the page */
+/*
+    Stephen 11-14 - Before we get into things, a brief style guide reminder.
+    Comments for communication use your full name, like in this one.
+    For comments that need to stick around through the submission, initial and date.
+    Please initial and date if you modify someone else's code, unless it's very minor.
+
+    If you need to modify the CSS of an element for your page (ie, <h1>) make sure you
+     use a Class or ID for it, so you don't break everyone else's page!
+*/
+    
+    * { /* SV - settings for every possible element on the page */
     font-family: 'Tahoma', 'Sans-seriff';
     margin:0;
     box-sizing: border-box; /*SV 11-14 - as per w3schools, changes calculation of total size of elements to give better CSS control */
