@@ -18,6 +18,17 @@
         <!--Nov 14 - Stephen went on a code-cleaning rampage. If I accidently deleted an important comment, please replace it.-->
     </head>
     <body>
+    <!--
+        Stephen's thinking out loud here. The layout here is a scattered mess. To fix it, using semantic HTML as agreed,
+        we need a <header> tag for our top. Title, image, etc go in it. Bam.
+        
+        Then we throw in a <div>. This is where Amanda's columns come in - we put <nav> in the left, <main> in the middle, <aside> on the right.
+        See https://www.w3schools.com/html/html5_semantic_elements.asp for an example (our layout is a bit different).
+        <main> can be divided into <section>s, particularly on our pages that are multiple pages.
+            Our pop-out info can go into <details>.
+
+        <footer> goes in the bottom, other tags used as required.
+    -->
         <nav> <!-- Stephen changed the div to nav-->
             <a class="active" href="#Home">Home</a> 
             <a href="#About ">About Us</a> 
@@ -39,14 +50,16 @@
         
         <div class="overFlow"> <!-- Stephen's fixing Amanda's columns-->
             <!--AH Swoops in for the fancy award of the year-->
+        <!--
             <div class="left">
                 <h2>Left Column </h2>
                     <p> Who doesn't love a good soil sample map? I ask you this. LOREM  UPSUM</p>
             </div>
-            <div class="main">
+        -->
+            <main>
                 <h2>Main Column Responsive in the CSS above</h2>
                     <p>Lorem ipsum all over the place. Look over there! An environmentalist in their natural habitat</p>
-            </div>
+            </main>
             <div class="right">
                 <h2>Right Column</h2>
                     <p> Ess En double 0h Pee Dee oh double Gee</p>

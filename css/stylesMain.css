@@ -11,17 +11,17 @@
 }
 
 nav {
-    width: 100%;
+    width: 20%;
+    float: left;
     background-color: #555; 
     overflow: auto;
 }
             
 nav a {
-    float: left;
-    width: 16%; 
+    /*width: 16%; */
     text-align: center;
     padding: 12px 0;
-    transition: all 0.3s ease; 
+    transition: all .3s ease; /* Christie - what does this do? SV */
     color: white; 
     font-size: 20px;
 } 
@@ -37,7 +37,7 @@ nav a:hover {
 .overFlow {
     overflow: auto;
 }
-/* AH Adds some style to the columns below*/
+/* AH Adds some style to the columns below
 .left {
     background-color: #4e7a50;
     float: left;
@@ -46,8 +46,8 @@ nav a:hover {
     margin: 0;
     text-align: center;
 }
-  
-.main {
+  */
+main {
     float: left;
     width: 60%;
     padding: 20px;
