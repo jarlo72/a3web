@@ -1,21 +1,8 @@
 <!DOCTYPE html>
-<!--Jon Marlo Delicano-->
 <html>
-        <head>
-            <meta name="viewport" content="width=device-width, initial-scale=1.0"><!--AHunter Responsive onto it all -->
-            @media only screen and (max-width: 620px) {
-                /* For mobile phones: */
-                .left, .main, .right {
-                  width: 100%;
-                }<!--AH added this, it essentially makes a 3 column section switch to sitting ontop of themselves, instead of columns, once the screen size drops to 620px.
-                     I'm unclear exactly where in the doc this goes and I do believe it ought to go in the CSS not HTML-->
-            <div style="background-color:blue;padding:15px;text-align:center;">
-                <h1>Title will not change size on purpose</h1> <!-- from Stephen, why is there an H1 in the head? It should be in the body-->
-              </div><!--AH Added a non-responsive title that spans the entire page and doesn't change, will look cool having a stable non responsive title for each page-->
-        <!-- Nov 14 (Christie): Since I'm calling a CSS page for the menu bar, I'm going to comment out this request-->
-        <!--<link rel="stylesheet" href="/css/stylesMain.css">--> <!-- we don't need a template for stylesheet I don't think,
-        since it's just one stylesheet for the entire site, it will update as we go-->
-        <!-- -->
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"><!--AHunter Responsive onto it all -->
+
         <!--Nov 14 (Christie):We can choose whether we want a horizontal menu bar or a hamburger icon--> 
         <!-- Nov 14: Christie inserted navigation bar based on suggestion from 
         https://www.w3schools.com/howto/howto_css_icon_bar.asp-->
@@ -27,67 +14,7 @@
         (tablet, phone, laptop) at a scale of 1-->
         <!-- Nov14 (Christie):this refers to w3schools CSS document but of course we will use our own for the final submission-->   
         <link rel="stylesheet" href="css/stylesMain.css">
-        
-        <!-- Nov 14 (Christie):For our final submission all this style info will be in a CSS document but for now it's here
-        because, frankly, although I input it into our CSS document I couldn't get it to work properly.  I will spend more 
-        time on it later.  For now this gives you an idea of what we can do
-        <style>
-        /* Nov 14 (Christie): Horizontal Menu Bar*/
-        body {
-            margin:0;
-        }   
-            .icon-bar {
-                width: 100%;
-                background-color: #555; /* default inactive menu item colour*/
-                overflow: auto;
-            }
-                    
-            .icon-bar a {
-                float: left;
-                width: 16%; /* use whatever percentage is needed to align all items across top of page*/
-                text-align: center;
-                padding: 12px 0;
-                transition: all 0.3s ease; /* colour transition*/
-                color: white; /* text colour*/
-                font-size: 20px;
-            }
-                    
-            .icon-bar a:hover {
-                background-color: rgb(238, 15, 15); /* colour of menu tab when mouse hovers over it*/
-            }
-                    
-            .active {
-                background-color: #0f7fe9; /* colour of the active menu tab*/
-            }    
-            
-            /* AH Adds some style to the columns below*/
-            .left {
-  background-color: #4e7a50;
-  float: left;
-  width: 20%;
-  padding: 15px;
-  margin-top: 7px;
-  text-align: center;
-}
-}
-
-.main {
-  float: left;
-  width: 60%;
-  padding: 20px;
-}
-
-.right {
-  background-color: #4e7a50;
-  float: left;
-  width: 20%;
-  padding: 15px;
-  margin-top: 7px;
-  text-align: center;
-}
-
-                </style> -->
-        
+        <!--Nov 14 - Stephen went on a code-cleaning rampage. If I accidently deleted an important comment, please replace it.-->
     </head>
     <body>
         <div class="icon-bar"> <!-- thought from Stephen - instead of div, use nav for Semantic HTML-->
@@ -102,10 +29,12 @@
             to the template, maximum 100% of the width, won't enlarge only get smol-->
 
         <!--I agree, I am just practicing pushes here too. November 11, 2021-->
-        <h1 style="font-size:5vw;">This is the primary header, it's also responsive- just this one.</h1><!--Responsive h1 AH-->
+        <h1 style="font-size:5vw;">This is the primary header, it's also responsive- just this one.</h1><!--Responsive h1 AH--> <!--css in the HTML-->
             <h2>These are the main subheaders.</h2>
                 <p>Some paragraph styling.</p>
-                
+        <div style="background-color:blue;padding:15px;text-align:center;">
+            <h1>Title will not change size on purpose</h1> <!-- from Stephen, this doesn't belong in the head div, so I've moved it to the body-->
+        </div><!--AH Added a non-responsive title that spans the entire page and doesn't change, will look cool having a stable non responsive title for each page-->        
                 
                 <!--AH Swoops in for the fancy award of the year-->
                 <div class="left">
@@ -125,27 +54,6 @@
                         sdfsadfkhdksjahklsdhlkjashlksadhsaldkfhkjsadhklsdhlshlkjdljhsa
                     </p>
                   </div>
-            <h2>Oh look, another h2 subheader</h2>
-                <p>Another thing to agree on are the usage of tabs in the code.</p>
-                <p>I recently learned that I've been using h tags incorrectly, and saw this tab method
-                    as a recommendation to keep yourself and your code organized.</p>
-                <p>We need to decide, in the code, on things like tab spacings and comment placement - 
-                    before a tag, after, inside, etc <p>
-                <p>I'll throw in a mock stylesheet too. Please note, none of my choices for font or
-                    colour are any indication of where I feel we should go, I'm literally just throwing
-                    this together so we have a starting point.</p>
-            <h2> This is a test for Gabby's github syncing. </h2>
-            <h2>We need a team vote here.</h2>
-                <p>Do we want to use semantic html?</p>
-                <p>if you haven't used it before, it's basically the option to use descriptive tags
-                    for html elements - such as putting your title etc into a tag called header, your
-                    navigation bar into a tag called nav, etc. Details and useful image to be found
-                    here: <a href="https://www.w3schools.com/html/html5_semantic_elements.asp"></p>
-                <p>Cast your vote by updating this page with a comment!</p>
-                <!-- Stephen votes Yes to semantic HTML -->
-                <!--We love semantic HTML let's do it, Gabby-->
-                <!-- Yes Semantic is sensical. Amanda votes yes-->
-                <!--I'm in: CHristie-->
             <h2>Template h2 header</h2>
                 <p>paragraph</p>
                 <h3>template h3 header</h3>

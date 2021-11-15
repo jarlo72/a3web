@@ -1,45 +1,62 @@
-*{ /*comments here to describe the style block */
+* { /*comments here to describe the style block */
     font-family: 'Century Gothic', 'Sans-seriff';
 }
-h1 { /*overrides the site font, resets size */
-    font-family: 'Tahoma';
-    font-size: 32px; /*If you need to comment on a specific item, do it at the end of the line */
+
+@media screen and (max-width: 620px) { /* AH added this, it essentially makes a 3 column section switch to sitting ontop of themselves, instead of columns, once the screen size drops to 620px.For mobile phones: */
+    .left, .main, .right {
+      width: 100%;
+    }
 }
-/*Nov 14 (Christie): Horizontal Menu Bar  All this is commented out because presently I can't get it to run
-from the CSS file.  The same code is in the HTML document */
 
 body {
     margin:0;
-}   
-    .icon-bar {
-        width: 100%;
-        background-color: #555; 
-        overflow: auto;
-    }
+} 
+
+.icon-bar {
+    width: 100%;
+    background-color: #555; 
+    overflow: auto;
+}
             
-    .icon-bar a {
-        float: left;
-        width: 16%; 
-        text-align: center;
-        padding: 12px 0;
-        transition: all 0.3s ease; 
-        color: white; 
-        font-size: 20px;
-    } 
+.icon-bar a {
+    float: left;
+    width: 16%; 
+    text-align: center;
+    padding: 12px 0;
+    transition: all 0.3s ease; 
+    color: white; 
+    font-size: 20px;
+} 
             
-    .icon-bar a:hover {
-        background-color: rgb(238, 15, 15); 
-    }
+.icon-bar a:hover {
+    background-color: rgb(238, 15, 15); 
+}
             
-    .active {
-        background-color: #0f7fe9; 
-    } 
-          /*      
-    <div class="icon-bar"> 
-        <a class="active" href="#Home">Home</a> 
-        <a href="#About ">About Us</a> 
-        <a href="#Why">Why Hire Us</a> 
-        <a href="#Projects">Projects</a>
-           <a href="#Involved">Get Involved</a> 
-        <a href="#Blag">Blag</a>
-    </div> */
+.active {
+     background-color: #0f7fe9; 
+}
+
+/* AH Adds some style to the columns below*/
+.left {
+    background-color: #4e7a50;
+    float: left;
+    width: 20%;
+    padding: 15px;
+    margin-top: 7px;
+    text-align: center;
+}
+  
+.main {
+    float: left;
+    width: 60%;
+    padding: 20px;
+}
+
+.right {
+    background-color: #4e7a50;
+    float: left;
+    width: 20%;
+    padding: 15px;
+    margin-top: 7px;
+    text-align: center;
+}
