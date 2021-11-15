@@ -4,12 +4,6 @@
     box-sizing: border-box; /*SV - as per w3schools, changes calculation of total size of elements to give better CSS control */
 }
 
-@media screen and (max-width: 620px) { /* AH added this, it essentially makes a 3 column section switch to sitting ontop of themselves, instead of columns, once the screen size drops to 620px.For mobile phones: */
-    .left, .main, .right {
-      width: 100%;
-    }
-}
-
 /* element settings */
 h1 { /* CP, moved to new tag by SV */
     font-size: 5vw;
@@ -27,7 +21,7 @@ header { /* SV */
 }
 
 nav { /* CP */
-    width: 12%;
+    width: 10%;
     float: left;
     text-align: center;
     background-color: #555; 
@@ -63,4 +57,10 @@ aside { /* AH - modified by SV */
     padding: 15px;
     margin-top: 7px;
     text-align: center;
+}
+
+@media screen and (max-width: 800px) { /* AH added this, it essentially makes a 3 column section switch to sitting ontop of themselves, instead of columns, once the screen size drops to 620px.For mobile phones: */
+    nav, main, aside {
+      width: 100%;
+    }
 }
