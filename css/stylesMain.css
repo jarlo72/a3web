@@ -1,5 +1,5 @@
-* { /*comments here to describe the style block */
-    font-family: 'Century Gothic', 'Sans-seriff';
+* { /* settings for every possible element on the page */
+    font-family: 'Tahoma', 'Sans-seriff';
     margin:0;
     box-sizing: border-box; /*SV - as per w3schools, changes calculation of total size of elements to give better CSS control */
 }
@@ -8,6 +8,24 @@
     .left, .main, .right {
       width: 100%;
     }
+}
+
+/* element settings */
+h1 {
+    font-size: 5vw;
+}
+
+/* section settings */
+header {
+    background-color:blue;
+    padding:15px;
+    text-align:center;
+}
+#unchanging {
+    font-size: 4em;
+}
+.overFlow {
+    overflow: auto; /* as per w3schools */
 }
 
 nav {
@@ -34,26 +52,13 @@ nav a:hover {
      background-color: #0f7fe9; 
 }
 
-.overFlow {
-    overflow: auto;
-}
-/* AH Adds some style to the columns below
-.left {
-    background-color: #4e7a50;
-    float: left;
-    width: 20%;
-    padding: 20px;
-    margin: 0;
-    text-align: center;
-}
-  */
 main {
     float: left;
     width: 60%;
     padding: 20px;
 }
 
-.right {
+aside {
     background-color: #4e7a50;
     float: left;
     width: 20%;
