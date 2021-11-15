@@ -1,5 +1,7 @@
 * { /*comments here to describe the style block */
     font-family: 'Century Gothic', 'Sans-seriff';
+    margin:0;
+    box-sizing: border-box; /*SV - as per w3schools, changes calculation of total size of elements to give better CSS control */
 }
 
 @media screen and (max-width: 620px) { /* AH added this, it essentially makes a 3 column section switch to sitting ontop of themselves, instead of columns, once the screen size drops to 620px.For mobile phones: */
@@ -9,7 +11,7 @@
 }
 
 body {
-    margin:0;
+    
 } 
 
 .icon-bar {
@@ -36,13 +38,16 @@ body {
      background-color: #0f7fe9; 
 }
 
+.overFlow {
+    overflow: auto;
+}
 /* AH Adds some style to the columns below*/
 .left {
     background-color: #4e7a50;
     float: left;
     width: 20%;
-    padding: 15px;
-    margin-top: 7px;
+    padding: 20px;
+    margin: 0;
     text-align: center;
 }
   
