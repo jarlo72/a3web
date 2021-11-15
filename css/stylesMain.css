@@ -59,6 +59,16 @@ aside { /* AH - modified by SV */
     text-align: center;
 }
 
+footer { /* footer formatting sourced from https://www.w3schools.com/cssref/pr_class_clear.asp */
+	background-color: lightgray;
+	border-top: 1px solid gray;
+	border-bottom: 1px solid gray;
+	text-align: center;
+	margin-top:10px;
+	padding: 50px;
+	clear: both;
+}
+
 @media screen and (max-width: 800px) { /* AH added this, it essentially makes a 3 column section switch to sitting ontop of themselves, instead of columns, once the screen size drops to 620px.For mobile phones: */
     nav, main, aside {
       width: 100%;
