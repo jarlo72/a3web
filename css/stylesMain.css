@@ -92,6 +92,7 @@ main { /* AH - modified 11-15 by SV - sets <main> to the right of <nav> */
 aside { /* AH - modified 11-14 by SV - sets <aside> to stay to the right of main - on the far right of the page */
     /* T1 background-color:  #B2B6D6; */
     /* background-color: #4e7a50; */
+    background-color: #B2CCD6;
     float: left;
     width: 20%;     /* change this setting if you want the sidebar to be larger. Don't forget to also change <main> */
     padding: 15px;
@@ -102,7 +103,7 @@ aside { /* AH - modified 11-14 by SV - sets <aside> to stay to the right of main
 footer { /* JD 11-15 - footer formatting sourced from https://www.w3schools.com/cssref/pr_class_clear.asp */
 	/* T1 background-color: #BAD6A9; */
     /* background-color: lightgray; */
-    background-color: #B2CCD6;
+    background-color: #497B8F;
 	border-top: 1px solid gray;
 	border-bottom: 1px solid gray;
 	text-align: center;
