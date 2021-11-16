@@ -25,6 +25,7 @@ TRIAD 2: mauve #8F787C sand #D6D4A9 pink #D6BFC3 grey-blue #B2CCD6 blue #497B8F
 TRIAD 3: steel #5C6C80 salmon #CC9893 periwinkle #A7B7CC light-green #C2CC93 army-green #7C8552
 SPLIT-COMP1: green #6D8A70 light-green #B4D6B7 pink #D6C5BF navy #54708F light-blue #85ABD6
 SPLIT-COMP2: brown #80796C tea #CCBDA3 light-green #BFCC99 green #53806E turquoise #85CCB1
+SPLIT-COMP3: indigo #4723DB purple #675C94 teal #79DBDA lime green #A9FF9E green #75995F
 COMPOUND: light-green #E3F7DF forest #E3F7DF green-sand #C9CFA3 light-purple #A185DB deep-purple #A185DB
 
 From Cythia Brewer's Website https://colorbrewer2.org/#type=diverging&scheme=BrBG&n=5
@@ -45,7 +46,8 @@ header { /* SV 11-14 - a modification of AH's work for our header info*/
     /* background-color:lightblue; */
     /*T1 background-color:#BAD6A9 ; */
     /* T2 background-color:  #497B8F; */
-    background-color: #C2CC93;
+    /* T3 background-color: #C2CC93; */
+    background-color: #A9FF9E;
     padding:15px;
     text-align:center;
     font-size: 4em;
@@ -58,7 +60,8 @@ nav { /* CP - modified SV 11-14 - Changed the width as part of moving <nav> from
     width: 10%;     /* make sure the width in this, <main>, and <aside> all add up to 100%! */
     float: left;
     text-align: center;
-    background-color:#4C5E75 ;
+    background-color: #675C94;
+    /* T3 background-color:#4C5E75 ; */
     /* T2 background-color: #8F787C; */
     /* T1 background-color:#6E718A; */
     /* background-color: #555;  */
@@ -74,14 +77,15 @@ nav a { /* CP */
 } 
             
 nav a:hover { /* CP */
-    background-color: #A7B7CC;
+    background-color: #4723DB;
+    /* T3 background-color: #A7B7CC; */
     /* background-color: #D6BFC3; */
     /* T1 background-color: #D6C5BE; */
     /* background-color: rgb(238, 15, 15);  */
 }
             
 .active { /* CP */
-    background-color: #C2847E;
+    background-color: #79DBDA;
     /* background-color: #D6D4A9; */
     /* T1 background-color: #8F7E78; */
      /* background-color: #0f7fe9;  */
@@ -97,7 +101,7 @@ aside { /* AH - modified 11-14 by SV - sets <aside> to stay to the right of main
     /* T1 background-color:  #B2B6D6; */
     /* background-color: #4e7a50; */
     /* T2 background-color: #B2CCD6; */
-    background-color: #C2CC93;
+    background-color:#66995F;
     float: left;
     width: 20%;     /* change this setting if you want the sidebar to be larger. Don't forget to also change <main> */
     padding: 15px;
@@ -109,7 +113,8 @@ footer { /* JD 11-15 - footer formatting sourced from https://www.w3schools.com/
 	/* T1 background-color: #BAD6A9; */
     /* background-color: lightgray; */
     /* T2 background-color: #497B8F; */
-    background-color: #7C8552;
+    /* T3 background-color: #7C8552; */
+    background-color: #A9FF9E;
 	border-top: 1px solid gray;
 	border-bottom: 1px solid gray;
 	text-align: center;
