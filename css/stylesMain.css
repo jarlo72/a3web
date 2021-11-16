@@ -42,7 +42,8 @@ h1 { /* CP, moved to new tag 11-14 by SV */
 /* -------------- section settings -------------- */
 
 header { /* SV 11-14 - a modification of AH's work for our header info*/
-    background-color:lightblue;
+    /* background-color:lightblue; */
+    background-color:#BAD6A9 ;
     padding:15px;
     text-align:center;
     font-size: 4em;
@@ -55,7 +56,8 @@ nav { /* CP - modified SV 11-14 - Changed the width as part of moving <nav> from
     width: 10%;     /* make sure the width in this, <main>, and <aside> all add up to 100%! */
     float: left;
     text-align: center;
-    background-color: #555; 
+    background-color:#6E718A;
+    /* background-color: #555;  */
     overflow: auto;
 }
             
@@ -68,11 +70,13 @@ nav a { /* CP */
 } 
             
 nav a:hover { /* CP */
-    background-color: rgb(238, 15, 15); 
+    background-color: #D6C5BE;
+    /* background-color: rgb(238, 15, 15);  */
 }
             
 .active { /* CP */
-     background-color: #0f7fe9; 
+    background-color: #8F7E78;
+     /* background-color: #0f7fe9;  */
 }
 
 main { /* AH - modified 11-15 by SV - sets <main> to the right of <nav> */
@@ -82,7 +86,8 @@ main { /* AH - modified 11-15 by SV - sets <main> to the right of <nav> */
 }
 
 aside { /* AH - modified 11-14 by SV - sets <aside> to stay to the right of main - on the far right of the page */
-    background-color: #4e7a50;
+    background-color:  #B2B6D6;
+    /* background-color: #4e7a50; */
     float: left;
     width: 20%;     /* change this setting if you want the sidebar to be larger. Don't forget to also change <main> */
     padding: 15px;
@@ -91,7 +96,8 @@ aside { /* AH - modified 11-14 by SV - sets <aside> to stay to the right of main
 }
 
 footer { /* JD 11-15 - footer formatting sourced from https://www.w3schools.com/cssref/pr_class_clear.asp */
-	background-color: lightgray;
+	background-color: #BAD6A9;
+    /* background-color: lightgray; */
 	border-top: 1px solid gray;
 	border-bottom: 1px solid gray;
 	text-align: center;
