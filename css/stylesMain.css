@@ -59,7 +59,7 @@ nav { /* CP - modified SV 11-14 - Changed the width as part of moving <nav> from
     width: 10%;     /* make sure the width in this, <main>, and <aside> all add up to 100%! */
     float: left;
     text-align: center;
-    /* SC1 background-color: #54708F; */
+    background-color: #54708F; 
     /* CB2 background-color: #bae4bc; */
     /* T3 background-color:#4C5E75 ; */
     /* T2 background-color: #8F787C; */
@@ -77,7 +77,7 @@ nav a { /* CP */
 } 
             
 nav a:hover { /* CP */
-    /* SC1 background-color: #85ABD6; */
+    background-color: #85ABD6; 
     /*CB2 background-color: #f0f9e8; */
     /* T3 background-color: #A7B7CC; */
     /* background-color: #D6BFC3; */
@@ -104,7 +104,7 @@ aside { /* AH - modified 11-14 by SV - sets <aside> to stay to the right of main
     /* background-color: #4e7a50; */
     /* T2 background-color: #B2CCD6; */
     /* CB2 background-color:#43a2ca; */
-    /* SC1 background-color: #B4D6B5; */
+    background-color: #B4D6B5;
     float: left;
     width: 20%;     /* change this setting if you want the sidebar to be larger. Don't forget to also change <main> */
     padding: 15px;
@@ -118,7 +118,7 @@ footer { /* JD 11-15 - footer formatting sourced from https://www.w3schools.com/
     /* T2 background-color: #497B8F; */
     /* T3 background-color: #7C8552; */
     /* CB2 background-color: #0868ac; */
-    /* SC1 background-color: #568557; */
+    background-color: #568557;
 	border-top: 1px solid gray;
 	border-bottom: 1px solid gray;
 	text-align: center;
