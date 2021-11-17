@@ -52,6 +52,11 @@ header { /* SV 11-14 - a modification of AH's work for our header info*/
     text-align:center;
     font-size: 4em;
 }
+
+#logo { /* JD 11-17 - logo styling. Inspired by logo placement common in many consulting websites*/
+	float:left;
+	margin-left:20px;
+}
 .overFlow { /* SV 11-14 - sets a container for our columns, to keep any other content below it */
     overflow: auto; /* as per w3schools */
 }
