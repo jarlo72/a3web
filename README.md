@@ -3,19 +3,19 @@ Team members: Amanda Hunter, Christie Peacock, Stephen Vandam, Jon Marlo Delican
 
 ## Milestones
 1) Build initial template 
-	* Complete by November 18 (Week 11) 
+* Complete by November 18 (Week 11) 
 
 2) Agree on the format and design of the pages 
-	* Complete by November 22 (Week 12) 
+* Complete by November 22 (Week 12) 
 
 3) Everyone builds a page (HTML) 
-	* Complete by Nov 26 (Week 13) 
+* Complete by Nov 26 (Week 13) 
 
 4) Create the content for each page. 
-	* Complete by Dec 3 (Week 13) 
+* Complete by Dec 3 (Week 13) 
 
 5) Finalize code and validate (QA/QC) web pages 
-	* Complete by Dec 6 (Week 14) 
+* Complete by Dec 6 (Week 14) 
 
 ## Deliverables
 Breaking up milestones into smaller deliverables to create progression scheme. 
@@ -59,8 +59,7 @@ Breaking up milestones into smaller deliverables to create progression scheme.
 
 ## Individual Workload Distribution: 
 
-The tasks/responsibilities assigned to each person is designating that the individual is merely responsible for ensuring those tasks are complete (hopefully by the deliverables deadline). 
-Team members may assist and take on each other’s responsibilities as they see fit.
+The tasks/responsibilities assigned to each person is designating that the individual is merely responsible for ensuring those tasks are complete (hopefully by the deliverables deadline). Team members may assist and take on each other’s responsibilities as they see fit.
 
 ### Amanda Hunter: 
 
