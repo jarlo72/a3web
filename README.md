@@ -2,20 +2,20 @@
 Team members: Amanda Hunter, Christie Peacock, Stephen Vandam, Jon Marlo Delicano, Gabby Riefesel 
 
 ## Milestones
-1) Build initial template 
-* Complete by November 18 (Week 11) 
+1. Build initial template 
+	* Complete by November 18 (Week 11) 
 
-2) Agree on the format and design of the pages 
-* Complete by November 22 (Week 12) 
+2. Agree on the format and design of the pages 
+	* Complete by November 22 (Week 12) 
 
-3) Everyone builds a page (HTML) 
-* Complete by Nov 26 (Week 13) 
+3. Everyone builds a page (HTML) 
+	* Complete by Nov 26 (Week 13) 
 
-4) Create the content for each page. 
-* Complete by Dec 3 (Week 13) 
+4. Create the content for each page. 
+	* Complete by Dec 3 (Week 13) 
 
-5) Finalize code and validate (QA/QC) web pages 
-* Complete by Dec 6 (Week 14) 
+5. Finalize code and validate (QA/QC) web pages 
+	* Complete by Dec 6 (Week 14) 
 
 ## Deliverables
 Breaking up milestones into smaller deliverables to create progression scheme. 
@@ -50,7 +50,6 @@ Breaking up milestones into smaller deliverables to create progression scheme.
 * Everyone creates one service idea and a brief write up, and one fake project to go with it 
 * As a group we will come up with a mission statement, pricing, etc. 
 
- 
 
 ### 5. Reconvene to finalize and validate the code (HTML, CSS, and Javascript) 
 
