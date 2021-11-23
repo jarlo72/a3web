@@ -16,22 +16,9 @@
 
 
 /* --------- Colour pallette -------- */
+/*-- GR 11-22 Colour Palette fom Adobe Color https://color.adobe.com/create/color-wheel
+TRIAD 2: mauve #8F787C sand #D6D4A9 pink #D6BFC3 grey-blue #B2CCD6 blue #497B8F --*/
 
-/* GR Options from Adobe Color https://color.adobe.com/create/color-wheel
-avoided orange bc this site says its equal to not taking yourself seriously... https://99designs.ca/blog/tips/website-color-schemes/
-
-TRIAD 1: brown #8F7E78 light-green #BAD6A9 dust-pink #D6C5BE light-purple #B2B6D6 plum #6E718A
-TRIAD 2: mauve #8F787C sand #D6D4A9 pink #D6BFC3 grey-blue #B2CCD6 blue #497B8F
-TRIAD 3: steel #5C6C80 salmon #CC9893 periwinkle #A7B7CC light-green #C2CC93 army-green #7C8552
-SC1: green #6D8A70 light-green #B4D6B7 pink #D6C5BF navy #54708F light-blue #85ABD6
-SC2: brown #80796C tea #CCBDA3 light-green #BFCC99 green #53806E turquoise #85CCB1
-COMPOUND: light-green #E3F7DF forest #E3F7DF green-sand #C9CFA3 light-purple #A185DB deep-purple #A185DB
-
-From Cythia Brewer's Website https://colorbrewer2.org/#type=diverging&scheme=BrBG&n=5
-
-CB1: mud-brown #a6611a beige #dfc27d off-white #f5f5f5 turquoise #80cdc1 teal #018571
-CB2: light-green #f0f9e8 green #bae4bc turquoise #7bccc4 blue #43a2ca deep-blue #0868ac
-*/
 
 /* -------------- element settings -------------- */
 
@@ -42,20 +29,11 @@ h1 { /* CP, moved to new tag 11-14 by SV */
 /* -------------- section settings -------------- */
 
 header { /* SV 11-14 - a modification of AH's work for our header info*/
-    /* background-color:lightblue; */
-    /*T1 background-color:#BAD6A9 ; */
-    /* T2 background-color:  #497B8F; */
-    /* T3 background-color: #C2CC93; */
-    /* background-color: #0868ac; */
-    background-color: #BFCC99;
+    /* 11-22 GR colour palette */
+    background-color:  #497B8F;
     padding:15px;
     text-align:center;
     font-size: 4em;
-}
-
-#logo { /* JD 11-17 - logo styling. Inspired by logo placement common in many consulting websites*/
-	float:left;
-	margin-left:20px;
 }
 .overFlow { /* SV 11-14 - sets a container for our columns, to keep any other content below it */
     overflow: auto; /* as per w3schools */
@@ -65,13 +43,7 @@ nav { /* CP - modified SV 11-14 - Changed the width as part of moving <nav> from
     width: 10%;     /* make sure the width in this, <main>, and <aside> all add up to 100%! */
     float: left;
     text-align: center;
-    background-color: #53806E;
-    /* SC1 background-color: #54708F;  */
-    /* CB2 background-color: #bae4bc; */
-    /* T3 background-color:#4C5E75 ; */
-    /* T2 background-color: #8F787C; */
-    /* T1 background-color:#6E718A; */
-    /* background-color: #555;  */
+    background-color: #8F787C;     /* GR 11-22 colour palette */
     overflow: auto;
 }
             
@@ -84,23 +56,11 @@ nav a { /* CP */
 } 
             
 nav a:hover { /* CP */
-    background-color: #BFCC99;
-   /* SC1 background-color: #85ABD6;  */
-    /*CB2 background-color: #f0f9e8; */
-    /* T3 background-color: #A7B7CC; */
-    /* background-color: #D6BFC3; */
-    /* T1 background-color: #D6C5BE; */
-    /* background-color: rgb(238, 15, 15);  */
+    background-color: #D6BFC3; /* GR 11-22 colour palette */   
 }
             
 .active { /* CP */
-    background-color: #85CCB1;
-    /* SC1 background-color: #D6C5BF ; */
-    /* CB2 background-color: #7bccc4; */
-    /* background-color: #D6D4A9; */
-    /* T1 background-color: #8F7E78; */
-     /* background-color: #0f7fe9;  */
-     
+    background-color: #D6D4A9; /* GR 11-22 colour palette */  
 }
 
 main { /* AH - modified 11-15 by SV - sets <main> to the right of <nav> */
@@ -110,12 +70,7 @@ main { /* AH - modified 11-15 by SV - sets <main> to the right of <nav> */
 }
 
 aside { /* AH - modified 11-14 by SV - sets <aside> to stay to the right of main - on the far right of the page */
-    /* T1 background-color:  #B2B6D6; */
-    /* background-color: #4e7a50; */
-    /* T2 background-color: #B2CCD6; */
-    /* CB2 background-color:#43a2ca; */
-    /* SC1 background-color: #B4D6B5; */
-    background-color: #C2AA80;
+    background-color: #B2CCD6; /* GR 11-22 colour palette */  
     float: left;
     width: 20%;     /* change this setting if you want the sidebar to be larger. Don't forget to also change <main> */
     padding: 15px;
@@ -124,13 +79,7 @@ aside { /* AH - modified 11-14 by SV - sets <aside> to stay to the right of main
 }
 
 footer { /* JD 11-15 - footer formatting sourced from https://www.w3schools.com/cssref/pr_class_clear.asp */
-	/* T1 background-color: #BAD6A9; */
-    /* background-color: lightgray; */
-    /* T2 background-color: #497B8F; */
-    /* T3 background-color: #7C8552; */
-    /* CB2 background-color: #0868ac; */
-    /* SC1 background-color: #568557; */
-    background-color: #756852 ;
+    background-color: #497B8F;
 	border-top: 1px solid gray;
 	border-bottom: 1px solid gray;
 	text-align: center;
