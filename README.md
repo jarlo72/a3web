@@ -69,7 +69,7 @@ Template/CSS (coding) related work:
 Content related work: 
 * Writing a blag article 
 * Submitting a picture of themselves and a one-paragraph write-up 
-* Creating one service idea and a brief write up, and one fake project to go with it 
+* Creating one service idea (Remote Sensing) and a brief write up, and one fake project (drone stuff) to go with it 
 
 ### Christie Peacock: 
 
@@ -80,7 +80,7 @@ Template/CSS (coding) related work:
 Content related work: 
 * Writing a blag article 
 * Submitting a picture of themselves and a one-paragraph write-up 
-* Creating one service idea and a brief write up, and one fake project to go with it\ 
+* Creating one service idea (Database) and a brief write up, and one fake project (past database projects?) to go with it\ 
 
 ### Stephen Vandam: 
 
@@ -92,7 +92,7 @@ Template/CSS (coding) related work:
 Content related work: 
 * Writing a blag article 
 * Submitting a picture of themselves and a one-paragraph write-up 
-* Creating one service idea and a brief write up, and one fake project to go with it 
+* Creating one service idea (Web Design) and a brief write up, and one fake project (Assignment 2??) to go with it 
 
 ### Jon Marlo Delicano: 
 
@@ -104,7 +104,7 @@ Template/CSS (coding) related work:
 Content related work: 
 * Writing a blag article 
 * Submitting a picture of themselves and a one-paragraph write-up 
-* Creating one service idea and a brief write up, and one fake project to go with it 
+* Creating one service idea (Surveying) and a brief write up, and one fake project (Assignment 3) to go with it 
 
 ### Gabby Riefesel: 
 
@@ -115,4 +115,4 @@ Template/CSS (coding) related work:
 Content related work: 
 * Writing a blag article 
 * Submitting a picture of themselves and a one-paragraph write-up 
-* Creating one service idea and a brief write up, and one fake project to go with it 
+* Creating one service idea (Spatial Analysis) and a brief write up, and one fake project (??) to go with it 
