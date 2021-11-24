@@ -56,7 +56,7 @@ header { /* SV 11-14 - a modification of AH's work for our header info*/
 
 main { /* SV 11-23 - sets up flexbox, to simplify positioning of everything. Removed all previous float and positioning items. */
     display: flex;
-    flex-flow: row nowrap;
+    flex-flow: column nowrap;
     justify-content: center;
 }
 
@@ -68,11 +68,13 @@ nav { /* CP - modified SV 11-14 - Changed the width as part of moving <nav> from
     order: 1;
     flex-grow: 1;
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: nowrap;
 }
          
 nav a { /* CP */
-    padding: 12px;
+    padding: 5px;
     transition: all .3s ease;
     color: white; 
 } 
@@ -110,18 +112,18 @@ footer { /* JD 11-15 - footer formatting sourced from https://www.w3schools.com/
 	clear: both;
 }
 
-@media screen and (max-width: 800px) { /* AH added this, it essentially makes a 3 column section switch to sitting ontop of themselves, 
-                                        instead of columns, once the screen size drops to 620px.For mobile phones. Modified by SV 11-14 to 800px. */
+@media screen and (min-width: 520px) {
+    /* If we're doing a hamburger menu, it needs to go in up above, and what's currently our default would go here */
+}
+@media screen and (min-width: 800px) { /* AH created, SV modified 11-24 - switched from max-width to min-width for mobile-first design */
    main {
-       flex-direction: column;
-   }
-   nav {
        flex-direction: row;
-       justify-content: space-around;
-       flex-wrap: nowrap;
-       font-size: 12pt;
+   }
+   nav { /* SV 11-23 - the menu switches to a vertical bar when the screen size is above 800px */
+       flex-direction: column;
+       font-size: 15pt;
     }
     nav a {
-        padding: 5px;
+        padding: 12px;
     }
 }
