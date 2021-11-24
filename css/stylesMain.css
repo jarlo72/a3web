@@ -8,7 +8,7 @@
      use a Class or ID for it, so you don't break everyone else's page!
 */
     
-    * { /* SV - settings for every possible element on the page */
+* { /* SV - settings for every possible element on the page */
     font-family: 'Tahoma', 'Sans-seriff';
     margin:0;
     box-sizing: border-box; /*SV 11-14 - as per w3schools, changes calculation of total size of elements to give better CSS control */
@@ -24,58 +24,80 @@ TRIAD 2: mauve #8F787C sand #D6D4A9 pink #D6BFC3 grey-blue #B2CCD6 blue #497B8F 
 
 h1 { /* CP, moved to new tag 11-14 by SV */
     font-size: 5vw;
+    color: white; /* SV 11-23 */
+}
+h2 { /* SV 11-23 */
+    font-size: 20pt;
+}
+h3 { /* SV 11-23 */
+    font-size: 16pt;
+}
+p { /* SV 11-23 */
+    font-size: 12pt;
 }
 
 /* -------------- section settings -------------- */
 
 header { /* SV 11-14 - a modification of AH's work for our header info*/
     /* 11-22 GR colour palette */
-    background-color:  #497B8F;
+    /* background-color:  #497B8F; */
+    background-image: url("../images/headerimages/pondmtn.jpg"); /* Stephen - we can change this once the large version of the other gets uploaded */
+    height: 300px;
+    background-size: cover;
+    background-position: 50% 30%;
+    background-repeat: no-repeat; /* SV 11-23 background image and details added for header graphic */
     padding:15px;
-    text-align:center;
     font-size: 4em;
+    display: flex; /* SV 11-23 - as per https://www.w3schools.com/css/css3_flexbox.asp */
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
 }
-.overFlow { /* SV 11-14 - sets a container for our columns, to keep any other content below it */
-    overflow: auto; /* as per w3schools */
+
+main { /* SV 11-23 - sets up flexbox, to simplify positioning of everything. Removed all previous float and positioning items. */
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
 }
 
 nav { /* CP - modified SV 11-14 - Changed the width as part of moving <nav> from the top to the left */
-    width: 10%;     /* make sure the width in this, <main>, and <aside> all add up to 100%! */
-    float: left;
+    flex: 0, 0, 120px; /* SV 11-23 - fixes the size of the nav bar */
     text-align: center;
+    font-size: 15pt;
     background-color: #8F787C;     /* GR 11-22 colour palette */
-    overflow: auto;
+    order: 1;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
 }
-            
+         
 nav a { /* CP */
     padding: 12px;
     transition: all .3s ease;
-    display: block; /* SV 11-14 - sets the nav buttons into blocks, so they become stackable */
     color: white; 
-    font-size: 20px;
 } 
-            
+
 nav a:hover { /* CP */
-    background-color: #D6BFC3; /* GR 11-22 colour palette */   
+    background-color: #D6BFC3; /* GR 11-22 colour palette */
 }
             
 .active { /* CP */
-    background-color: #D6D4A9; /* GR 11-22 colour palette */  
+    background-color: #D6D4A9; /* GR 11-22 colour palette  */
 }
 
-main { /* AH - modified 11-15 by SV - sets <main> to the right of <nav> */
-    float: left;
-    width: 68%;     /* change this if you are removing or resizing <aside> or <nav> */
+section { /* SV - 11-23 - aligns subsequent sections to the column format consistent with main */
     padding: 20px;
+    order: 2;
+    flex-grow: 1;
 }
 
 aside { /* AH - modified 11-14 by SV - sets <aside> to stay to the right of main - on the far right of the page */
     background-color: #B2CCD6; /* GR 11-22 colour palette */  
-    float: left;
-    width: 20%;     /* change this setting if you want the sidebar to be larger. Don't forget to also change <main> */
     padding: 15px;
     margin-top: 7px;
     text-align: center;
+    order: 3;
+    flex-grow: 1;
 }
 
 footer { /* JD 11-15 - footer formatting sourced from https://www.w3schools.com/cssref/pr_class_clear.asp */
@@ -90,7 +112,16 @@ footer { /* JD 11-15 - footer formatting sourced from https://www.w3schools.com/
 
 @media screen and (max-width: 800px) { /* AH added this, it essentially makes a 3 column section switch to sitting ontop of themselves, 
                                         instead of columns, once the screen size drops to 620px.For mobile phones. Modified by SV 11-14 to 800px. */
-    nav, main, aside {
-      width: 100%;
+   main {
+       flex-direction: column;
+   }
+   nav {
+       flex-direction: row;
+       justify-content: space-around;
+       flex-wrap: nowrap;
+       font-size: 12pt;
+    }
+    nav a {
+        padding: 5px;
     }
 }
