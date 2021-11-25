@@ -144,7 +144,8 @@ article.blag{
 
 /*--GR 11-25 set style for each person's article for background colour, border colour, and padding --*/
 article.blagcont {
-    background-color:#B2CCD6;
+    background-color:lightgray;
     border: 2px solid #D6D4A9;
     padding: 25px;
+    margin: 20px
 }
