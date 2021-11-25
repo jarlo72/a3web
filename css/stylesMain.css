@@ -127,3 +127,9 @@ footer { /* JD 11-15 - footer formatting sourced from https://www.w3schools.com/
         padding: 12px;
     }
 }
+
+#slogan {
+    color: white; 
+    font-style:italic;
+    padding-top: 25px;
+}
