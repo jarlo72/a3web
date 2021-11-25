@@ -1,7 +1,9 @@
 <!DOCTYPE html>
+<html lang="en"> <!-- SV 11-23 added english language-->
 <html>
     <head>
         <meta name="viewport" content="width=device-width, initial-scale=1.0"><!--AH 11-14 Responsive onto it all -->
+        <meta charset="UTF-8"> <!-- SV 11-23 added character encoding set-->
         <title>Landing Page</title> <!--SV 11-14-->   
         <link rel="stylesheet" href="css/stylesMain.css"> <!-- CP 11-14 -->
         <!-- Just placing link here for convenience https://jarlo72.github.io/a3web/index.html JD 11-16-->
@@ -23,17 +25,13 @@
     -->
     <body>
         <header>
-            <figure id=logo> <!--JD 11-17 - logo semantic element in header-->
+            <figure id="logo"> <!--JD 11-17 - logo semantic element in header-->
                 <img src="images/headerimages/logo.svg" style="height:94px;width:130px;" alt="LASD logo" style="max-width:100%;height:auto;">
             </figure>
-            <h1>Title will not change size on purpose</h1><!--AH-->
-            <!--AH Added a non-responsive title that spans the entire page and doesn't change, will look cool having a stable non responsive title for each page-->
-            <!--GR just adjusted the file path ../drone/.. to connect this image back to the folder after I moved files-->
-            <img src="images/drone/keeley3.jpg" alt="drone exploration in timmins" style="max-width:100%;height:auto;"> <!--AH Added a responsive image here 
-            to the template, maximum 100% of the width, won't enlarge only get smol-->
+            <h1>42</h1> <!-- SV 11-23 - added the actual title-->
         </header>
 
-        <div class="overFlow">  <!--SV 11-14 - set up a container for the columns-->
+        <main>  <!--SV 11-14 - set up a container for the columns-->
             <!--AH Swoops in for the fancy award of the year-->
             <nav> <!-- CP 11-14 inserted navigation bar based on suggestion from 
                 https://www.w3schools.com/howto/howto_css_icon_bar.asp - modified SV 11-14 from div to nav-->
@@ -42,32 +40,33 @@
                 <a href="#Why">Why Hire Us</a> 
                 <a href="#Projects">Projects</a>
                 <a href="GetInvolved.html">Get Involved</a> 
-                <a href="#Blag">Blag</a>
+                <a href="blag.html">Blag</a>
             </nav> 
 
-            <main> <!--AH 11-14 - adds the centre column-->
-                <h2>H2 needs to be the main headers for content, to keep in mind heirarchy.</h2><!--Stephen 11/15-->>
-                    <p>Lorem ipsum dolor sit amet.</p>
-                <h3>H3 are secondary headers.</h3> <!-- Stephen 11/15 - I tab in the headers to help me visuallize the web heirarchy
-                    but it's not actually required, if you find it annoying I can stop.-->
-                    <p>Lorem ipsum all over the place. Look over there! An environmentalist in their natural habitat</p>
-            </main>
+            <section>
+                <article>
+                    <h2>We are the answer.</h2><!--Stephen 11/15-->>
+                        <p>Lorem ipsum dolor sit amet.</p>
+                    <h3>H3 are secondary headers.</h3> <!-- Stephen 11/15 - I tab in the headers to help me visuallize the web heirarchy
+                         but it's not actually required, if you find it annoying I can stop.-->
+                        <p>Lorem ipsum all over the place. Look over there! An environmentalist in their natural habitat</p>
+                </article>
 
+                <article> <!--AH 11-14 - sections are used across the entire width of the columns, but could be
+                            incorporated into the columns if that seems best. They are the recommended way to
+                            add sub-pages. -->
+                    <h2>Template h2 header</h2> <!--SV 11-07 - filler for the template -->
+                        <p>paragraph</p>
+                        <h3>template h3 header</h3>
+                            <p>paragraph</p>
+                </article>
+            </section>
             <Aside><!--AH 11-14 - adds the right column -->
                 <h2>Right Column</h2>
                     <p> Ess En double 0h Pee Dee oh double Gee</p>
             </aside>
-            
-        </div>
+        </main>
 
-        <section> <!--AH 11-14 - sections are used across the entire width of the columns, but could be
-                    incorporated into the columns if that seems best. They are the recommended way to
-                    add sub-pages. -->
-            <h2>Template h2 header</h2> <!--SV 11-07 - filler for the template -->
-                <p>paragraph</p>
-                <h3>template h3 header</h3>
-                    <p>paragraph</p>
-        </section>
         <footer> <!-- JD 11-15 - Inspired by content-based websites which often state the creator's name, affiliate links, etc. Semantic element, footer-->
             <p>Created by Group 1 Footer</p>
         </footer>
