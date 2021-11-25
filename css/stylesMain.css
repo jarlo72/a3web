@@ -142,6 +142,10 @@ article.blag{
     flex-grow: 1;
 }
 
+h2.blagtitle{
+    text-align: center;
+}
+
 /*--GR 11-25 set style for each person's article for background colour, border colour, and padding --*/
 article.blagcont {
     background-color:lightgray;
