@@ -1,122 +1,124 @@
 <!DOCTYPE html>
-<html>
+<html lang="en"> <!-- SV 11-23 added english language-->
     <head>
         <meta name="viewport" content="width=device-width, initial-scale=1.0"><!--AH 11-14 Responsive onto it all -->
-        <title>Blag</title> <!--GR 11-22-->   
+        <meta charset="UTF-8"> <!-- SV 11-23 added character encoding set-->
+        <title>Group 6 Page Template</title> <!--SV 11-14-->   
         <link rel="stylesheet" href="css/stylesMain.css"> <!-- CP 11-14 -->
+        <!-- Just placing link here for convenience https://jarlo72.github.io/a3web/template.html JD 11-16-->
     </head>
+    <!--
+        Stephen 11-14 - Before we get into things, a brief style guide reminder.
+        Comments for communication use your full name, like in this one.
+        For comments that need to stick around through the submission, initial and date.
+        Please initial and date if you modify someone else's code, unless it's very minor.
 
+        When using this template to create subpages, remember:
+        USE SEMANTIC HTML.
+        Change the <title> above.
+        If you need to modify the CSS of an element for your page (ie, <h1>) make sure you
+        use a Class or ID for it, so you don't break everyone else's page!
+
+        Oh, also, for each new page you get to delete all the comments from here - they only
+        apply to the template doc, not your individual page.
+    -->
     <body>
         <header>
-            <figure id=logo> <!--JD 11-17 - logo semantic element in header-->
+            <figure id="logo"> <!--JD 11-17 - logo semantic element in header-->
                 <img src="images/headerimages/logo.svg" style="height:94px;width:130px;" alt="LASD logo" style="max-width:100%;height:auto;">
             </figure>
-            <h1>Blags and Stories (not yet the real title) </h1><!--GR 11-22-->
-            <img src="images/drone/keeley3.jpg" alt="drone exploration in timmins" style="max-width:100%;height:auto;"> <!--AH Added a responsive image here 
-            to the template, maximum 100% of the width, won't enlarge only get smol-->
+            <h1>42</h1> <!-- SV 11-23 - added the actual title-->
         </header>
 
-        <div class="overFlow">  <!--SV 11-14 - set up a container for the columns-->
-            <nav> <!-- CP 11-14 inserted navigation bar based on suggestion from 
-                https://www.w3schools.com/howto/howto_css_icon_bar.asp - modified SV 11-14 from div to nav-->
-                <a href="index.html">Home</a> 
-                <a href="#About ">About Us</a> 
-                <a href="#Why">Why Hire Us</a> 
-                <a href="#Projects">Projects</a>
-                <a href="GetInvolved.html">Get Involved</a> 
-                <a class="active" href="blag.html">Blag</a>
-            </nav> 
+        <main> <!--GR 11-22 block element centre column to contain blags-->
+            <!--Christie's Blag--> 
+                <div class="blag1"> <!--GR 11-22 Inserts block element to contain blag #1-->
+                    <h2 class="blags">Christie's Blag Title</h2>
+                    <h5 class="blags">Sub Title, Date</h5>
+                        <div class="blagimg">
+                            <img class="blags" src="images/headerimages/pond.jpg" alt = "Blag Image" style="height:608px;width:912px;" > <!--GR 11-20 insert descriptive image for blag-->
+                        </div>
+                    <p class="blags"> Blag Text.
+                    </p>    
+                </div>
+            <!--Gabby's Blag--> 
+                <div class="blag2"> <!--GR 11-22 Inserts block element to contain blag #2-->
+                    <h2 class="blags">Gabby's Blag </h2>
+                    <h5 class="blags">Sub Title, Date</h5>
+                        <div class="blagimg">
+                            <img class="blags" src="images/headerimages/puffinreserve2.jpg" alt = "Blag Image" style="height:608px;width:912px;" > <!--GR 11-20 insert descriptive image for blag-->
+                        </div> 
+                    <p class="blags"> Blag Text.
+                    </p>         
+                </div>
+            <!--Amanda's Blag-->     
+                <div class="blag3"> <!--GR 11-22 Inserts block element to contain blag #3-->
+                    <h2 class="blags">Amanda's Blag</h2>
+                    <h5 class="blags">Sub Title, Date</h5>
+                        <div class="blagimg">
+                            <img class="blags" src="images/drone/keeley4.jpg" alt = "Blag Image" style="height:608px;width:912px;" > <!--GR 11-20 insert descriptive image for blag-->
+                        </div>
+                    <p class="blags">Blag text.
+                    </p> 
+                </div>
+            <!--Jon's Blag-->          
+                <div class="blag4"> <!--GR 11-22 Inserts block element to contain blag #4-->
+                    <h2 class="blags">Jon's Blag</h2>
+                    <h5 class="blags">Sub Title, Date</h5>
+                        <div class="blagimg">
+                            <img class="blags" src="images/headerimages/IMG_1320.jpg" alt = "Blag Image" style="height:608px;width:912px;" > <!--GR 11-20 insert descriptive image for blag-->
+                        </div>
+                    <p class="blags">Blag Text. 
+                    </p>
+                </div>
+            <!--Stephen's Blag-->     
+                <div class="blag5"> <!--GR 11-22 Inserts block element to contain blag #5-->
+                    <h2 class="blags">Stephen's Blag</h2>
+                    <h5 class="blags">Sub Title, Date</h5>
+                        <div class="blagimg">
+                            <img class="blags" src="images/headerimages/vistahills2.jpg" alt = "Blag Image" style="height:608px;width:912px;" > <!--GR 11-20 insert descriptive image for blag-->
+                        </div>
+                    <p class="blags">Blag Text.
+                    </p>
+                </div>
+        </main>
 
-            <main> <!--GR 11-22 block element centre column to contain blags-->
-                <!--Christie's Blag--> 
-                    <div class="blag1"> <!--GR 11-22 Inserts block element to contain blag #1-->
-                        <h2 class="blags">Christie's Blag Title</h2>
-                        <h5 class="blags">Sub Title, Date</h5>
-                            <div class="blagimg">
-                                <img class="blags" src="images/headerimages/pond.jpg" alt = "Blag Image" style="height:608px;width:912px;" > <!--GR 11-20 insert descriptive image for blag-->
-                            </div>
-                        <p class="blags"> Blag Text.
-                        </p>    
-                    </div>
-                <!--Gabby's Blag--> 
-                    <div class="blag2"> <!--GR 11-22 Inserts block element to contain blag #2-->
-                        <h2 class="blags">Gabby's Blag </h2>
-                        <h5 class="blags">Sub Title, Date</h5>
-                            <div class="blagimg">
-                                <img class="blags" src="images/headerimages/puffinreserve2.jpg" alt = "Blag Image" style="height:608px;width:912px;" > <!--GR 11-20 insert descriptive image for blag-->
-                            </div> 
-                        <p class="blags"> Blag Text.
-                        </p>         
-                    </div>
-                <!--Amanda's Blag-->     
-                    <div class="blag3"> <!--GR 11-22 Inserts block element to contain blag #3-->
-                        <h2 class="blags">Amanda's Blag</h2>
-                        <h5 class="blags">Sub Title, Date</h5>
-                            <div class="blagimg">
-                                <img class="blags" src="images/drone/keeley4.jpg" alt = "Blag Image" style="height:608px;width:912px;" > <!--GR 11-20 insert descriptive image for blag-->
-                            </div>
-                        <p class="blags">Blag text.
-                        </p> 
-                    </div>
-                <!--Jon's Blag-->          
-                    <div class="blag4"> <!--GR 11-22 Inserts block element to contain blag #4-->
-                        <h2 class="blags">Jon's Blag</h2>
-                        <h5 class="blags">Sub Title, Date</h5>
-                            <div class="blagimg">
-                                <img class="blags" src="images/headerimages/IMG_1320.jpg" alt = "Blag Image" style="height:608px;width:912px;" > <!--GR 11-20 insert descriptive image for blag-->
-                            </div>
-                        <p class="blags">Blag Text. 
-                        </p>
-                    </div>
-                <!--Stephen's Blag-->     
-                    <div class="blag5"> <!--GR 11-22 Inserts block element to contain blag #5-->
-                        <h2 class="blags">Stephen's Blag</h2>
-                        <h5 class="blags">Sub Title, Date</h5>
-                            <div class="blagimg">
-                                <img class="blags" src="images/headerimages/vistahills2.jpg" alt = "Blag Image" style="height:608px;width:912px;" > <!--GR 11-20 insert descriptive image for blag-->
-                            </div>
-                        <p class="blags">Blag Text.
-                        </p>
-                    </div>
-            </main>
+        <aside><!--GR 11-22 - block element adds right for side bar topics links to projects and about us pages -->
+            <!--Gabby Riefesel 11-22 I think it would be cool if this link cycled through out profiles and linked back to the our team page -->
+                <div class="aboutus">
+                    <h2 class="blags">Check out our team of GIS Specialists</h2>
+                    <a href = "#aboutus.html"> <!--GR 11-22 include image in <a> so image acts as link to About Us page-->
+                        <img src="images/profiles/profilegabby.jpg" alt = "Profile" style="height:94px;width:130px;" style="max-width:100%;height:auto;" >
+                    </a>
+                </div>
 
-            <aside><!--GR 11-22 - block element adds right for side bar topics links to projects and about us pages -->
-                <!--Gabby Riefesel 11-22 I think it would be cool if this link cycled through out profiles and linked back to the our team page -->
-                    <div class="aboutus">
-                        <h2 class="blags">Check out our team of GIS Specialists</h2>
-                        <a href = "#aboutus.html"> <!--GR 11-22 include image in <a> so image acts as link to About Us page-->
-                            <img src="images/profiles/profilegabby.jpg" alt = "Profile" style="height:94px;width:130px;" style="max-width:100%;height:auto;" >
-                        </a>
-                    </div>
-
-                <!--Gabby Riefesel 11-22 I think it would be cool if this block had links to our projects page with an image-->    
-                    <div class="projects"> <!--GR 11-22 block element for link to projects page-->
-                        <h3 class="blags">Projects</h3>
-                        <a href = "#Projects.html"> <!--GR 11-22 include image in <a> so image acts as link to projects page-->
-                            <img src="images/headerimages/IMG_1320.jpg" alt = "Project Image" style="height:94px;width:130px;" style="max-width:100%;height:auto;"> <!--GR 11-22 click img link to project-->
-                        </a>
-                        <a href = "#Projects.html">
-                                <img src="images/headerimages/IMG_1320.jpg" alt = "Project Image" style="height:94px;width:130px;" style="max-width:100%;height:auto;"> <!--GR 11-22 click img linkto project-->
-                        </a>
-                        <a href = "#Projects.html">
+            <!--Gabby Riefesel 11-22 I think it would be cool if this block had links to our projects page with an image-->    
+                <div class="projects"> <!--GR 11-22 block element for link to projects page-->
+                    <h3 class="blags">Projects</h3>
+                    <a href = "#Projects.html"> <!--GR 11-22 include image in <a> so image acts as link to projects page-->
+                        <img src="images/headerimages/IMG_1320.jpg" alt = "Project Image" style="height:94px;width:130px;" style="max-width:100%;height:auto;"> <!--GR 11-22 click img link to project-->
+                    </a>
+                    <a href = "#Projects.html">
                             <img src="images/headerimages/IMG_1320.jpg" alt = "Project Image" style="height:94px;width:130px;" style="max-width:100%;height:auto;"> <!--GR 11-22 click img linkto project-->
-                        </a>
-                    </div>
-            </aside>
-            
-        </div>
+                    </a>
+                    <a href = "#Projects.html">
+                        <img src="images/headerimages/IMG_1320.jpg" alt = "Project Image" style="height:94px;width:130px;" style="max-width:100%;height:auto;"> <!--GR 11-22 click img linkto project-->
+                    </a>
+                </div>
+        </aside>
+        
+    </div>
 
 <!--- Gabby Riefesel 11-22, not sure if this section would be needed for the blag page so I commented it out-->
 
-        <!-- <section>--> <!--AH 11-14 - sections are used across the entire width of the columns, but could be -->
-                    <!-- incorporated into the columns if that seems best. They are the recommended way to -->
-                    <!-- add sub-pages. --> 
-            <!-- <h2>Template h2 header</h2> SV 11-07 - filler for the template -->
+    <!-- <section>--> <!--AH 11-14 - sections are used across the entire width of the columns, but could be -->
+                <!-- incorporated into the columns if that seems best. They are the recommended way to -->
+                <!-- add sub-pages. --> 
+        <!-- <h2>Template h2 header</h2> SV 11-07 - filler for the template -->
+            <!-- <p>paragraph</p> -->
+            <!-- <h3>template h3 header</h3> -->
                 <!-- <p>paragraph</p> -->
-                <!-- <h3>template h3 header</h3> -->
-                    <!-- <p>paragraph</p> -->
-        <!-- </section> -->
-
+    <!-- </section> -->
 
         <footer> <!-- JD 11-15 - Inspired by content-based websites which often state the creator's name, affiliate links, etc. Semantic element, footer-->
             <p>Created by Group 1 Footer</p>
