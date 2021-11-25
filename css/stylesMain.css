@@ -84,7 +84,7 @@ nav a:hover { /* CP */
 }
             
 .active { /* CP */
-    background-color: #D6D4A9; /* GR 11-22 colour palette  */
+    background-color: #497B8F; /* GR 11-22 colour palette  */
 }
 
 section { /* SV - 11-23 - aligns subsequent sections to the column format consistent with main */
@@ -103,7 +103,7 @@ aside { /* AH - modified 11-14 by SV - sets <aside> to stay to the right of main
 }
 
 footer { /* JD 11-15 - footer formatting sourced from https://www.w3schools.com/cssref/pr_class_clear.asp */
-    background-color: #497B8F;
+    background-color: #D6D4A9;
 	border-top: 1px solid gray;
 	border-bottom: 1px solid gray;
 	text-align: center;
