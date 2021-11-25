@@ -133,3 +133,18 @@ footer { /* JD 11-15 - footer formatting sourced from https://www.w3schools.com/
     font-style:italic;
     padding-top: 25px;
 }
+
+/* -------------- Blag Page Styling -------------- */ 
+
+/* GR 11-25 makes main article in central column of blag page */
+article.blag{
+    order: 2;
+    flex-grow: 1;
+}
+
+/*--GR 11-25 set style for each person's article for background colour, border colour, and padding --*/
+article.blagcont {
+    background-color:#B2CCD6;
+    border: 2px solid #D6D4A9;
+    padding: 25px;
+}
