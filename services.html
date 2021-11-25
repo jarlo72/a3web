@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en"> <!-- SV 11-23 added english language-->
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"><!--AH 11-14 Responsive onto it all -->
+        <meta charset="UTF-8"> <!-- SV 11-23 added character encoding set-->
+        <title>Why hire us?</title> <!-- SV 11-25 -->   
+        <link rel="stylesheet" href="css/stylesMain.css"> <!-- CP 11-14 -->
+        <!-- Just placing link here for convenience https://jarlo72.github.io/a3web/template.html JD 11-16-->
+    </head>
+    <!--
+        Stephen 11-14 - Before we get into things, a brief style guide reminder.
+        Comments for communication use your full name, like in this one.
+        For comments that need to stick around through the submission, initial and date.
+        Please initial and date if you modify someone else's code, unless it's very minor.
+
+        When using this template to create subpages, remember:
+        USE SEMANTIC HTML.
+        Change the <title> above.
+        If you need to modify the CSS of an element for your page (ie, <h1>) make sure you
+        use a Class or ID for it, so you don't break everyone else's page!
+
+        Oh, also, for each new page you get to delete all the comments from here - they only
+        apply to the template doc, not your individual page.
+    -->
+    <body>
+        <header>
+            <figure id="logo"> <!--JD 11-17 - logo semantic element in header-->
+                <img src="images/headerimages/logo.svg" style="height:94px;width:130px;" alt="LASD logo" style="max-width:100%;height:auto;">
+            </figure>
+            <h1>42</h1> <!-- SV 11-23 - added the actual title-->
+        </header>
+
+        <main>  <!--SV 11-14 - set up a container for the columns-->
+            <!--AH Swoops in for the fancy award of the year-->
+            <nav> <!-- CP 11-14 inserted navigation bar based on suggestion from 
+                https://www.w3schools.com/howto/howto_css_icon_bar.asp - modified SV 11-14 from div to nav-->
+                <a class="active" href="#Home">Home</a> 
+                <a href="#About ">About Us</a> 
+                <a href="#Why">Why Hire Us</a> 
+                <a href="#Projects">Projects</a>
+                <a href="#Involved">Get Involved</a> 
+                <a href="blag.html">Blag</a>
+            </nav> 
+
+            <section>
+                <article>
+                    <h2>We are the answer.</h2><!--Stephen 11/15-->>
+                        <p>Lorem ipsum dolor sit amet.</p>
+                    <h3>H3 are secondary headers.</h3> <!-- Stephen 11/15 - I tab in the headers to help me visuallize the web heirarchy
+                         but it's not actually required, if you find it annoying I can stop.-->
+                        <p>Lorem ipsum all over the place. Look over there! An environmentalist in their natural habitat</p>
+                </article>
+
+                <article> <!--AH 11-14 - sections are used across the entire width of the columns, but could be
+                            incorporated into the columns if that seems best. They are the recommended way to
+                            add sub-pages. -->
+                    <h2>Template h2 header</h2> <!--SV 11-07 - filler for the template -->
+                        <p>paragraph</p>
+                        <h3>template h3 header</h3>
+                            <p>paragraph</p>
+                </article>
+            </section>
+            <Aside><!--AH 11-14 - adds the right column -->
+                <h2>Right Column</h2>
+                    <p> Ess En double 0h Pee Dee oh double Gee</p>
+            </aside>
+        </main>
+
+        <footer> <!-- JD 11-15 - Inspired by content-based websites which often state the creator's name, affiliate links, etc. Semantic element, footer-->
+            <p>Created by Group 1 Footer</p>
+        </footer>
+    </body>
+</html>
