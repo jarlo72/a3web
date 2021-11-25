@@ -141,9 +141,10 @@ article.blag{
     order: 2;
     flex-grow: 1;
 }
-
+/* GR 11-25 center align blag page title */
 h2.blagtitle{
     text-align: center;
+    margin:30px;
 }
 
 /*--GR 11-25 set style for each person's article for background colour, border colour, and padding --*/
@@ -151,5 +152,5 @@ article.blagcont {
     background-color:lightgray;
     border: 2px solid #D6D4A9;
     padding: 25px;
-    margin: 20px
+    margin: 20px;
 }
