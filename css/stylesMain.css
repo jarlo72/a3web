@@ -149,3 +149,12 @@ article.blagcont {
     padding: 25px;
     margin: 20px;
 }
+
+/* GR 11-26 set style of title, subtitle and date of blags*/
+h3.blags{
+    margin:10px
+}
+
+h5.blags{
+    margin:10px
+}
