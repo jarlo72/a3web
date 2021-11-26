@@ -52,11 +52,24 @@
                 <!--Jon's Blag-->          
                     <article class="blagcont"> <!--GR 11-22 Inserts block element to contain blag #4-->
                         <h3 class="blags"> Exploring the Columbia Icefields</h3>  <!--GR 11-26 input Jon's content for testing UX-->
-                            <h5 class="blags">West Coast GIS Summit, November 22, 2020</h5>
-                            <img src="images/blagimages/icefieldmap.PNG">
-                            
-                                <p class="blags"> Travelling widens our perspective and helps develop a different approach to life that can be translated to our career passions. Here at LASD, we believe that change and discovery is a necessary part of life and to do so, we must put ourselves out there, somewhere, in the world. We always encourage our team members to pursue this approach to life and take it beyond work. During the annual West Coast GIS Summit, taking place in the later summer months, the team at LASD had a wonderful opportunity to hit the trails and explore the Columbia Icefields highway connecting Jasper and Banff national parks. As you can tell, this was indeed far from the west coast; a consequence of our team overly enthusiastically taking LASD values to heart. The trip definitely left an impression on our team members, who brought back with them a plethora of awkward yet wholesome selfies, and, consequently, many requests for projects and contracts in the Rockies.. 
+                            <h5 class="blags">West Coast GIS Summit -  November 22, 2020</h5>
+                            <img src="images/blagimages/icefieldmap.PNG">  
+                            <button onclick = "myFunction()"> Read More </button> <!--GR 11-26 add button to activate javascript to drop down article text <p class="blagJ"> element-->
+                                <p class="blagJ"> Travelling widens our perspective and helps develop a different approach to life that can be translated to our career passions. Here at LASD, we believe that change and discovery is a necessary part of life and to do so, we must put ourselves out there, somewhere, in the world. We always encourage our team members to pursue this approach to life and take it beyond work. During the annual West Coast GIS Summit, taking place in the later summer months, the team at LASD had a wonderful opportunity to hit the trails and explore the Columbia Icefields highway connecting Jasper and Banff national parks. As you can tell, this was indeed far from the west coast; a consequence of our team overly enthusiastically taking LASD values to heart. The trip definitely left an impression on our team members, who brought back with them a plethora of awkward yet wholesome selfies, and, consequently, many requests for projects and contracts in the Rockies.
                                 </p>
+
+                            <!-- Use JavaScript to Toggle Hide/Show <p> element on click  SOURCE:https://www.w3schools.com/howto/tryit.asp?filename=tryhow_js_toggle_hide_show -->
+                            
+                                <script>
+                                    function myFunction(){
+                                        var x = document.getElementById("blagJ");
+                                        if (x.style.display === "none") {
+                                            x.style.display = "block";
+                                        } else {
+                                            x.style.display = "none";
+                                        }
+                                    }
+                                </script>                                
                     </article>
                 <!--Stephen's Blag-->     
                     <article class="blagcont"> <!--GR 11-22 Inserts block element to contain blag #5-->
