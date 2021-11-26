@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en"> <!-- SV 11-23 added english language-->
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"><!--AH 11-14 Responsive onto it all -->
+        <meta charset="UTF-8"> <!-- SV 11-23 added character encoding set-->
+        <title>Projects</title> <!--CP 11-26-->   
+        <link rel="stylesheet" href="css/stylesMain.css"> <!-- CP 11-14 -->
+        <!-- Just placing link here for convenience https://jarlo72.github.io/a3web/template.html JD 11-16-->
+    </head>
+    <!--
+        Stephen 11-14 - Before we get into things, a brief style guide reminder.
+        Comments for communication use your full name, like in this one.
+        For comments that need to stick around through the submission, initial and date.
+        Please initial and date if you modify someone else's code, unless it's very minor.
+
+        When using this template to create subpages, remember:
+        USE SEMANTIC HTML.
+        Change the <title> above.
+        If you need to modify the CSS of an element for your page (ie, <h1>) make sure you
+        use a Class or ID for it, so you don't break everyone else's page!
+
+        Oh, also, for each new page you get to delete all the comments from here - they only
+        apply to the template doc, not your individual page.
+    -->
+    <body>
+        <header>
+            <figure id="logo"> <!--JD 11-17 - logo semantic element in header-->
+                <img src="images/headerimages/logo.svg" style="height:94px;width:130px;" alt="LASD logo" style="max-width:100%;height:auto;">
+            </figure>
+            <h1>LASD Projects</h1> <!-- SV 11-23 - added the actual title-->
+        </header>
+
+        <main>  <!--SV 11-14 - set up a container for the columns-->
+            <!--AH Swoops in for the fancy award of the year-->
+            <nav> <!-- CP 11-14 inserted navigation bar based on suggestion from 
+                https://www.w3schools.com/howto/howto_css_icon_bar.asp - modified SV 11-14 from div to nav-->
+                <a href="#Home">Home</a> 
+                <a href="#About ">About Us</a> 
+                <a href="#Why">Why Hire Us</a> 
+                <a class="active" href="#Projects">Highlights of Some of Our Projects</a>
+                <a href="#Involved">Get Involved</a> 
+                <a href="blag.html">Blag</a>
+            </nav> 
+
+            <section>
+            <!--CP 11-26 I really like Gabby's Blag layout and think it should be used for Projects page-->
+                <h2 class = 'blagtitle'>Projects Page</h2>    
+                    <!--Christie's project--> 
+                    <article class="blagcont"> <!--GR 11-22 Inserts block element to contain blag #1-->
+                        <h3 class="blags">Christie's Project Comes First because she rules!</h3>
+                            <h5 class="blags">Sub Title, Date</h5>
+                                <p class="blags"> Blag Text.
+                                </p>    
+                    </article>
+                <!--Gabby's project--> 
+                    <article class="blagcont"> <!--GR 11-22 Inserts block element to contain blag #2-->
+                        <h3 class="blags">Gabby's Project </h3>
+                            <h5 class="blags">Sub Title, Date</h5>
+                                <p class="blags"> Blag Text.
+                                </p>         
+                    </article>
+                <!--Amanda's project-->     
+                    <article class="blagcont"> <!--GR 11-22 Inserts block element to contain blag #3-->
+                        <h3 class="blags">Amanda's Project</h3>
+                            <h5 class="blags">Sub Title, Date</h5>
+                                <p class="blags">Blag text.
+                                </p> 
+                    </article>
+                <!--Jon's project-->          
+                    <article class="blagcont"> <!--GR 11-22 Inserts block element to contain blag #4-->
+                        <h3 class="blags">Jon's Project</h3>
+                            <h5 class="blags">Sub Title, Date</h5>
+                            
+                                <p class="blags">Blag Text. 
+                                </p>
+                    </article>
+                <!--Stephen's project-->     
+                    <article class="blagcont"> <!--GR 11-22 Inserts block element to contain blag #5-->
+                        <h3 class="blags">Stephen's Project</h3>
+                            <h5 class="blags">Sub Title, Date</h5>
+                                <p class="blags">Blag Text.
+                                </p>
+                    </article>
+            </section> 
+            </section>
+            <Aside><!--AH 11-14 - adds the right column -->
+                <h2>Right Column</h2>
+                    <p> Ess En double 0h Pee Dee oh double Gee</p>
+            </aside>
+        </main>
+
+        <footer> <!-- JD 11-15 - Inspired by content-based websites which often state the creator's name, affiliate links, etc. Semantic element, footer-->
+            <p>Created by Group 1 Footer</p>
+        </footer>
+    </body>
+</html>
