@@ -136,11 +136,6 @@ footer { /* JD 11-15 - footer formatting sourced from https://www.w3schools.com/
 
 /* -------------- Blag Page Styling -------------- */ 
 
-/* GR 11-25 makes main article in central column of blag page... LIKLEY OOPS */
-/* article.blag{
-    order: 2;
-    flex-grow: 1;
-} */
 
 /* GR 11-25 center align blag page title */
 h2.blagtitle{
