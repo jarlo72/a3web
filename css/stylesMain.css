@@ -49,32 +49,25 @@ header { /* SV 11-14 - a modification of AH's work for our header info*/
     padding:15px;
     font-size: 4em;
     display: flex; /* SV 11-23 - as per https://www.w3schools.com/css/css3_flexbox.asp */
-    flex-flow: row nowrap;
+    flex-flow: row wrap;
     justify-content: center;
     align-items: center;
 }
 
 nav { /* CP - modified SV 11-14 - Changed the width as part of moving <nav> from the top to the left */
-    flex: 0, 0, 120px; /* SV 11-23 - fixes the size of the nav bar */
     text-align: center;
-    font-size: 15pt;
+    font-size: 12pt;
     background-color: #8F787C;     /* GR 11-22 colour palette */
     order: 1;
-    flex-grow: 1;
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
-    flex-wrap: nowrap;
-}
-
-main { /* SV 11-23 - sets up flexbox, to simplify positioning of everything. Removed all previous float and positioning items. */
-    display: flex;
-    flex-flow: column nowrap;
     justify-content: center;
+    flex-wrap: nowrap;
+    align-items: center;
 }
          
 nav a { /* CP */
-    padding: 5px;
+    padding: 10px;
     transition: all .3s ease;
     color: white; 
 } 
@@ -87,10 +80,18 @@ nav a:hover { /* CP */
     background-color: #497B8F; /* GR 11-22 colour palette  */
 }
 
+main { /* SV 11-23 - sets up flexbox, to simplify positioning of everything. Removed all previous float and positioning items. */
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: left;
+}
+
 section { /* SV - 11-23 - aligns subsequent sections to the column format consistent with main */
     padding: 20px;
-    order: 2;
+    order: 1;
     flex-grow: 1;
+    display: flex;
+    flex-direction: column;
 }
 
 aside { /* AH - modified 11-14 by SV - sets <aside> to stay to the right of main - on the far right of the page */
@@ -98,7 +99,7 @@ aside { /* AH - modified 11-14 by SV - sets <aside> to stay to the right of main
     padding: 15px;
     margin-top: 7px;
     text-align: center;
-    order: 3;
+    order: 2;
     flex-grow: 1;
 }
 
@@ -116,14 +117,20 @@ footer { /* JD 11-15 - footer formatting sourced from https://www.w3schools.com/
     /* If we're doing a hamburger menu, it needs to go in up above, and what's currently our default would go here */
 }
 @media screen and (min-width: 800px) { /* AH created, SV modified 11-24 - switched from max-width to min-width for mobile-first design */
+   header {
+
+   }
+   
    main {
        flex-direction: row;
    }
-   nav { /* SV 11-23 - the menu switches to a vertical bar when the screen size is above 800px */
-       font-size: 15pt;
-    }
-    nav a {
-        padding: 12px;
+   aside {
+    flex-grow: 1;
+}
+   nav a { /* SV 12-01 - adjusts size of nav bar when screen size increases */
+        font-size: 15pt;
+        padding-left: 15px;
+        padding-right: 15px;
     }
 }
 
@@ -136,7 +143,7 @@ footer { /* JD 11-15 - footer formatting sourced from https://www.w3schools.com/
 /* -------------- Blag Page Styling -------------- */ 
 
 /* GR 11-25 center align blag page title */
-h2.blagtitle{
+.centretitle{
     text-align: center;
     margin:30px;
 }
@@ -159,3 +166,19 @@ h5.blags{
 }
 
 /* GR 11-26 Stylize button  */
+
+/* -------------- Services Page Styling -------------- */
+
+/* SV 12-01 - Stole the centre titling from Blag Page */
+
+/* SV 12-01 - Attributes for left-aligned sections */
+.leftside {
+    padding-left: 20px;
+    padding-right: 200px;
+}
+/* SV 12-01 - Attributes for right-aligned sections */
+.rightside {
+    text-align: right;
+    padding-right: 20px;
+    padding-left: 200px;
+}
