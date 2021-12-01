@@ -136,22 +136,27 @@ footer { /* JD 11-15 - footer formatting sourced from https://www.w3schools.com/
 
 /* -------------- Blag Page Styling -------------- */ 
 
-/* GR 11-25 makes main article in central column of blag page... LIKLEY OOPS */
-/* article.blag{
-    order: 2;
-    flex-grow: 1;
-} */
-
 /* GR 11-25 center align blag page title */
 h2.blagtitle{
     text-align: center;
     margin:30px;
 }
 
-/*--GR 11-25 set style for each person's article for background colour, border colour, and padding --*/
+/*--GR 11-25 set style for each person's article for background colour, border colour, margin, and padding --*/
 article.blagcont {
     background-color:lightgray;
     border: 2px solid #D6D4A9;
     padding: 25px;
     margin: 20px;
 }
+
+/* GR 11-26 set style of title, subtitle and date of blags*/
+h3.blags{
+    margin:10px
+}
+
+h5.blags{
+    margin:10px
+}
+
+/* GR 11-26 Stylize button  */
