@@ -54,12 +54,6 @@ header { /* SV 11-14 - a modification of AH's work for our header info*/
     align-items: center;
 }
 
-main { /* SV 11-23 - sets up flexbox, to simplify positioning of everything. Removed all previous float and positioning items. */
-    display: flex;
-    flex-flow: column nowrap;
-    justify-content: center;
-}
-
 nav { /* CP - modified SV 11-14 - Changed the width as part of moving <nav> from the top to the left */
     flex: 0, 0, 120px; /* SV 11-23 - fixes the size of the nav bar */
     text-align: center;
@@ -71,6 +65,12 @@ nav { /* CP - modified SV 11-14 - Changed the width as part of moving <nav> from
     flex-direction: row;
     justify-content: space-around;
     flex-wrap: nowrap;
+}
+
+main { /* SV 11-23 - sets up flexbox, to simplify positioning of everything. Removed all previous float and positioning items. */
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
 }
          
 nav a { /* CP */
@@ -120,7 +120,6 @@ footer { /* JD 11-15 - footer formatting sourced from https://www.w3schools.com/
        flex-direction: row;
    }
    nav { /* SV 11-23 - the menu switches to a vertical bar when the screen size is above 800px */
-       flex-direction: column;
        font-size: 15pt;
     }
     nav a {
