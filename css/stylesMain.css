@@ -32,6 +32,7 @@ h2 { /* SV 11-23 */
 }
 h3 { /* SV 11-23 */
     font-size: 16pt;
+    float: none;
 }
 p { /* SV 11-23 */
     font-size: 12pt;
@@ -136,10 +137,14 @@ footer { /* JD 11-15 - footer formatting sourced from https://www.w3schools.com/
     width: 100vw;
 }
 
+.footernotes {
+    font-size: 10pt;
+}
+
 #slogan {
     color: white; 
     font-style:italic;
-    padding-top: 25px;
+    float: none;
 }
 
 /* -------------- Blag Page Styling -------------- */ 
