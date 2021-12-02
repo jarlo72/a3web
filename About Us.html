@@ -1,2 +1,77 @@
 
-About Us
+<!DOCTYPE html>
+<html lang="en"> <!-- SV 11-23 added english language-->
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"><!--AH 11-14 Responsive onto it all -->
+        <meta charset="UTF-8"> <!-- SV 11-23 added character encoding set-->
+        <title>Meet the Team</title> <!--SV 11-14-->   
+        <link rel="stylesheet" href="css/stylesMain.css"> <!-- CP 11-14 -->
+        <!-- Just placing link here for convenience https://jarlo72.github.io/a3web/template.html JD 11-16-->
+    </head>
+    <!--
+        Stephen 11-14 - Before we get into things, a brief style guide reminder.
+        Comments for communication use your full name, like in this one.
+        For comments that need to stick around through the submission, initial and date.
+        Please initial and date if you modify someone else's code, unless it's very minor.
+
+        When using this template to create subpages, remember:
+        USE SEMANTIC HTML.
+        Change the <title> above.
+        If you need to modify the CSS of an element for your page (ie, <h1>) make sure you
+        use a Class or ID for it, so you don't break everyone else's page!
+
+        Oh, also, for each new page you get to delete all the comments from here - they only
+        apply to the template doc, not your individual page.
+    -->
+    <body>
+        <header>
+            <figure id="logo"> <!--JD 11-17 - logo semantic element in header-->
+                <img src="images/headerimages/logo.svg" style="height:94px;width:130px;" alt="LASD logo" style="max-width:100%;height:auto;">
+            </figure>
+            <h1>42</h1> <!-- SV 11-23 - added the actual title-->
+        </header>
+
+        <nav class="topnav" id="myTopnav"> <!-- SV 12-02 - modifications for the hamburger menu-->
+            <a href="index.html">Home</a> 
+            <a href="#About ">About Us</a> 
+            <a class="active" href="services.html">Why Hire Us</a>
+            <a href="projects.html">Projects</a>
+            <a href="GetInvolved.html">Get Involved</a> 
+            <a href="blag.html">Blag</a>
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()"> <!-- SV 12-02 - Hamburger menu icon thingy as per https://www.w3schools.com/howto/howto_js_topnav_responsive.asp-->
+                &#9776; <!-- thanks to https://webdesign.tutsplus.com/tutorials/7-non-raster-approaches-for-making-the-hamburger-menu-icon--cms-21686 for the UTF reference code & idea-->
+              </a>
+        </nav> 
+
+        <main>          <!--SV 11-14 - set up a container for the columns; mod 12-01 - moved to fix the navbar --><!--AH Swoops in for the fancy award of the year-->
+            <section>
+                <article>
+                    <h2>We are the answer.</h2><!--Stephen 11/15-->>
+                        <p>Lorem ipsum dolor sit amet.</p>
+                    <h3>H3 are secondary headers.</h3> <!-- Stephen 11/15 - I tab in the headers to help me visuallize the web heirarchy
+                         but it's not actually required, if you find it annoying I can stop.-->
+                        <p>Lorem ipsum all over the place. Look over there! An environmentalist in their natural habitat</p>
+                </article>
+
+                <article> <!--AH 11-14 - sections are used across the entire width of the columns, but could be
+                            incorporated into the columns if that seems best. They are the recommended way to
+                            add sub-pages. -->
+                    <h2>Template h2 header</h2> <!--SV 11-07 - filler for the template -->
+                        <p>paragraph</p>
+                        <h3>template h3 header</h3>
+                            <p>paragraph</p>
+                </article>
+            </section>
+            <Aside><!--AH 11-14 - adds the right column -->
+                <h2>Right Column</h2>
+                    <p> Ess En double 0h Pee Dee oh double Gee</p>
+            </aside>
+        </main>
+
+        <footer> <!-- JD 11-15 - Inspired by content-based websites which often state the creator's name, affiliate links, etc. Semantic element, footer-->
+            <p>Created by Group 1 Footer</p>
+        </footer>
+
+        <script src="js/navFunction.js"></script> <!-- SV 12-02 - link to javascript for the nav hamburger-->
+    </body>
+</html>
