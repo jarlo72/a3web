@@ -192,10 +192,10 @@ h5.blags{
     nav.active { /* CP */
         background-color: #497B8F; /* GR 11-22 colour palette  */
     }
-    nav a:not(:first-child) {
+    nav a:not(:first-child) {     /* SV 12-02 - overrides the small-screen hiding of the menu */
         display: inherit;
     }
-    nav a.icon {
+    nav a.icon {     /* SV 12-02 - overrides the line above this one, for the hamburger only */
         display: none;
     }
 }
