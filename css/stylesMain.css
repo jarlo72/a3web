@@ -143,6 +143,7 @@ footer { /* JD 11-15 - footer formatting sourced from https://www.w3schools.com/
 #slogan {
     color: white; 
     font-style:italic;
+    float: none;
 }
 
 /* -------------- Blag Page Styling -------------- */ 
