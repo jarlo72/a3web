@@ -39,6 +39,9 @@ p { /* SV 11-23 */
 
 /* -------------- section settings -------------- */
 
+body {
+    background-color: #ffefc8;
+}
 header { /* SV 11-14 - a modification of AH's work for our header info*/
     /* 11-22 GR colour palette */
     /* background-color:  #497B8F; */
@@ -106,6 +109,7 @@ main { /* SV 11-23 - sets up flexbox, to simplify positioning of everything. Rem
 }
 
 section { /* SV - 11-23 - aligns subsequent sections to the column format consistent with main */
+    
     padding: 20px;
     order: 1;
     flex: 80vw;
@@ -116,8 +120,7 @@ section { /* SV - 11-23 - aligns subsequent sections to the column format consis
 aside { /* AH - modified 11-14 by SV - sets <aside> to stay to the right of main - on the far right of the page */
     background-color: #B2CCD6; /* GR 11-22 colour palette */  
     padding: 15px;
-    margin-top: .5vw;
-    margin-right: .5vw;
+    margin: 0.5vw;
     text-align: center;
     order: 2;
     flex: 20vw;
@@ -126,11 +129,11 @@ aside { /* AH - modified 11-14 by SV - sets <aside> to stay to the right of main
 footer { /* JD 11-15 - footer formatting sourced from https://www.w3schools.com/cssref/pr_class_clear.asp */
     background-color: #D6D4A9;
 	border-top: 1px solid gray;
-	border-bottom: 1px solid gray;
 	text-align: center;
-	margin-top:10px;
 	padding: 50px;
-	clear: both;
+	position: fixed;
+    bottom: 0;
+    width: 100vw;
 }
 
 #slogan {
