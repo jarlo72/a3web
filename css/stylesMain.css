@@ -45,7 +45,7 @@ header { /* SV 11-14 - a modification of AH's work for our header info*/
     background-image: url("../images/headerimages/sunset.JPG"); /* Stephen - we can change this once the large version of the other gets uploaded */
     height: 300px;
     background-size: cover;
-    background-position: 50% 35%;
+    background-position: 50% 30%;
     background-repeat: no-repeat; /* SV 11-23 background image and details added for header graphic */
     padding:15px;
     font-size: 4em;
