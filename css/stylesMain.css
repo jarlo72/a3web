@@ -133,10 +133,13 @@ footer { /* JD 11-15 - footer formatting sourced from https://www.w3schools.com/
 	clear: both;
 }
 
+.footernotes {
+    font-size: 10pt;
+}
+
 #slogan {
     color: white; 
     font-style:italic;
-    padding-top: 25px;
 }
 
 /* -------------- Blag Page Styling -------------- */ 
