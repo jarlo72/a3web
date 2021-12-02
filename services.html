@@ -31,19 +31,25 @@
         </header>
 
         <nav> 
-            <a href="index.html">Home</a> 
-            <a href="#About ">About Us</a> 
-            <a class="active" href="services.html">Why Hire Us</a> 
-            <a href="projects.html">Projects</a>
-            <a href="GetInvolved.html">Get Involved</a> 
-            <a href="blag.html">Blag</a>
+            <a class="active" href="services.html">Why Hire Us</a> <!-- active page goes above "toplinks" so it won't get hidden-->
+            <div id="toplinks">
+                <a href="index.html">Home</a> 
+                <a href="#About ">About Us</a> 
+                <!-- services goes back here-->
+                <a href="projects.html">Projects</a>
+                <a href="GetInvolved.html">Get Involved</a> 
+                <a href="blag.html">Blag</a>
+            </div>
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()"> <!-- SV 12-02 - Hamburger menu icon thingy as per https://www.w3schools.com/howto/howto_js_mobile_navbar.asp-->
+                <p class="hamburger lines">&#9776;</p> <!-- thanks to https://webdesign.tutsplus.com/tutorials/7-non-raster-approaches-for-making-the-hamburger-menu-icon--cms-21686 for the UTF reference code & idea-->
+              </a>
         </nav> 
 
         <main>
             <section>
                 <article>
-                    <h2 class="centretitle">Why hire us?</h2><!--Stephen 11/15-->
-                        <p class = 'centretitle'>Brief explanation of offered services.</p>
+                    <h2 class="blagtitle">Why hire us?</h2><!--Stephen 11/15 - using the centred class from Gabby's blag page-->
+                        <p class = 'blagtitle'>Brief explanation of offered services.</p>
                     <h3 class="leftside">First service item</h3> <!-- Stephen 12/01 Placeholder Text-->
                         <p class="leftside">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed maximus eget lacus at ultrices. In ornare orci quis dui mattis ultrices. Cras fermentum auctor molestie. Mauris imperdiet fermentum ex eu dignissim. Duis lobortis faucibus odio, eu tincidunt eros faucibus a. Nullam ac purus eget arcu dignissim pellentesque sit amet non sem. Pellentesque fringilla dolor vitae leo interdum, in euismod neque placerat. Suspendisse tempus commodo posuere. Integer nec pulvinar dolor. Duis et orci id turpis commodo volutpat sit amet vel risus. In a leo congue, tristique dui sit amet, porttitor erat. Ut ac mollis diam. Nullam porta justo ligula, ac consequat risus luctus eu. Morbi non orci quis mauris placerat vehicula et consectetur orci. Aliquam quis purus urna. Pellentesque non mi aliquet ex placerat gravida. </p>
                     <h3 class="rightside">Second service item</h3>
@@ -68,5 +74,8 @@
         <footer> <!-- JD 11-15 - Inspired by content-based websites which often state the creator's name, affiliate links, etc. Semantic element, footer-->
             <p>Created by Group 1 Footer</p>
         </footer>
+
+        <script src="/js/navFunction.js"></script>
+
     </body>
 </html>
