@@ -55,38 +55,28 @@ header { /* SV 11-14 - a modification of AH's work for our header info*/
 }
 
 nav { /* CP - modified SV 11-14 - Changed the width as part of moving <nav> from the top to the left */
-    text-align: center;
     font-size: 12pt;
     background-color: #8F787C;     /* GR 11-22 colour palette */
-    order: 1;
-    display: flex;
-    flex-direction: column;
-    justify-content: left;
-    flex-wrap: nowrap;
-    align-items: center;
     overflow: hidden; /* SV 12-02 - as per https://www.w3schools.com/howto/howto_js_mobile_navbar.asp */
-    position: relative;  /* SV 12-02 - as per https://www.w3schools.com/howto/howto_js_mobile_navbar.asp */
 }
-nav.toplinks {
-    display: none;
-}    
 nav a { /* CP */
+    float: left;
+    display: block;
+    color: white; 
+    text-align: center;
     padding: 10px;
     transition: all .3s ease;
-    color: white; 
     text-decoration: none; /* SV 12-02 - get rid of those annoying underlines */
 } 
 nav a:hover { /* CP */
     background-color: #D6BFC3; /* GR 11-22 colour palette */
 }          
-.active { /* CP */
+nav.active { /* CP */
     background-color: #497B8F; /* GR 11-22 colour palette  */
 }
 nav a.icon {
-    background: black;
-    position: absolute;
-    right: 0;
-    top: 0;
+    float: right;
+    display: block;
 }
 
 main { /* SV 11-23 - sets up flexbox, to simplify positioning of everything. Removed all previous float and positioning items. */
@@ -166,6 +156,7 @@ h5.blags{
     padding: 2px;
     margin-left: 2vw;
     margin-right: 20vw;
+    margin-bottom: 2vw;
 }
 /* SV 12-01 - Attributes for right-aligned sections */
 .rightside {
@@ -173,23 +164,33 @@ h5.blags{
     padding: 2px;
     margin-right: 2vw;
     margin-left: 20vw;
+    margin-bottom: 2vw;
 }
 
 @media screen and (min-width: 520px) {
     /* SV - 12-02 - added hamburger menu; moved small-page styles down to here */
     nav { /* CP - modified SV 11-14 - Changed the width as part of moving <nav> from the top to the left */
-        text-align: center;
         font-size: 12pt;
         background-color: #8F787C;     /* GR 11-22 colour palette */
-        order: 1;
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        flex-wrap: nowrap;
-        align-items: center;
+        overflow: hidden; /* SV 12-02 - as per https://www.w3schools.com/howto/howto_js_mobile_navbar.asp */
     }
-    .active { /* CP */
+    nav a { /* CP */
+        float: none;
+        display: block;
+        color: white; 
+        text-align: center;
+        padding: 10px;
+        transition: all .3s ease;
+        text-decoration: none; /* SV 12-02 - get rid of those annoying underlines */
+    } 
+    nav a:hover { /* CP */
+        background-color: #D6BFC3; /* GR 11-22 colour palette */
+    }          
+    nav.active { /* CP */
         background-color: #497B8F; /* GR 11-22 colour palette  */
+    }
+    nav a.icon {
+        display: none;
     }
 }
 @media screen and (min-width: 800px) { /* AH created, SV modified 11-24 - switched from max-width to min-width for mobile-first design */
