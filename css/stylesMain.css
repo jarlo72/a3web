@@ -42,10 +42,10 @@ p { /* SV 11-23 */
 header { /* SV 11-14 - a modification of AH's work for our header info*/
     /* 11-22 GR colour palette */
     /* background-color:  #497B8F; */
-    background-image: url("../images/headerimages/pondmtn.jpg"); /* Stephen - we can change this once the large version of the other gets uploaded */
+    background-image: url("../images/headerimages/sunset.jpg"); /* Stephen - we can change this once the large version of the other gets uploaded */
     height: 300px;
     background-size: cover;
-    background-position: 50% 30%;
+    background-position: 50% 25%;
     background-repeat: no-repeat; /* SV 11-23 background image and details added for header graphic */
     padding:15px;
     font-size: 4em;
@@ -53,6 +53,9 @@ header { /* SV 11-14 - a modification of AH's work for our header info*/
     flex-flow: row wrap;
     justify-content: center;
     align-items: center;
+}
+#logo {
+    height: 10vw
 }
 
 nav { /* CP - modified SV 11-14 - Changed the width as part of moving <nav> from the top to the left */
