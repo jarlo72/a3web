@@ -32,14 +32,16 @@
             <h3 id=slogan>"Because you save the best for LASD"</div>
         </header>
 
-        <nav> <!-- CP 11-14 inserted navigation bar based on suggestion from 
-            https://www.w3schools.com/howto/howto_css_icon_bar.asp - modified SV 11-14 from div to nav-->
+        <nav class="topnav" id="myTopnav"> <!-- SV 12-02 - modifications for the hamburger menu-->
             <a class="active" href="index.html">Home</a> 
-            <a href="#About">About Us</a> 
-            <a href="services.html">Why Hire Us</a> 
+            <a href="#About ">About Us</a> 
+            <a href="services.html">Why Hire Us</a>
             <a href="projects.html">Projects</a>
             <a href="GetInvolved.html">Get Involved</a> 
             <a href="blag.html">Blag</a>
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()"> <!-- SV 12-02 - Hamburger menu icon thingy as per https://www.w3schools.com/howto/howto_js_topnav_responsive.asp-->
+                &#9776; <!-- thanks to https://webdesign.tutsplus.com/tutorials/7-non-raster-approaches-for-making-the-hamburger-menu-icon--cms-21686 for the UTF reference code & idea-->
+              </a>
         </nav> 
 
         <main> <!--SV 12-01 Moved <main> down to fix the nav bar-->
@@ -70,5 +72,7 @@
         <footer> <!-- JD 11-15 - Inspired by content-based websites which often state the creator's name, affiliate links, etc. Semantic element, footer-->
             <p>Created by Group 1 Footer</p>
         </footer>
+
+        <script src="js/navFunction.js"></script> <!-- SV 12-02 - link to javascript for the nav hamburger-->
     </body>
 </html>
