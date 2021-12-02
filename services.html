@@ -30,7 +30,7 @@
             <h1>Land, Air, Sea - Digital</h1>
         </header>
 
-        <nav>
+        <nav class="topnav" id="myTopnav">
             <a href="index.html">Home</a> 
             <a href="#About ">About Us</a> 
             <a class="active" href="services.html">Why Hire Us</a>
@@ -84,11 +84,11 @@
 
         <script>
         function myFunction() {
-            var x = document.getElementById("myLinks");
-            if (x.style.display === "block") {
-              x.style.display = "none";
+            var x = document.getElementById("myTopnav");
+            if (x.className === "topnav") {
+                x.className += " responsive";
             } else {
-              x.style.display = "block";
+                x.className = "topnav";
             }
         }
         </script>
