@@ -119,8 +119,7 @@ main { /* SV 11-23 - sets up flexbox, to simplify positioning of everything. Rem
 }
 
 section { /* SV - 11-23 - aligns subsequent sections to the column format consistent with main */
-    
-    padding: 20px;
+    margin: 1vw;
     order: 1;
     flex: 80vw;
     display: flex;
@@ -130,7 +129,8 @@ section { /* SV - 11-23 - aligns subsequent sections to the column format consis
 aside { /* AH - modified 11-14 by SV - sets <aside> to stay to the right of main - on the far right of the page */
     background-color: #B2CCD6; /* GR 11-22 colour palette */  
     padding: 15px;
-    margin: 0.5vw;
+    margin: 1vw;
+    margin-left: 0;
     text-align: center;
     order: 2;
     flex: 20vw;
@@ -181,26 +181,44 @@ h5.blags{
 
 /* SV 12-01 - Stole the centre titling from Blag Page */
 
-/* SV 12-01 - Attributes for left-aligned sections */
-article.sides {
+article {
     display: flex;
     flex-flow: row nowrap;
+    height:max-content;
+    align-items: center;
+    margin-top: 1vw;
 }
-.leftside {
-    text-align: justify;
-    padding: 2px;
-    margin-left: 2vw;
-    margin-right: 20vw;
-    margin-bottom: 2vw;
+article p {
+    text-align:justify;
 }
-/* SV 12-01 - Attributes for right-aligned sections */
-.rightside {
-    text-align: justify;
-    padding: 2px;
-    margin-right: 2vw;
-    margin-left: 20vw;
-    margin-bottom: 2vw;
+article:first-child {
+    margin-top: 0;
+    padding-top: 0;
 }
+.picBox {
+    width: 20vw;
+    display: none;
+}
+.picSet {
+    max-width: 18vw;
+    max-height: 140px;
+    border-radius: 10px;
+    margin-left: .5vw;
+}
+/* SV 12-01 - Left-aligned sections use default attributes */
+
+/* SV 12-01 - Attributes for right-aligned sections: */
+.rightText {
+    flex-direction: row-reverse;
+}
+.rightText figure {
+    margin-left: 0;
+    margin-right: .5vw;
+}
+article.rightText h3 {
+    text-align: right;
+}
+
 
 @media screen and (min-width: 800px) {
     main {
@@ -236,5 +254,8 @@ article.sides {
     }
     nav a.icon {     /* SV 12-02 - overrides the line above this one, for the hamburger only */
         display: none;
+    }
+    .picBox {
+        display: block;
     }
 }  
