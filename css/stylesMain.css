@@ -184,8 +184,7 @@ h5.blags{
 /* SV 12-01 - Attributes for left-aligned sections */
 article.sides {
     display: flex;
-    flex-direction: row;
-    
+    flex-flow: row nowrap;
 }
 .leftside {
     text-align: justify;
@@ -226,7 +225,6 @@ article.sides {
         padding-left: 15px;
         padding-right: 15px;    
     }
-    } 
     nav a:hover { /* CP */
         background-color: #D6BFC3; /* GR 11-22 colour palette */
     }          
