@@ -203,8 +203,11 @@ article.sides {
     margin-bottom: 2vw;
 }
 
-@media screen and (min-width: 520px) {
-    /* SV - 12-02 - added hamburger menu; moved small-page styles down to here */
+@media screen and (min-width: 800px) {
+    main {
+        flex-direction: row;
+     }
+     /* SV - 12-02 - added hamburger menu; moved small-page styles down to here */
     nav { /* CP - modified SV 11-14 - Changed the width as part of moving <nav> from the top to the left */
         display: flex;
         flex-direction: row;
@@ -213,12 +216,16 @@ article.sides {
         background-color: #8F787C;     /* GR 11-22 colour palette */
         overflow: hidden; /* SV 12-02 - as per https://www.w3schools.com/howto/howto_js_mobile_navbar.asp */
     }
-    nav a { /* CP */
+    nav a { /* CP mod SV 12-01 - adjusts size of nav bar when screen size increases */
         color: white; 
         text-align: center;
         padding: 10px;
         transition: all .3s ease;
         text-decoration: none; /* SV 12-02 - get rid of those annoying underlines */
+        font-size: 15pt;
+        padding-left: 15px;
+        padding-right: 15px;    
+    }
     } 
     nav a:hover { /* CP */
         background-color: #D6BFC3; /* GR 11-22 colour palette */
@@ -232,16 +239,4 @@ article.sides {
     nav a.icon {     /* SV 12-02 - overrides the line above this one, for the hamburger only */
         display: none;
     }
-}
-@media screen and (min-width: 800px) { /* AH created, SV modified 11-24 - switched from max-width to min-width for mobile-first design */
-   
-   main {
-       flex-direction: row;
-    }
-   nav a { /* SV 12-01 - adjusts size of nav bar when screen size increases */
-        font-size: 15pt;
-        padding-left: 15px;
-        padding-right: 15px;
-    }
-
-}
+}  
