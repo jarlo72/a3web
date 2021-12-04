@@ -320,9 +320,12 @@ article.au { /*AH 12-04 - tweaks the article section to not have auto columns an
 
 .spacecadetbig {margin-top: 5vh;}
 
+
+
+
 div.aboutusgrid {           /*this allows our team photos to be in line with eachother and with descriptions 
     underneath. source https://www.w3schools.com/css/css_image_gallery.asp */
-    margin: 5px;
+    margin: 2vw;
     border: 1px solid rgb(20, 56, 34);
     float: left;
     width: auto;
@@ -341,3 +344,12 @@ div.aboutusgrid {           /*this allows our team photos to be in line with eac
     padding: 15px;
     text-align: center;
   }
+
+  * {
+    box-sizing: border-box;
+  }
+
+  .responsiveau {     /*AH 12-04 makes the grid responsive.*/ 
+    padding: 0 6px;
+    float: left;
+    width: 25%;}
