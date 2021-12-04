@@ -150,7 +150,10 @@ footer { /* JD 11-15 - footer formatting sourced from https://www.w3schools.com/
     font-size: 10pt;
 }
 
-/* -------------- Blag Page Styling -------------- */ 
+/* -------------- Blag Page Styling (OLD) -------------- */ 
+/* GR 12-3 - Hey Christie, I have changed my style for my blags, but I know you were using this CSS for your page
+if you are still using it go ahead, if not feel free to delete
+where this CSS is not used for blags anymore, I would alter the .classes so they reflect your content */
 
 /* GR 11-25 center align blag page title */
 .blagtitle{
@@ -172,11 +175,42 @@ h3.blags{
 }
 
 h5.blags{
-    margin:10px
+    margin-left:15px;
 }
 
-/* GR 11-26 Stylize button  */
 
+
+/* -------------- Blag Page Styling -------------- */ 
+
+/* GR 12-03 Style individual blags in cards SOURCE: https://www.w3schools.com/howto/howto_css_profile_card.asp*/ 
+div.card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    max-width: fit-content;
+    margin: 20px;
+    text-align: left;
+    font-family: arial;
+    background-color:white;
+}
+
+h3.blags{
+    margin:10px
+}
+  
+h5.subtitle {
+    color: #497B8F;
+    font-size: 18px;
+    margin: 10px;
+}
+
+summary.blags {
+      margin:10px;
+}
+
+p.Blags {
+    margin:20px;
+}
+
+   
 /* -------------- Services Page Styling -------------- */
 
 /* SV 12-01 - Stole the centre titling from Blag Page */
