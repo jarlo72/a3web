@@ -188,7 +188,8 @@ h5.blags{
     margin:20px;
 }
 
-/* GR 12-03 Style individual blags in cards SOURCE: https://www.w3schools.com/howto/howto_css_profile_card.asp*/ 
+/* GR 12-03 Style individual blags in cards CSS SOURCE: https://www.w3schools.com/howto/howto_css_profile_card.asp*/ 
+/* Inspiration for design SOURCE: https://www.worldwildlife.org/blogs  */
 div.card {
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
     max-width: fit-content;
