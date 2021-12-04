@@ -331,9 +331,6 @@ div.aboutusgrid {           /*this allows our team photos to be in line with eac
     width: auto;
   }
   
-  div.aboutusgrid:hover {
-    border: 1px solid #777;
-  }
   
   div.aboutusgrid img {
     width: 100%;
