@@ -182,6 +182,12 @@ h5.blags{
 
 /* -------------- Blag Page Styling -------------- */ 
 
+/* GR 11-25 center align blag page title */
+.blagtitle{
+    text-align: center;
+    margin:20px;
+}
+
 /* GR 12-03 Style individual blags in cards SOURCE: https://www.w3schools.com/howto/howto_css_profile_card.asp*/ 
 div.card {
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
