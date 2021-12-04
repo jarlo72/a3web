@@ -316,6 +316,6 @@ article.au { /*AH 12-04 - tweaks the article section to not have auto columns an
     margin-top: 1vw;
 }
 
-.spacecadetbaby { margin-top: 1vh; }
+.spacecadetbaby { margin-top: 1vh; } /*AH 12-04 Spacing between paragraphs*/
 
-.spacecadetbigbaby {magin-top: 2bh;}
+.spacecadetbig {magin-top: 2bh;}
