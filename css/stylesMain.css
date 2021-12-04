@@ -310,8 +310,12 @@ article.rightText h3 {
     margin:20px;
 }
 
-article.au {
+article.au { /*AH 12-04 - tweaks the article section to not have auto columns anymore*/
     height:max-content;
     align-items: center;
     margin-top: 1vw;
 }
+
+.spacecadetbaby { margin-top: 1vh; }
+
+.spacecadetbigbaby {magin-top: 2bh;}
