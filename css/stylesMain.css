@@ -298,4 +298,19 @@ article.rightText h3 {
     .picBox {
         display: block;
     }
-}  
+}
+
+    /* -------------- About Us Page Styling -------------- */
+
+/* AH 12-04 - borrowed the centre titling from Blag Page */
+
+.aboutustitle{
+    text-align: center;
+    margin:20px;
+}
+
+article.au {
+    height:max-content;
+    align-items: center;
+    margin-top: 1vw;
+}
