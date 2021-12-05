@@ -4,7 +4,7 @@
     <head>
         <meta name="viewport" content="width=device-width, initial-scale=1.0"><!--AH 11-14 Responsive onto it all -->
         <meta charset="UTF-8"> <!-- SV 11-23 added character encoding set-->
-        <title>Meet the Team</title> <!--SV 11-14-->   
+        <title>LASD - Meet the Team</title> <!--SV 11-14-->   
         <link rel="stylesheet" href="css/stylesMain.css"> <!-- CP 11-14 -->
         <!-- Just placing link here for convenience https://jarlo72.github.io/a3web/template.html JD 11-16-->
     </head>
@@ -45,96 +45,80 @@
 
         <main>          <!--SV 11-14 - set up a container for the columns; mod 12-01 - moved to fix the navbar --><!--AH Swoops in for the fancy award of the year-->
             <section>
-                <article.au>
+                <article>
                     <h2 class="blagtitle">Meet the Team</h2><!--Stephen 11/15-->
-                        <p class="spacecadetbaby"></p>
-                        <p>Land Air and Sea Digital (LASD) is a national collective of geographic information system and cartographic professionals.</p>
-                        <p class="spacecadetbig"> </p>
-                        <p>Founded in 2021 through an initiative called "make a webpage, survey a tree," LASD has grown to become of of the most 
+                        <p class="spacecadetbaby">Land Air and Sea Digital (LASD) is a national collective of geographic information system and cartographic professionals.</p>
+                        <p class="spacecadetbig">Founded in 2021 through an initiative called "make a webpage, survey a tree," LASD has grown to become of of the most 
                             effective and wide-reaching assessment agencies in the world! We provide long LASDing results for our clients and nature.</p>
-                        <p class="spacecadetbig"> </p>
-                        <h2 class="blagtitle">The LASD People on Earth</h2>
-                        <p class="spacecadetbaby"></p>
-                    <p>Meet the experts, scientists and leaders that make up our diverse team!</p> <!-- Stephen 11/15 - I tab in the headers to help me visuallize the web heirarchy
-                         but it's not actually required, if you find it annoying I can stop.-->
-                </article.au>
+                        <h2 class="blagtitle spacecadetbig">The LASD People on Earth</h2>
+                    <p class="spacecadetbaby">Meet the experts, scientists and leaders that make up our diverse team!</p>
+                </article>
 
-                <div class ="responsiveau">
-                    <div class= "aboutusgrid">       <!--AH 12-4 Filled it with content, and then designated id for finessing in css and js-->
-                        <a target="_blank" href="profileChristie121bw.jpg"></a>
-                            <img id="bwpro" src="images\profiles\profileChristie121bw.jpg" alt="staff member Christie">
-                        
-                    <div class="staffdesc">
-                        <h3>Christie Peacock</h3>
-                        <h4>GIS analyst</h4>
-                        Christie's work as a civil engineering focusing in stormwater management has given
-                    her a wealth of experience to draw upon for construction monitoring, survey, design and infrastructure analysis. When not working
-                    for us, Christie is toodling with maps of hiking trails.</div>
-                    </div>
-                </div>
-                
-                <div class ="responsiveau">
-                    <div class="aboutusgrid">
-                        <a target="_blank" href="profileChristie121bw.jpg"></a>
-                          <img id="bwpro" src="images\profiles\profileChristie121bw.jpg" alt="staff member stephen">
-                    <div class="staffdesc"><h3>Stephen Vandam</h3>
-                    <h4>Resident Lorem Linguist</h4>Lorem</div>
-                    </div>
-                </div>   
 
-                <div class ="responsiveau">
-                    <div class= "aboutusgrid">
-                        <img id="bwpro" src="images\profiles\profilegabby121bw.jpg" alt="staff member Gabby">
-                        
-                    <div class="staffdesc"><h3>Gabby Riefesel</h3>
-                    <h4>Environmental Spatial Analyst</h4>
-                    Gabby Riefesel is the environmental spatial analyst expert on our team here at Land, Air, Sea - Digital! They have an extensive background in 
+                <div class="folks"> <!-- AH/SV 12-04 - creates a container to arrange the profiles in-->
+                    <article class="bio">   <!-- AH/SV 12-04 - sets up a consistent profile set, using the vertical arrangement set for article -->
+                            <img class="profiles" src="images\profiles\profileChristie121.jpg" alt="staff member Christie"> <!-- AH/SV 12-04 - sets class for greyscale effect-->
+                            <h3>Christie Peacock</h3>
+                            <h4>GIS analyst</h4>
+                            <p class="justify">Christie's work as a civil engineering focusing in stormwater management has given her a wealth of experience to draw upon for 
+                                construction monitoring, survey, design and infrastructure analysis. When not working for us, Christie is toodling with maps 
+                                of hiking trails.</p>
+                    </article>
+
+                    <article class="bio">   <!-- AH/SV 12-04 - sets up a consistent profile set, using the vertical arrangement set for article -->
+                        <img class="profiles" src="images\profiles\Stephen.jpeg" alt="staff member stephen"> <!-- AH/SV 12-04 - sets class for greyscale effect-->
+                        <h3>Stephen VanDam</h3>
+                        <h4>Web and Database Programmer</h4>
+                        <p class="justify">When it comes to problem solving in annoying lines of code, Stephen is our guy. Specializing in HTML, CSS, Javascript, JQuery
+                            and SQL, Stephen is also comfortable with C# and Java, although he's not a coffee drinker. With a background as a civil engineering technician,
+                            Stephen is also our surveying field-hand, familiar with the workings of construction sites and a knack for riverbed surveys. When he's not
+                            repairing Amanda's CSS he can be found in his basement woodshop making sawdust.
+                        </p>
+                    </article>
+
+                    <article class="bio">   <!-- AH/SV 12-04 - sets up a consistent profile set, using the vertical arrangement set for article -->
+                        <img class="profiles" src="images\profiles\profilegabby121.jpg" alt="staff member Gabby"> <!-- AH/SV 12-04 - sets class for greyscale effect-->
+                        <h3>Gabby Riefesel</h3>
+                        <h4>Environmental Spatial Analyst</h4>
+                        <p class="justify">Gabby Riefesel is the environmental spatial analyst expert on our team here at Land, Air, Sea - Digital! They have an extensive background in 
                         ecosystem modeling, and ensures our environmental assessments encompass the requirements of flora and fauna local to all our projects. They 
                         have worked with Government, research institutes, ENGOs, and volunteer run organizations throughout their career, and carries an in-depth 
                         knowledge of project requirements for these various organization types. Gabby completed Bachelors of Science in Biology at Memorial University 
                         of Newfoundland and Labrador and a GIS: Applications Specialist Diploma from Fleming College. When not working, Gabby enjoys bike touring 
-                        around the island of Newfoundland.</div>
-                    </div>
-                </div>
+                        around the island of Newfoundland.</p>
+                    </article>
 
-                <div class ="responsiveau">
-                    <div class= "aboutusgrid">
-                            <img id="bwpro" src="images\profiles\jmd121bw.jpg"alt="staff member Jon">
-                        
-                    <div class="staffdesc"><h3>Jon Marlo Delicano</h3>
-                    <h4>Cad Mapping Specialist</h4>Though a mechanical engineer in upbringing with a background in automotive manufacturing, Jon Marlo always held an enthusiasm for cartography 
+                    <article class="bio">   <!-- AH/SV 12-04 - sets up a consistent profile set, using the vertical arrangement set for article -->
+                        <img class="profiles" src="images\profiles\jmd121.jpg" alt="staff member Jon"> <!-- AH/SV 12-04 - sets class for greyscale effect-->
+                        <h3>Jon Marlo Delicano</h3>
+                        <h4>Cad Mapping Specialist</h4>
+                        <P class="justify">Though a mechanical engineer in upbringing with a background in automotive manufacturing, Jon Marlo always held an enthusiasm for cartography 
                         and mapmaking. Yearning for challenge himself in a different direction, he explored various career pursuits to align with his passions. Jon Marlo 
                         eventually found himself here at LASD where he continues to place his passions in mapmaking whilst applying his learned technical skills towards the 
-                        GIS industry. Nowadays, he specializes in CAD mapping.</div>
-                    </div>
-                </div>
+                        GIS industry. Nowadays, he specializes in CAD mapping.</p>
+                    </article>
 
-                <div class ="responsiveau">
-                    <div class= "aboutusgrid">
-                        <a target="_blank" href="amanda121bw.jpg"></a>
-                        <img id="bwpro" src="images\profiles\amanda121bw.jpg"alt="staff member Amanda">    
-                        
-                    <div class="staffdesc"><h3>Amanda Hunter</h3>
-                    <h4>Remote Sensing Specialist</h4>Amanda Hunter has more than just her head in the clouds these days! Our UAV pilot and remote image & sensor analyst 
-loves to send her robot birds into the sky to measure and record a wide array of landscapes. 
-Amanda had her humble beginnings as an internationally published fashion photographer but when she 
-nearly died of exposure she joined the LASD option available to her! With an advanced operations UAV 
-certification and over 5923 logged flights under her belt,she has the greatest passion for crea ting and then staring at 
-images than anyone we’ve ever met. She looks down on everything from great heights, in the best possible way.</div>
-                    </div>
-                </div>
+                    <article class="bio">   <!-- AH/SV 12-04 - sets up a consistent profile set, using the vertical arrangement set for article -->
+                        <img class="profiles" src="images\profiles\amanda.jpg" alt="staff member Amanda">     <!-- AH/SV 12-04 - sets class for greyscale effect-->
+                        <h3>Amanda Hunter</h3>
+                        <h4>Remote Sensing Specialist</h4>
+                        <P class="justify">Amanda Hunter has more than just her head in the clouds these days! Our UAV pilot and remote image & sensor analyst loves to send her robot
+                            birds into the sky to measure and record a wide array of landscapes. Amanda had her humble beginnings as an internationally published fashion
+                            photographer but when she nearly died of exposure she joined the LASD option available to her! With an advanced operations UAV certification
+                            and over 5923 logged flights under her belt,she has the greatest passion for crea ting and then staring at images than anyone we’ve ever met.
+                            She looks down on everything from great heights, in the best possible way</p>
+                    </article>
 
-                <div class ="responsiveau">
-                    <div class= "aboutusgrid">
-                            <img id="bwpro" src="images\profiles\squirrel121bw.jpg"alt="staff member Sean">
-                    <div class="staffdesc"><h3>Sean Skwirl</h3>
-                    <h4>Mascott and pilot</h4>Sean is a the world's smallest and most skilled pilot, he is under 2.64 kilos and therefore can ride anything from a drone to a helicopter. 
-                   He looks down on everything from great heights, in the best possible way. He is quoted saying, "squirrels are very good at explaining things, because they give it to you in a nutshell." 
-                    On his spare time he can be found at the local pub arguing with folks on the correct spelling of his name.</div>
-                    </div>
+                    <article class="bio">   <!-- AH/SV 12-04 - sets up a consistent profile set, using the vertical arrangement set for article -->
+                        <img id="squirrel" src="images\profiles\squirrel121bw.jpg"alt="staff member Sean"> <!-- AH 12-04 - Epic Squirrel Time-->
+                        <div class="staffdesc"><h3>Sean Skwirl</h3>
+                        <h4>Mascott and pilot</h4>
+                        <p class="justify">Sean is a the world's smallest and most skilled pilot, he is under 2.64 kilos and therefore can ride anything from a drone to a helicopter. 
+                       He looks down on everything from great heights, in the best possible way. He is quoted saying, "squirrels are very good at explaining things, because they give it to you in a nutshell." 
+                        On his spare time he can be found at the local pub arguing with folks on the correct spelling of his name.</p>
+                    </article>
+                    
                 </div>
-               
-
                 
             </section>
 

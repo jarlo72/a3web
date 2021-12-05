@@ -263,45 +263,27 @@ article.rightText h3 {
     /* -------------- About Us Page Styling -------------- */
 
 
-article.au { /*AH 12-04 - tweaks the article section to not have auto columns anymore*/
-    height:max-content;
-    align-items: center;
-    margin-top: 1vw;
-}
 
 .spacecadetbaby { margin-top: 1vh; } /*AH 12-04 Spacing between paragraphs*/
 
 .spacecadetbig {margin-top: 5vh;}
 
-
-
-
-div.aboutusgrid {           /*this allows our team photos to be in line with eachother and with descriptions 
-    underneath. source https://www.w3schools.com/css/css_image_gallery.asp */
-    margin: 2vw;
-    border: 1px solid rgb(20, 56, 34);
-    float: left;
-    width: 100%;
-  }
-  
-  div.aboutusgrid img {
-    width: 100%;
-    height: auto;
-  }
-  
-  div.staffdesc {
-    padding: 15px;
-    text-align: center;
-  }
-
-  * {
-    box-sizing: border-box;
-  }
-
-  .responsiveau {     /*AH 12-04 makes the grid responsive.*/ 
-    padding: 0 6px;
-    float: left;
+.folks { /* AH/SV 12-04 - the bio panels to go in rows, wrapping around if made smaller */
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+}
+.bio { /* AH/SV 12-04 - sets the bio panels to arrange their contents vertically, full-width on small screens */
     width: 100vw;
+    border: 1px solid rgb(20, 56, 34);
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding: 5px;
+    margin: .5vw;;
+}
+.justify { /* AH/SV 12-04 - sets the paragraphs to justify instead of centre */
+    text-align: justify;
 }
 
     @media screen and (min-width: 800px) {
@@ -344,5 +326,14 @@ div.aboutusgrid {           /*this allows our team photos to be in line with eac
         }
         .picBox {
             display: block;
+        }
+        .bio { /* AH/SV 12-04 - Sets the width of the bio boxes so that three fit on a larger screen */
+            width: 23.5vw;
+        }
+        .profiles { /* AH/SV 12-04 - sets images to greyscale for bios */
+            filter: grayscale(100%);
+        }
+        .profiles:hover { /* AH/SV 12-04 - bio images switch to colour on mouseover */
+            filter: none;
         }
     }
