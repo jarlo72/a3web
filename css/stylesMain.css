@@ -378,8 +378,13 @@ article.leftText h5 {
     min-width: 35%;
 }
 
-.getinvolvedElement {
+.getinvolvedElement1 {
     padding: 10px;
+}
+
+.getinvolvedElement2 {
+    padding-top: 10px;
+    padding-bottom: 5px;
 }
 
 .contactInfo {
