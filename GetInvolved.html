@@ -5,6 +5,7 @@
         <meta charset="UTF-8"> <!-- SV 11-23 added character encoding set-->
         <title>Get Involved</title> <!--SV 11-14-->   
         <link rel="stylesheet" href="css/stylesMain.css"> <!-- CP 11-14 -->
+        <script src="js/GetInvolved.js"></script>
         <!-- Just placing link here for convenience https://jarlo72.github.io/a3web/GetInvolved.html JD 11-16-->
     </head>
     <!--
@@ -47,28 +48,51 @@
                 <article>
                     <h2>JOIN US! We are the answer</h2><!--JD 12/02-->
                     <h3>Passion Drives Us</h3> <!--JD 12/02 Description of why to join us-->
-                        <p>Lorem ipsum all over the place. Look over there! An environmentalist in their natural habitat</p>
+                        <p>Lorem ipsum all over the place. Look over there! An in their natural habitat</p>
                     <h3>Benefits</h3> <!--JD 12/02 Small Description of benefits-->
-                        <p>Lorem ipsum all over the place. Look over there! An environmentalist in their natural habitat</p>
+                        <p>Lorem ipsum all over the place. Look over there! An in their natural habitat</p>
                     <h3>Current Opportunities</h3> <!--JD 12/02 Listing current job openings-->
-                        <p>Lorem ipsum all over the place. Look over there! An environmentalist in their natural habitat</p>
+                        <p>Lorem ipsum all over the place. Look over there! An in their natural habitat</p>
                     </article>
 
             </section>
-            <Aside><!--AH 11-14 - adds the right column -->
+            <Aside id="ConWithUs"><!--AH 11-14 - adds the right column -->
                 <h2>Connect with Us</h2>
-                    <h3>Main Office</h4>
-                            <p>Lorem ipsum all over the place. Look over there! An environmentalist in their natural habitat</p>
-                    <h3>Where We're Based</h4>
-                        <!--JD 12/02 Picture of Map-->
-                    <h3>General Inquiries</h4>
-                        <p>Lorem ipsum all over the place. Look over there! An environmentalist in their natural habitat</p>
+                    <h3 class="contactheaders">Where we're Based</h4>
+                        <h4>Main Office Address</h4>
+                            <p>200 Albert St S, Lindsay, ON K9V 5E6<br></p>
+                            <p class=officeDesc>We are located within the wonderfully accomodating Frost Campus of Fleming College, home to one of the most acclaimed GIS Programs in Canada.
+                                Though many of us currently work remotely, do take the opportunity to visit our amazing 10 sq ft. office space. It has more plants than people right now, but
+                                on occassion you may see our lone CAD mapper and IT tech who we require to be on site at least 2 times a week. Looking forward to meeting you!
+                            </p>
+                        <a class=deadlink href ="https://www.google.com/maps/dir//Fleming+College+-+Frost+Campus+Store,+200+Albert+St+S,+Lindsay,+ON+K9V+5E6/@44.3410189,-78.7412238,15z/data=!4m9!4m8!1m0!1m5!1m1!1s0x89d58ce9667aaaab:0x26e572ce46a757c2!2m2!1d-78.7412238!2d44.3410189!3e0">
+                        <img src = 'https://maps.googleapis.com/maps/api/staticmap?center=fleming+college,Lindsay,ON&zoom=12&size=400x300&maptype=roadmap
+                        &markers=color:red%7C44.340818,-78.741506&key=AIzaSyBUxvIhcqHLpBlOoC2oCSaUmN0I66JoaRA' alt = 'map' style = 'width:100%'></a><!--JD 12/02 Picture of Map-->
+                    <h3 class="contactheaders">General Inquiries</h4>
+                            <p>Phone: <a class=deadlink>(416) 888-8888</a></p>
+                            <p>Email: <a class=deadlink>infoinquest@lasd.ca</a></p>
+                    <h3 class="contactheaders">Departments</h3>
+                        <div class = "contactInfo">
+                            <div class = individcontact><h4>Field Operations</h4>
+                                <p>Phone: <a class=deadlink>(416) 888-0001</a></p>
+                                <p>Email: <a class=deadlink>fieldinquest@lasd.ca</a></p></div>
+                            <div class = individcontact><h4>Planning and Development</h4>
+                                <p>Phone: <a class=deadlink>(416) 888-0002</a></p>
+                                <p>Email: <a class=deadlink>planinquest@lasd.ca</a></p></div>
+                            <div class = individcontact><h4>Shipping and Receiving</h4>
+                                <p>Phone: <a class=deadlink>(416) 888-0003</a></p>
+                                <p>Email: <a class=deadlink>loginquest@lasd.ca</a></p></div>
+                            <div class = individcontact><h4>Capital Management</h4>
+                                <p>Phone: <a class=deadlink>(416) 888-0004</a></p>
+                                <p>Email: <a class=deadlink>hrinquest@lasd.ca</a></p></div>
+                        
+                      
             </aside>
         </main>
 
         <footer> <!-- JD 11-15 - Inspired by content-based websites which often state the creator's name, affiliate links, etc. Semantic element, footer-->
             <p class="footernotes">@2021. Land Air Sea Digital Inc. All Rights Reserved. Any Land Air Sea Digital products are Trademarks owned by Group 1 of GEOM102 Web Design Programming</p>
-            <p class="footernotes">Email: infoinquest@lasd.ca | Phone: (416) 888-8888 | Terms of Use | Privacy Statement | Accessibility</p>
+            <p class="footernotes">Email: <a class=deadlink>infoinquest@lasd.ca</a> | Phone: <a class=deadlink>(416) 888-8888</a> | <a class=deadlink>Terms of Use</a> | <a class=deadlink>Privacy Statement</a> | <a class=deadlink>Accessibility</a></p>
         </footer>
 
         <script src="js/navFunction.js"></script> <!-- SV 12-02 - link to javascript for the nav hamburger-->
