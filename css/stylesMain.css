@@ -126,21 +126,6 @@ section { /* SV - 11-23 - aligns subsequent sections to the column format consis
     flex-direction: column;
 }
 
-article {
-    display: flex;
-    flex-flow: row nowrap;
-    height:max-content;
-    align-items: center;
-    margin-top: 1vw;
-}
-article p {
-    text-align:justify;
-}
-article:first-child {
-    margin-top: 0;
-    padding-top: 0;
-}
-
 aside { /* AH - modified 11-14 by SV - sets <aside> to stay to the right of main - on the far right of the page */
     background-color: #B2CCD6; /* GR 11-22 colour palette */  
     padding: 15px;
@@ -236,7 +221,20 @@ p.Blags {
 /* -------------- Services Page Styling -------------- */
 
 /* SV 12-01 - Stole the centre titling from Blag Page */
-
+article.serve {
+    display: flex;
+    flex-flow: row nowrap;
+    height:max-content;
+    align-items: center;
+    margin-top: 1vw;
+}
+article.serve p {
+    text-align:justify;
+}
+article.serve:first-child {
+    margin-top: 0;
+    padding-top: 0;
+}
 .picBox {
     width: 20vw;
     display: none;
@@ -259,47 +257,6 @@ p.Blags {
 }
 article.rightText h3 {
     text-align: right;
-}
-
-
-@media screen and (min-width: 800px) {
-    main {
-        flex-direction: row;
-     }
-     /* SV - 12-02 - added hamburger menu; moved small-page styles down to here */
-    nav { /* CP - modified SV 11-14 - Changed the width as part of moving <nav> from the top to the left */
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        font-size: 12pt;
-        background-color: #8F787C;     /* GR 11-22 colour palette */
-        overflow: hidden; /* SV 12-02 - as per https://www.w3schools.com/howto/howto_js_mobile_navbar.asp */
-    }
-    nav a { /* CP mod SV 12-01 - adjusts size of nav bar when screen size increases */
-        color: white; 
-        text-align: center;
-        padding: 10px;
-        transition: all .3s ease;
-        text-decoration: none; /* SV 12-02 - get rid of those annoying underlines */
-        font-size: 15pt;
-        padding-left: 15px;
-        padding-right: 15px;    
-    }
-    nav a:hover { /* CP */
-        background-color: #D6BFC3; /* GR 11-22 colour palette */
-    }          
-    nav.active { /* CP */
-        background-color: #497B8F; /* GR 11-22 colour palette  */
-    }
-    nav a:not(:first-child) {     /* SV 12-02 - overrides the small-screen hiding of the menu */
-        display: inherit;
-    }
-    nav a.icon {     /* SV 12-02 - overrides the line above this one, for the hamburger only */
-        display: none;
-    }
-    .picBox {
-        display: block;
-    }
 }
 
     /* -------------- About Us Page Styling -------------- */
@@ -350,4 +307,45 @@ div.aboutusgrid {           /*this allows our team photos to be in line with eac
   .responsiveau {     /*AH 12-04 makes the grid responsive.*/ 
     padding: 0 6px;
     float: left;
-    width: 25%;}
+    width: 25%;
+}
+
+    @media screen and (min-width: 800px) {
+        main {
+            flex-direction: row;
+         }
+         /* SV - 12-02 - added hamburger menu; moved small-page styles down to here */
+        nav { /* CP - modified SV 11-14 - Changed the width as part of moving <nav> from the top to the left */
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            font-size: 12pt;
+            background-color: #8F787C;     /* GR 11-22 colour palette */
+            overflow: hidden; /* SV 12-02 - as per https://www.w3schools.com/howto/howto_js_mobile_navbar.asp */
+        }
+        nav a { /* CP mod SV 12-01 - adjusts size of nav bar when screen size increases */
+            color: white; 
+            text-align: center;
+            padding: 10px;
+            transition: all .3s ease;
+            text-decoration: none; /* SV 12-02 - get rid of those annoying underlines */
+            font-size: 15pt;
+            padding-left: 15px;
+            padding-right: 15px;    
+        }
+        nav a:hover { /* CP */
+            background-color: #D6BFC3; /* GR 11-22 colour palette */
+        }          
+        nav.active { /* CP */
+            background-color: #497B8F; /* GR 11-22 colour palette  */
+        }
+        nav a:not(:first-child) {     /* SV 12-02 - overrides the small-screen hiding of the menu */
+            display: inherit;
+        }
+        nav a.icon {     /* SV 12-02 - overrides the line above this one, for the hamburger only */
+            display: none;
+        }
+        .picBox {
+            display: block;
+        }
+    }
