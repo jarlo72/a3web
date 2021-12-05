@@ -291,30 +291,6 @@ article.rightText h3 {
     text-align: justify;
 }
 
-div.aboutusgrid {           /*this allows our team photos to be in line with eachother and with descriptions 
-    underneath. source https://www.w3schools.com/css/css_image_gallery.asp */
-    margin: 2vw;
-    
-    float: left;
-    width: 100%;
-  }
-  
-  div.aboutusgrid img {
-    width: 100%;
-    height: auto;
-  }
-  
-  div.staffdesc {
-    padding: 15px;
-    text-align: center;
-  }
-
-  .responsiveau {     /*AH 12-04 makes the grid responsive.*/ 
-    padding: 0 6px;
-    float: left;
-    width: 100vw;
-}
-
     @media screen and (min-width: 800px) {
         main {
             flex-direction: row;
