@@ -3,7 +3,7 @@
     <head>
         <meta name="viewport" content="width=device-width, initial-scale=1.0"><!--AH 11-14 Responsive onto it all -->
         <meta charset="UTF-8"> <!-- SV 11-23 added character encoding set-->
-        <title>Projects</title> <!--CP 11-26-->   
+        <title>LASD's Splendid Projects</title> <!--CP 11-26-->   
         <link rel="stylesheet" href="css/stylesMain.css"> <!-- CP 11-14 -->
         <!-- Just placing link here for convenience https://jarlo72.github.io/a3web/projects.html JD 11-16-->
     </head>
@@ -27,7 +27,7 @@
             <figure> <!--JD 11-17 - logo semantic element in header-->
                 <img src="images/headerimages/logo_v2.svg" alt="LASD logo" style="max-width:auto;max-height:100%;" id="logo">
             </figure>
-            <h1>Projects</h1> <!-- SV 11-23 - added the actual title-->
+            <h1>Projects</h1> 
         </header>
 
         <nav class="topnav" id="myTopnav"> <!-- SV 12-02 - modifications for the hamburger menu-->
@@ -42,66 +42,98 @@
               </a>
         </nav> 
 
-        <main> <!--SV 12-01 Moved <main> down to fix the nav bar-->
+        <main> 
             <section>
-            <!--CP 11-26 I really like Gabby's Blag layout and think it should be used for Projects page-->
-                <h2 class = 'blagtitle'>Projects Page</h2>    
-                    <!--Christie's project--> 
-                    <article class="blagcont"> <!--GR 11-22 Inserts block element to contain blag #1-->
-                        <h3 class="blags">Database Creation</h3>
-                            <h5 class="blags">Working with local municipality, Fall 2021</h5>
-                                <p> Tree Database Assists Parks Staff</p>
-                                <p> Parks staff from a local municipality approached LASD to assist 
-                                them with creating a database of trees within their jurisdiction.  Staff intend to 
-                                use this database for creating monthly maintenance schedules, establishing annual 
-                                capital projects for urban tree revitalization, generating budgets, and responding to 
-                                citizen complaints and concerns.</p>
-                                <p>The LASD environmental team worked with closely with Parks staff to 
-                                suss out key tree data to collect. A digital field data collection form was created for 
-                                rapid field assessment.  Once back in the office, staff easily transferred the data into 
-                                a custom database.  Training sessions were held with Parks staff to allow them to update 
-                                and query the data.  LASD also designed custom forms and reports to allow staff to quickly 
-                                respond to council requests and questions from the public.</p>
-                                <p>Municipal staff were so thrilled that LASD will be retained in 2022 to design additional 
-                                databases for other park amenities.</p>    
-                    </article>
-                <!--Gabby's project--> 
-                    <article class="blagcont"> <!--GR 11-22 Inserts block element to contain blag #2-->
-                        <h3 class="blags">Gabby's Project </h3>
-                            <h5 class="blags">Sub Title, Date</h5>
-                                <p class="blags"> Blag Text.
-                                </p>         
-                    </article>
-                <!--Amanda's project-->     
-                    <article class="blagcont"> <!--GR 11-22 Inserts block element to contain blag #3-->
-                        <h3 class="blags">Remote Surveying</h3>
-                            <h5 class="blags">Keeley and Frontier Mine UAV Survey 2020</h5>
-                                <p class="blags"> </p> Our team of aerial surveyors made an expedition to the Keeley and Frontier mines. They gathered data which were then 
-                                transformed into three dimensional maps using photogrammetry. Before drones were more common, mapping of large areas was done using manned aircraft, airplanes or helipcopters. 
-                                Drone mapping is a way to do this job cheaper, safer, and with simpler logistics. Furthermore, 3D mapping is an incredible service to try out! Not only 
-                                does it allow us to visualize a complex terrain, it allows us to monitor progress of development. 
+                    <!--Christie's projects page reverses the order of Services page, for fun--> 
+                <article class="serve rightText">
+                    <div class="textZone">
+                        <h3>Database Creation</h3>    
+                        <h5>Municipal Staff Collaboration 2021</h5>
+                        <p> Parks staff from a local municipality approached LASD to assist 
+                        them with creating a database of trees within their jurisdiction.  Staff will 
+                        use this to create monthly schedules, establish annual projects for urban tree revitalization, 
+                        generate budgets, and respond citizen complaints.</p>
+                        <p>The LASD environmental team worked closely with Parks staff to 
+                        suss out key tree data to collect. A digital data collection form was created for 
+                        rapid field assessment.  In the office, staff easily transferred the data into 
+                        a custom database.  Parks staff were trained by LASD to update 
+                        and query the data.  LASD also designed custom forms and reports so staff can quickly 
+                        respond to council requests and questions from the public.</p>
+                        <p>Municipal staff were so thrilled that LASD will be retained in 2022 to design additional 
+                        databases for other park amenities.</p>  
+                    </div>
+                    <figure class="picBox">
+                        <img src="images/projectimages/databasePhotoOfTree-2.jpg" alt="Tree" class="picSet">
+                    </figure>   
 
-                                </p> 
-                    </article>
+                </article>
+                <!--Gabby's project--> 
+                <article class="serve leftText">
+                    <div class="textZone">
+                        <h3>Gabby's Project</h3>
+                        <h5>Maybe a Screech-In?</h5> 
+                        <p>At LASD we enjoy Newfoundland hospitality! .</p>
+                        <p> and this shows a potential flaw if we don't have enough text</p>
+                    </div>
+                    <figure class="picBox">
+                        <img src="images/projectimages/SpatialAnalysisPic.PNG" alt="Spatial" class="picSet">
+                    </figure>
+                </article>
+
+                <!--Amanda's project-->     
+                <article class="serve rightText">
+                    <div class="textZone">
+                        <h3>Remote Surveying</h3>
+                        <h5>Keeley and Frontier Mine UAV Survey 2020</h5>
+                        <p> Our team of aerial surveyors made an expedition to the Keeley and Frontier mines. They gathered data which were then 
+                        transformed into three dimensional maps using photogrammetry. Before drones were more common, mapping of large areas was done using manned aircraft, airplanes or helipcopters. 
+                        Drone mapping is a way to do this job cheaper, safer, and with simpler logistics. Furthermore, 3D mapping is an incredible service to try out! Not only 
+                        does it allow us to visualize a complex terrain, it allows us to monitor progress of development.</p>
+                    </div>
+                    <figure class="picBox">
+                        <img src="images/headerimages/aerialforest.JPG" alt="Keely" class="picSet">
+                    </figure>  
+                </article>
+
                 <!--Jon's project-->          
-                    <article class="blagcont"> <!--GR 11-22 Inserts block element to contain blag #4-->
-                        <h3 class="blags">Jon's Project</h3>
-                            <h5 class="blags">Sub Title, Date</h5>
-                            
-                                <p class="blags">Blag Text. 
-                                </p>
-                    </article>
+                <article class="serve leftText">
+                    <div class="textZone">
+                        <h3>Bark Lake Traverse</h3>
+                        <h5>Local Camp Expansion Survey 2021</h5> 
+                        <p>In the fall of 2021, LASD had an amazing opportunity at Bark Lake to conduct a closed traverse survey as part of a camp 
+                        survey plan. Our team members went out and surveyed 12 traverses and afterwards drafted the survey data to a digital
+                        map using AutoCAD Mapping software. After doing so, we discovered our linear error of closure was within a meter and the
+                        angular error of closure was less than a degree! Props to our team who conducted this successful survey</p>
+                    </div>
+                    <figure class="picBox">
+                        <img src="images/projectimages/SurveyProjectPicJMD.png" alt="CADplot" class="picSet">
+                    </figure>
+                </article>
+
                 <!--Stephen's project-->     
-                    <article class="blagcont"> <!--GR 11-22 Inserts block element to contain blag #5-->
-                        <h3 class="blags">Stephen's Project</h3>
-                            <h5 class="blags">Sub Title, Date</h5>
-                                <p class="blags">Blag Text.
-                                </p>
-                    </article>
+                <article class="serve rightText"> 
+                    <div class="textZone">
+                        <h3>Stephen's Project</h3>
+                        <h5>Baking Cookies while Programming</h5>
+                        <p> Because who doesn't love chocolate chip cookies?</p>
+                        <p> Again, the lack of text fails to fill out the page</p>
+                    </div>
+                    <figure class="picBox">
+                        <img src="images/headerimages/aerialforest.JPG" alt="Keely" class="picSet">
+                    </figure>
+                </article>
             </section> 
-            <Aside><!--CP 11-26 - not so sure we want to keep the right column but it's up to what the team wants-->
-                <h2>Right Column</h2>
-                    <p> Ess En double 0h Pee Dee oh double Gee</p>
+
+            <aside><!--CP 11-26 - not so sure we want to keep the right column but it's up to what the team wants-->
+                <h2>There's More!</h2>
+                <ul>
+                    <li>Give us a call</li>
+                    <li>Drop us an email</li>
+                    <li>Let's Zoom</li>
+                    <li>Heck, we can even meet!</li>
+                </ul>
+                <!-- coloured list example as per https://www.w3schools.com/css/css_list.asp-->
+                
             </aside>
         </main>
 
