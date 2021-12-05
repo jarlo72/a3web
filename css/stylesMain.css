@@ -262,12 +262,6 @@ article.rightText h3 {
 
     /* -------------- About Us Page Styling -------------- */
 
-/* AH 12-04 - borrowed the centre titling from Blag Page */
-
-.aboutustitle{
-    text-align: center;
-    margin:20px;
-}
 
 article.au { /*AH 12-04 - tweaks the article section to not have auto columns anymore*/
     height:max-content;
@@ -287,9 +281,8 @@ div.aboutusgrid {           /*this allows our team photos to be in line with eac
     margin: 2vw;
     border: 1px solid rgb(20, 56, 34);
     float: left;
-    width: auto;
+    width: 100vw;
   }
-  
   
   div.aboutusgrid img {
     width: 100%;
@@ -308,7 +301,7 @@ div.aboutusgrid {           /*this allows our team photos to be in line with eac
   .responsiveau {     /*AH 12-04 makes the grid responsive.*/ 
     padding: 0 6px;
     float: left;
-    width: 25%;
+    width: 40%;
 }
 
     @media screen and (min-width: 800px) {
