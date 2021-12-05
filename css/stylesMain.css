@@ -293,6 +293,20 @@ article.rightText h3 {
 .justify { /* AH/SV 12-04 - sets the paragraphs to justify instead of centre */
     text-align: justify;
 }
+/* CP 12-05 -------------- Projects Page Styling  -------------- */
+
+/* CP 12-05 - Based heavily on Services Page Styling.  Order reversed */
+article.rightText h5 {
+    text-align: right;
+}
+
+article.leftText h5 {
+    text-align: left;
+}
+
+
+
+
 
     @media screen and (min-width: 800px) {
         main {
