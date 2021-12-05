@@ -288,7 +288,7 @@ div.aboutusgrid {           /*this allows our team photos to be in line with eac
     margin: 2vw;
     
     float: left;
-    width: 100vw;
+    width: 100%;
   }
   
   div.aboutusgrid img {
@@ -304,7 +304,7 @@ div.aboutusgrid {           /*this allows our team photos to be in line with eac
   .responsiveau {     /*AH 12-04 makes the grid responsive.*/ 
     padding: 0 6px;
     float: left;
-    width: 40%;
+    width: 100vw;
 }
 
     @media screen and (min-width: 800px) {
