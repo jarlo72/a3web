@@ -126,6 +126,21 @@ section { /* SV - 11-23 - aligns subsequent sections to the column format consis
     flex-direction: column;
 }
 
+article {
+    display: flex;
+    flex-flow: row nowrap;
+    height:max-content;
+    align-items: center;
+    margin-top: 1vw;
+}
+article p {
+    text-align:justify;
+}
+article:first-child {
+    margin-top: 0;
+    padding-top: 0;
+}
+
 aside { /* AH - modified 11-14 by SV - sets <aside> to stay to the right of main - on the far right of the page */
     background-color: #B2CCD6; /* GR 11-22 colour palette */  
     padding: 15px;
@@ -222,20 +237,6 @@ p.Blags {
 
 /* SV 12-01 - Stole the centre titling from Blag Page */
 
-article {
-    display: flex;
-    flex-flow: row nowrap;
-    height:max-content;
-    align-items: center;
-    margin-top: 1vw;
-}
-article p {
-    text-align:justify;
-}
-article:first-child {
-    margin-top: 0;
-    padding-top: 0;
-}
 .picBox {
     width: 20vw;
     display: none;
