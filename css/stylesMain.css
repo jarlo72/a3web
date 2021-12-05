@@ -149,6 +149,14 @@ footer { /* JD 11-15 - footer formatting sourced from https://www.w3schools.com/
 .footernotes {
     font-size: 10pt;
 }
+.deadlink {
+	color: black;
+	text-decoration:none;
+}    
+.deadlink:hover {
+	text-decoration: underline;
+    cursor:pointer;
+} 
 
 /* -------------- Blag Page Styling (OLD) -------------- */ 
 /* GR 12-3 - Hey Christie, I have changed my style for my blags, but I know you were using this CSS for your page
@@ -351,3 +359,37 @@ article.leftText h5 {
             filter: none;
         }
     }
+
+/* ---------------- JD 12-05 Get Involved Styling ------------------- */
+
+/* Set the size of the div element that contains the map */
+
+#ConWithUs {
+    padding: 15px;
+    margin: 1vw;
+    margin-left: 0;
+    text-align: center;
+    order: 2;
+    flex: 20vw;
+    min-width: 35%;
+}
+
+.contactInfo {
+    padding-top: 5px;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    row-gap: 10px;
+    column-gap: 15px;
+    min-width: 50%;
+}
+
+.contactheaders {
+    padding:5px;
+}
+
+.officeDesc {
+    padding: 10px;
+    font-style: italic;
+}
