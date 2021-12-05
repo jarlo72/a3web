@@ -271,6 +271,7 @@ article.rightText h3 {
 .folks {
     display: flex;
     flex-flow: row wrap;
+    justify-content: space-around;
 }
 .bio {
     width: 20vw;
