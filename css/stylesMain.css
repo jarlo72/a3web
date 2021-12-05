@@ -223,10 +223,9 @@ p.Blags {
 /* SV 12-01 - Stole the centre titling from Blag Page */
 article.serve {
     display: flex;
-    flex-flow: row nowrap;
     height:max-content;
     align-items: center;
-    margin-top: 1vw;
+    margin-top: 10vw;
 }
 article.serve p {
     text-align:justify;
@@ -236,17 +235,19 @@ article.serve:first-child {
     padding-top: 0;
 }
 .picBox {
-    width: 20vw;
+    width: 30vw;
     display: none;
 }
 .picSet {
-    max-width: 18vw;
-    max-height: 140px;
+    max-width: 28vw;
+    max-height: 300px;
     border-radius: 10px;
     margin-left: .5vw;
 }
 /* SV 12-01 - Left-aligned sections use default attributes */
-
+.leftText {
+    flex-direction: row;
+}
 /* SV 12-01 - Attributes for right-aligned sections: */
 .rightText {
     flex-direction: row-reverse;
@@ -344,6 +345,9 @@ div.aboutusgrid {           /*this allows our team photos to be in line with eac
         }
         nav a.icon {     /* SV 12-02 - overrides the line above this one, for the hamburger only */
             display: none;
+        }
+        article.serve {
+            margin-top: 1vw;
         }
         .picBox {
             display: block;
