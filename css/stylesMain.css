@@ -268,26 +268,21 @@ article.rightText h3 {
 
 .spacecadetbig {margin-top: 5vh;}
 
-.folks {
+.folks { /* AH/SV 12-04 - the bio panels to go in rows, wrapping around if made smaller */
     display: flex;
     flex-flow: row wrap;
-    justify-content: space-around;
+    justify-content: center;
 }
-.bio {
-    width: 20vw;
+.bio { /* AH/SV 12-04 - sets the bio panels to arrange their contents vertically, full-width on small screens */
+    width: 100vw;
     border: 1px solid rgb(20, 56, 34);
     display: flex;
     flex-direction: column;
     text-align: center;
     padding: 5px;
+    margin: .5vw;;
 }
-.profiles {
-    filter: grayscale(100%);
-}
-.profiles:hover {
-    filter: none;
-}
-.justify {
+.justify { /* AH/SV 12-04 - sets the paragraphs to justify instead of centre */
     text-align: justify;
 }
 
@@ -331,5 +326,14 @@ article.rightText h3 {
         }
         .picBox {
             display: block;
+        }
+        .bio { /* AH/SV 12-04 - Sets the width of the bio boxes so that three fit on a larger screen */
+            width: 23.5vw;
+        }
+        .profiles { /* AH/SV 12-04 - sets images to greyscale for bios */
+            filter: grayscale(100%);
+        }
+        .profiles:hover { /* AH/SV 12-04 - bio images switch to colour on mouseover */
+            filter: none;
         }
     }
