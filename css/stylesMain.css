@@ -158,6 +158,37 @@ footer { /* JD 11-15 - footer formatting sourced from https://www.w3schools.com/
     cursor:pointer;
 } 
 
+/* -------------- Landing (index) Page Styling -------------- */ 
+
+#landingPic {
+    background-image: url("../images/headerimages/oceancliff.JPG");
+    height: 50vw;
+    background-size: cover;
+    background-position: 50% 30%;
+    background-repeat: no-repeat; /* SV 11-23 background image and details added for header graphic */
+    display: flex; /* SV 11-23 - as per https://www.w3schools.com/css/css3_flexbox.asp */
+    flex-flow: wrap-reverse;
+    justify-content: center;
+}
+
+#landingText {
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+    padding: 15px;
+    padding-left: 100px;
+    padding-right: 100px;
+    color: white;
+    background-color: black;
+    opacity: 0.6;
+    height: 20%;
+}
+
+.landingTitle {
+    text-align: center;
+    margin-top: 20px;
+}
+
 /* -------------- Blag Page Styling (OLD) -------------- */ 
 /* GR 12-3 - Hey Christie, I have changed my style for my blags, but I know you were using this CSS for your page
 if you are still using it go ahead, if not feel free to delete
@@ -404,7 +435,6 @@ article.leftText h5 {
 
 .underlineTitle {
     border-bottom: 1px solid black;
-    padding-bottom: 5px;
     margin-bottom: 10px;
 }
 
