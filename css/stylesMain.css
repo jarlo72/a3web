@@ -340,15 +340,16 @@ article.rightText h5 {
 article.leftText h5 {
     text-align: left;
 }
+ 
 
 /* ---------------- JD 12-05 Get Involved Styling ------------------- */
 
-#jointitle {
+#jointitle { /* JD 12-06 - centers title */
     text-align: center;
     margin-bottom: 20px;
 }
 
-#ConWithUs {
+#ConWithUs { /* JD 12-06 - Overriding styling for the aside box to fit more content */
     padding: 15px;
     margin: 1vw;
     margin-left: 0;
@@ -358,7 +359,7 @@ article.leftText h5 {
     min-width: 35%;
 }
 
-.joblink {
+.joblink { /* JD 12-06 - Inspired from actual career pages where jobs links are in boxes */
     background-color: rgb(64, 66, 85);
     color: white;
     padding: 10px 20px;
@@ -367,12 +368,12 @@ article.leftText h5 {
     display: inline-block;
   }
 
-  .joblink:hover {
-    background-color:  rgb(100, 102, 121);
+  .joblink:hover { /* JD 12-06 - Link is highlighted over hover to simulate interaction */
+    background-color:  rgb(19, 19, 20);
     cursor:pointer;
   }
 
-  .jobwrap {
+  .jobwrap { /* JD 12-06 - using flexbox to organize the job link boxes */
     padding-top: 5px;
     display: flex;
     flex-flow: row wrap;
@@ -383,22 +384,22 @@ article.leftText h5 {
     min-width: 50%;
 }
 
-.underlineTitle {
+.underlineTitle { /* JD 12-06 - underlining titles (h3) for visual appeal and organization. could be used for titles in other pages */
     border-bottom: 1px solid black;
     margin-bottom: 10px;
 }
 
-.getinvolvedElement1 {
+.getinvolvedElement1 { /* JD 12-06 - minor spacing formatting specific to this page */
     padding: 10px;
 }
 
-.getinvolvedElement2 {
+.getinvolvedElement2 { /* JD 12-06 - minor spacing formatting specific to this page to override other styles */
     padding-top: 10px;
     padding-bottom: 5px;
     margin: 0;
 }
 
-.contactInfo {
+.contactInfo { /* JD 12-06 - using flexbox to display contact info appropriately with size of screen */
     padding-top: 5px;
     display: flex;
     flex-flow: row wrap;
@@ -409,12 +410,12 @@ article.leftText h5 {
     min-width: 50%;
 }
 
-.contactheaders {
+.contactheaders { /* JD 12-06 - minor formatting for contact info in aside */
     margin-top: 10px;
     padding:5px;
 }
 
-.officeDesc {
+.officeDesc { /* JD 12-06 - minor text styling for info in aside */
     padding: 10px;
     font-style: italic;
 }
