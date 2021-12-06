@@ -71,6 +71,15 @@ header { /* SV 11-14 - a modification of AH's work for our header info*/
     font-size: 0.4em;
 }
 
+.quote{
+    padding: 25px;
+    color: black;
+    text-align: center;
+    font-style: italic;
+    font-weight: bold;
+    font-size: 1.25em;
+}
+
 nav { /* CP - modified SV 11-14 - Changed the width as part of moving <nav> from the top to the left */
     font-size: 12pt;
     background-color: #8F787C;     /* GR 11-22 colour palette */
@@ -149,14 +158,46 @@ footer { /* JD 11-15 - footer formatting sourced from https://www.w3schools.com/
 .footernotes {
     font-size: 10pt;
 }
-.deadlink {
+.deadlink { /* JD 12-06 styling leads to hover effect below  */
 	color: black;
 	text-decoration:none;
 }    
-.deadlink:hover {
+.deadlink:hover { /* JD 12-06 Creates the appearance of a clickable link, regardless if it does anything or not  */
 	text-decoration: underline;
     cursor:pointer;
 } 
+
+/* -------------- Landing (index) Page Styling -------------- */ 
+
+#landingPic {
+    background-image: url("../images/headerimages/oceancliff.JPG");
+    height: 50vw;
+    background-size: cover;
+    background-position: 50% 30%;
+    background-repeat: no-repeat; /* SV 11-23 background image and details added for header graphic */
+    display: flex; /* SV 11-23 - as per https://www.w3schools.com/css/css3_flexbox.asp */
+    flex-flow: row wrap;
+    justify-content: center;
+}
+
+#landingText {
+    font-weight: bold;
+    text-align: center;
+    font-size: 1.5vw;
+    padding-top: 4%;
+    padding-left: 15%;
+    padding-right: 15%;
+    color: white;
+    background-color: black;
+    opacity: 0.6;
+    width: 100%;
+    height: 20%;
+}
+
+.landingTitle {
+    text-align: center;
+    margin-top: 20px;
+}
 
 /* -------------- Blag Page Styling (OLD) -------------- */ 
 /* GR 12-3 - Hey Christie, I have changed my style for my blags, but I know you were using this CSS for your page
@@ -211,7 +252,7 @@ h3.blags{
     margin:10px
 }
   
-h5.subtitle {
+.subtitle {
     color: #497B8F;
     font-size: 18px;
     margin: 10px;
@@ -229,16 +270,16 @@ p.Blags {
 /* -------------- Services Page Styling -------------- */
 
 /* SV 12-01 - Stole the centre titling from Blag Page */
-article.serve {
+.serve {
     display: flex;
     height:max-content;
     align-items: center;
     margin-top: 10vw;
 }
-article.serve p {
+.serve p {
     text-align:justify;
 }
-article.serve:first-child {
+.serve:first-child {
     margin-top: 0;
     padding-top: 0;
 }
@@ -250,7 +291,6 @@ article.serve:first-child {
     max-width: 28vw;
     max-height: 300px;
     border-radius: 10px;
-    margin-left: .5vw;
 }
 /* SV 12-01 - Left-aligned sections use default attributes */
 .leftText {
@@ -260,11 +300,8 @@ article.serve:first-child {
 .rightText {
     flex-direction: row-reverse;
 }
-.rightText figure {
-    margin-left: 0;
-    margin-right: .5vw;
-}
-article.rightText h3 {
+
+.rightText h3 {
     text-align: right;
 }
 
@@ -303,72 +340,16 @@ article.rightText h5 {
 article.leftText h5 {
     text-align: left;
 }
-
-
-
-
-
-    @media screen and (min-width: 800px) {
-        main {
-            flex-direction: row;
-         }
-         /* SV - 12-02 - added hamburger menu; moved small-page styles down to here */
-        nav { /* CP - modified SV 11-14 - Changed the width as part of moving <nav> from the top to the left */
-            display: flex;
-            flex-direction: row;
-            justify-content: center;
-            font-size: 12pt;
-            background-color: #8F787C;     /* GR 11-22 colour palette */
-            overflow: hidden; /* SV 12-02 - as per https://www.w3schools.com/howto/howto_js_mobile_navbar.asp */
-        }
-        nav a { /* CP mod SV 12-01 - adjusts size of nav bar when screen size increases */
-            color: white; 
-            text-align: center;
-            padding: 10px;
-            transition: all .3s ease;
-            text-decoration: none; /* SV 12-02 - get rid of those annoying underlines */
-            font-size: 15pt;
-            padding-left: 15px;
-            padding-right: 15px;    
-        }
-        nav a:hover { /* CP */
-            background-color: #D6BFC3; /* GR 11-22 colour palette */
-        }          
-        nav.active { /* CP */
-            background-color: #497B8F; /* GR 11-22 colour palette  */
-        }
-        nav a:not(:first-child) {     /* SV 12-02 - overrides the small-screen hiding of the menu */
-            display: inherit;
-        }
-        nav a.icon {     /* SV 12-02 - overrides the line above this one, for the hamburger only */
-            display: none;
-        }
-        article.serve {
-            margin-top: 1vw;
-        }
-        .picBox {
-            display: block;
-        }
-        .bio { /* AH/SV 12-04 - Sets the width of the bio boxes so that three fit on a larger screen */
-            width: 23.5vw;
-        }
-        .profiles { /* AH/SV 12-04 - sets images to greyscale for bios */
-            filter: grayscale(100%);
-        }
-        .profiles:hover { /* AH/SV 12-04 - bio images switch to colour on mouseover */
-            filter: none;
-        }
-    }
+ 
 
 /* ---------------- JD 12-05 Get Involved Styling ------------------- */
 
-/* Set the size of the div element that contains the map */
-
-#jointitle {
+#jointitle { /* JD 12-06 - centers title */
     text-align: center;
+    margin-bottom: 20px;
 }
 
-#ConWithUs {
+#ConWithUs { /* JD 12-06 - Overriding styling for the aside box to fit more content */
     padding: 15px;
     margin: 1vw;
     margin-left: 0;
@@ -378,16 +359,47 @@ article.leftText h5 {
     min-width: 35%;
 }
 
-.getinvolvedElement1 {
+.joblink { /* JD 12-06 - Inspired from actual career pages where jobs links are in boxes */
+    background-color: rgb(64, 66, 85);
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+  }
+
+  .joblink:hover { /* JD 12-06 - Link is highlighted over hover to simulate interaction */
+    background-color:  rgb(19, 19, 20);
+    cursor:pointer;
+  }
+
+  .jobwrap { /* JD 12-06 - using flexbox to organize the job link boxes */
+    padding-top: 5px;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+    row-gap: 10px;
+    column-gap: 15px;
+    min-width: 50%;
+}
+
+.underlineTitle { /* JD 12-06 - underlining titles (h3) for visual appeal and organization. could be used for titles in other pages */
+    border-bottom: 1px solid black;
+    margin-bottom: 10px;
+}
+
+.getinvolvedElement1 { /* JD 12-06 - minor spacing formatting specific to this page */
     padding: 10px;
 }
 
-.getinvolvedElement2 {
+.getinvolvedElement2 { /* JD 12-06 - minor spacing formatting specific to this page to override other styles */
     padding-top: 10px;
     padding-bottom: 5px;
+    margin: 0;
 }
 
-.contactInfo {
+.contactInfo { /* JD 12-06 - using flexbox to display contact info appropriately with size of screen */
     padding-top: 5px;
     display: flex;
     flex-flow: row wrap;
@@ -398,11 +410,72 @@ article.leftText h5 {
     min-width: 50%;
 }
 
-.contactheaders {
+.contactheaders { /* JD 12-06 - minor formatting for contact info in aside */
+    margin-top: 10px;
     padding:5px;
 }
 
-.officeDesc {
+.officeDesc { /* JD 12-06 - minor text styling for info in aside */
     padding: 10px;
     font-style: italic;
+}
+
+@media screen and (min-width: 800px) {
+    main {
+        flex-direction: row;
+        }
+        /* SV - 12-02 - added hamburger menu; moved small-page styles down to here */
+    nav { /* CP - modified SV 11-14 - Changed the width as part of moving <nav> from the top to the left */
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        font-size: 12pt;
+        background-color: #8F787C;     /* GR 11-22 colour palette */
+        overflow: hidden; /* SV 12-02 - as per https://www.w3schools.com/howto/howto_js_mobile_navbar.asp */
+    }
+    nav a { /* CP mod SV 12-01 - adjusts size of nav bar when screen size increases */
+        color: white; 
+        text-align: center;
+        padding: 10px;
+        transition: all .3s ease;
+        text-decoration: none; /* SV 12-02 - get rid of those annoying underlines */
+        font-size: 15pt;
+        padding-left: 15px;
+        padding-right: 15px;    
+    }
+    nav a:hover { /* CP */
+        background-color: #D6BFC3; /* GR 11-22 colour palette */
+    }          
+    nav.active { /* CP */
+        background-color: #497B8F; /* GR 11-22 colour palette  */
+    }
+    nav a:not(:first-child) {     /* SV 12-02 - overrides the small-screen hiding of the menu */
+        display: inherit;
+    }
+    nav a.icon {     /* SV 12-02 - overrides the line above this one, for the hamburger only */
+        display: none;
+    }
+    /* ---------- Services styling for large pages ---------- */
+    .serve {
+        margin-top: 1vw;
+    }
+    .picBox { /* displays the images on the services page when the screen is large */
+        display: block;
+    }
+    .leftText figure { /* when the figure is present, put a margin between the image and the left-side text */
+        margin-left: 1vw;
+    }
+    .rightText figure { /* when the figure is present, put a margin between the image and the right-side text */
+        margin-left: 0;
+        margin-right: 1vw;
+    }
+    .bio { /* AH/SV 12-04 - Sets the width of the bio boxes so that three fit on a larger screen */
+        width: 23.5vw;
+    }
+    .profiles { /* AH/SV 12-04 - sets images to greyscale for bios */
+        filter: grayscale(100%);
+    }
+    .profiles:hover { /* AH/SV 12-04 - bio images switch to colour on mouseover */
+        filter: none;
+    }
 }

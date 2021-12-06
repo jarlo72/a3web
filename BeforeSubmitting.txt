@@ -1,0 +1,10 @@
+List of things we should check before submission:
+
+1) image sizes - are they scaled down appropriately for the site?
+2) redundant CSS - we should meet as a group and go through stylesMain.css like a list and lay claim to whatever
+    we actually used, to make sure there's no unused CSS and no redundancy
+3) mobile and large-display checks - make sure nothing breaks horribly
+4) HTML that is not impacted by CSS
+5) Missing or mislabelled closing tags
+6) Contrast ratio number
+7) validation checks

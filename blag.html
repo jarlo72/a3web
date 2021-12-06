@@ -11,7 +11,8 @@
     <body>
         <header>
             <figure> <!--JD 11-17 - logo semantic element in header-->
-                <img src="images/headerimages/logo_v2.svg" alt="LASD logo" style="max-width:auto;max-height:100%;" id="logo">
+                <a class=deadlink href="index.html">
+                <img src="images/headerimages/logo_v2.svg" alt="LASD logo" style="max-height:100%;" id="logo"></a>
             </figure>
             <h1>Blag</h1> <!-- SV 11-23 - added the actual title-->
         </header>
@@ -23,7 +24,7 @@
             <a href="projects.html">Projects</a>
             <a href="GetInvolved.html">Get Involved</a> 
             <a class="active" href="blag.html">Blag</a>
-            <a href="javascript:void(0);" class="icon" onclick="myFunction()"> <!-- SV 12-02 - Hamburger menu icon thingy as per https://www.w3schools.com/howto/howto_js_topnav_responsive.asp-->
+            <a href="javascript:void(0);" class="icon" onclick="navFunction()"> <!-- SV 12-02 - Hamburger menu icon thingy as per https://www.w3schools.com/howto/howto_js_topnav_responsive.asp-->
                 &#9776; <!-- thanks to https://webdesign.tutsplus.com/tutorials/7-non-raster-approaches-for-making-the-hamburger-menu-icon--cms-21686 for the UTF reference code & idea-->
               </a>
         </nav>  
@@ -38,7 +39,7 @@
                         <h3 class="blags"> Good Data Saves Lives </h3>
                             <h5 class="subtitle"> Christie Peacock | September 2, 2021</h5>
                             <details id='blagC'>
-                                <summary class = blags> Read More</summary> 
+                                <summary class = "blags deadlink"> Read More</summary> 
                                 <p class="Blags" ID = 'blagC' > 
                                     In 2001, a teenager decided to explore a sewer near his house in Ottawa. Six hours and kilometers later, he was rescued by Ottawa Public Works and firefighter staff.  
                                     Little did he know that the sewer he descended into is a trunk sanitary sewer that drains 
@@ -63,7 +64,7 @@
                     <h3 class="blags">Capelin on the Coasts & Community Science</h3>
                         <h5 class="subtitle"> Gabby Riefesel | August 22, 2021</h5>
                         <details id='blagC'>
-                            <summary class = blags> Read More</summary> 
+                            <summary class = "blags deadlink"> Read More</summary> 
                             <p class="Blags" ID = 'blagC' > 
                                 In our company we get to work with many organizations from all sectors, although some contracts stand out to be most memorable. LASD has been working on with the Department of Fisheries and World Wildlife Foundation on a multi-year project to inventory Capelin spawning beaches across the island of Newfoundland.
                             </p>
@@ -83,7 +84,7 @@
                     <h3 class="blags"> A TUAV specialist and her most Recent Survey of the Keeley & Frontier Mines Community Science</h3>
                         <h5 class="subtitle"> Amanda Hunter | November 22, 2020</h5>
                         <details id='blagC'>
-                            <summary class = blags> Read More</summary> 
+                            <summary class = "blags deadlink"> Read More</summary> 
                             <p class="Blags" ID = 'blagC'> 
                                 There’s something really special about being asked to survey the Keeley-Frontier Mine. For starters, it is the most prolific past-producing silver/cobalt mine by average grade per tonne, in Canadian history.  The two mines combined produced close to 20 million ounces of silver and 3.5 million pounds of cobalt, at an average grade of 58 ounces silver per tonne, and 3.5 pounds cobalt per tonne. The most beautiful sample of cobalt the Royal Ontario Museum chose to display is in fact, a sample from the Keeley.
                             </p>
@@ -106,7 +107,7 @@
                     <h3 class="blags">Exploring the Columbia Icefields</h3>
                         <h5 class="subtitle">Jon Marlo Delicano | November 22, 2020</h5>
                         <details id='blagC'>
-                            <summary class = blags> Read More</summary> 
+                            <summary class = "blags deadlink"> Read More</summary> 
                             <p class="Blags" ID = 'blagC' > 
                                 Travelling widens our perspective and helps develop a different approach to life that can be translated to our career passions. Here at LASD, we believe that change and discovery is a necessary part of life and to do so, we must put ourselves out there, somewhere, in the world. We always encourage our team members to pursue this approach to life and take it beyond work.
                             </p>
@@ -123,7 +124,7 @@
                     <h3 class="blags"> An Ode To Lorem ipsum</h3>
                         <h5 class="subtitle">Stephen Vandam | April 1, 2042</h5>
                         <details id='blagC'>
-                            <summary class = blags> Read More</summary> 
+                            <summary class = "blags deadlink"> Read More</summary> 
                             <p class="Blags" ID = 'blagC' > 
                                 There's a neat set of text that web developers often use as filler content when they're laying out a website called Lorem Ipsum. Latin based, the text is seemingly random words and characters strung together and used to display large quantities of text without the developer needing to actually write anything, and with the security that if something gets lost or broken during the coding process, they haven't lost anything that can't be replaced.
                             </p>
@@ -168,7 +169,6 @@
             <p class="footernotes">Email: <a class=deadlink>infoinquest@lasd.ca</a> | Phone: <a class=deadlink>(416) 888-8888</a> | <a class=deadlink>Terms of Use</a> | <a class=deadlink>Privacy Statement</a> | <a class=deadlink>Accessibility</a></p>
         </footer>
 
-        <script src="js/navFunction.js"></script> <!-- SV 12-02 - link to javascript for the nav hamburger-->
-        <script src="js/ReadMore.js"></script> <!-- GR 12-02 - link to javascript for the button to unhide <p> article text-->
+        <script src="js/morningJava.js"></script> <!-- SV 12-02 - mod 12-06 - updated to single JS file for all coffee drinkers-->
     </body>
 </html>

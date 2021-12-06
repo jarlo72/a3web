@@ -3,6 +3,4 @@
 
     function myFunction(){
         document.getElementById("blagC").ontoggle = function() {myFunction()};
-
-
-  
+    }
