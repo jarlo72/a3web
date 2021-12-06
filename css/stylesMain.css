@@ -242,7 +242,8 @@ h5.blags{
 
 div.card {
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-    max-width: fit-content;
+    max-width: 90%;
+    max-height: 30%; /*I need to make images 'shorter' but this won't work*/ 
     margin: 20px;
     text-align: left;
     font-family: arial;
