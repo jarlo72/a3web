@@ -229,16 +229,16 @@ p.Blags {
 /* -------------- Services Page Styling -------------- */
 
 /* SV 12-01 - Stole the centre titling from Blag Page */
-article.serve {
+.serve {
     display: flex;
     height:max-content;
     align-items: center;
     margin-top: 10vw;
 }
-article.serve p {
+.serve p {
     text-align:justify;
 }
-article.serve:first-child {
+.serve:first-child {
     margin-top: 0;
     padding-top: 0;
 }
