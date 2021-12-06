@@ -71,6 +71,15 @@ header { /* SV 11-14 - a modification of AH's work for our header info*/
     font-size: 0.4em;
 }
 
+.quote{
+    padding: 25px;
+    color: black;
+    text-align: center;
+    font-style: italic;
+    font-weight: bold;
+    font-size: 1.25em;
+}
+
 nav { /* CP - modified SV 11-14 - Changed the width as part of moving <nav> from the top to the left */
     font-size: 12pt;
     background-color: #8F787C;     /* GR 11-22 colour palette */
@@ -167,7 +176,7 @@ footer { /* JD 11-15 - footer formatting sourced from https://www.w3schools.com/
     background-position: 50% 30%;
     background-repeat: no-repeat; /* SV 11-23 background image and details added for header graphic */
     display: flex; /* SV 11-23 - as per https://www.w3schools.com/css/css3_flexbox.asp */
-    flex-flow: wrap-reverse;
+    flex-flow: row wrap;
     justify-content: center;
 }
 
