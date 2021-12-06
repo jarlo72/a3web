@@ -239,6 +239,7 @@ h5.blags{
 
 /* GR 12-03 Style individual blags in cards CSS SOURCE: https://www.w3schools.com/howto/howto_css_profile_card.asp*/ 
 /* Inspiration for design SOURCE: https://www.worldwildlife.org/blogs  */
+
 div.card {
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
     max-width: fit-content;
@@ -246,6 +247,7 @@ div.card {
     text-align: left;
     font-family: arial;
     background-color:white;
+    
 }
 
 h3.blags{
@@ -254,7 +256,6 @@ h3.blags{
   
 .subtitle {
     color: #497B8F;
-    font-size: 18px;
     margin: 10px;
 }
 
@@ -266,6 +267,27 @@ p.Blags {
     margin:20px;
 }
 
+h4.BlagAside {
+    text-decoration: underline;
+    margin-bottom: 10px;
+}
+
+/* GR 06-12 Stylying for aside */
+/* Header styling from Jon Marlo Delicano, to include line under heading to visually organize sections on aside */
+/* GR 06-12 styling for link button to About Us page */
+p.authorp{
+    margin-top: 10px
+}
+
+a.author {
+    background-color: #8F787C;
+    color: white;
+    text-decoration: none;
+    padding: 5px;
+}
+a.author:hover {
+    background-color: #D6BFC3;
+}
    
 /* -------------- Services Page Styling -------------- */
 
