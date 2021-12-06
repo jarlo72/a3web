@@ -97,7 +97,7 @@ nav a { /* CP */
 nav a:hover { /* CP */
     background-color: #D6BFC3; /* GR 11-22 colour palette */
 }          
-nav.active { /* CP */
+nav a.active { /* CP */
     background-color: #497B8F; /* GR 11-22 colour palette  */
 }
 nav a:not(:first-child) {
@@ -454,6 +454,13 @@ article.leftText h5 {
     }
     nav a.icon {     /* SV 12-02 - overrides the line above this one, for the hamburger only */
         display: none;
+    }
+    aside {
+        position: sticky;
+        position: -webkit-sticky; /* to make it work in Safari, for all those Mac nerds */
+        top: 0;
+        margin-top: 1vw;
+        align-self: flex-start; /* This is to make it work with our flexbox layout; thanks to https://newbedev.com/my-position-sticky-element-isn-t-sticky-when-using-flexbox for fixing the damn thing */
     }
     /* ---------- Services styling for large pages ---------- */
     .serve {
