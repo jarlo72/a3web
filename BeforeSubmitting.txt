@@ -6,3 +6,5 @@ List of things we should check before submission:
 3) mobile and large-display checks - make sure nothing breaks horribly
 4) HTML that is not impacted by CSS
 5) Missing or mislabelled closing tags
+6) Contrast ratio number
+7) validation checks
