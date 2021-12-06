@@ -158,11 +158,11 @@ footer { /* JD 11-15 - footer formatting sourced from https://www.w3schools.com/
 .footernotes {
     font-size: 10pt;
 }
-.deadlink {
+.deadlink { /* JD 12-06 styling leads to hover effect below  */
 	color: black;
 	text-decoration:none;
 }    
-.deadlink:hover {
+.deadlink:hover { /* JD 12-06 Creates the appearance of a clickable link, regardless if it does anything or not  */
 	text-decoration: underline;
     cursor:pointer;
 } 
