@@ -80,6 +80,10 @@ header { /* SV 11-14 - a modification of AH's work for our header info*/
     font-size: 1.25em;
 }
 
+.bold{
+    font-weight: bold;
+}
+
 nav { /* CP - modified SV 11-14 - Changed the width as part of moving <nav> from the top to the left */
     font-size: 12pt;
     background-color: #8F787C;     /* GR 11-22 colour palette */
@@ -234,7 +238,9 @@ h5.blags{
 /* GR 11-25 center align blag page title */
 .blagtitle{
     text-align: center;
-    margin:20px;
+    margin-top:20px;
+    margin-bottom:20px;
+    color: rgb(27, 29, 66);
 }
 
 /* GR 12-03 Style individual blags in cards CSS SOURCE: https://www.w3schools.com/howto/howto_css_profile_card.asp*/ 
@@ -371,11 +377,6 @@ article.leftText h5 {
 
 /* ---------------- JD 12-05 Get Involved Styling ------------------- */
 
-#jointitle { /* JD 12-06 - centers title */
-    text-align: center;
-    margin-bottom: 20px;
-}
-
 #ConWithUs { /* JD 12-06 - Overriding styling for the aside box to fit more content */
     padding: 15px;
     margin: 1vw;
@@ -384,6 +385,11 @@ article.leftText h5 {
     order: 2;
     flex: 20vw;
     min-width: 35%;
+}
+
+.intropara {
+    padding-top:15px;
+    padding-bottom:15px;
 }
 
 .joblink { /* JD 12-06 - Inspired from actual career pages where jobs links are in boxes */
@@ -426,6 +432,11 @@ article.leftText h5 {
     margin: 0;
 }
 
+.selfie {
+    width: 100%;
+    border-radius: 10px;
+}
+
 .contactInfo { /* JD 12-06 - using flexbox to display contact info appropriately with size of screen */
     padding-top: 5px;
     display: flex;
@@ -446,6 +457,8 @@ article.leftText h5 {
     padding: 10px;
     font-style: italic;
 }
+
+/* ------------- JD - 12-07 - End of GetInvolved Styling ------------------------------------ */
 
 @media screen and (min-width: 800px) {
     main {

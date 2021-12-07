@@ -40,49 +40,56 @@
             <a class="active" href="GetInvolved.html">Get Involved</a> 
             <a href="blag.html">Blag</a>
             <a href="javascript:void(0);" class="icon" onclick="navFunction()"> <!-- SV 12-02 - Hamburger menu icon thingy as per https://www.w3schools.com/howto/howto_js_topnav_responsive.asp-->
-                &#9776; <!-- thanks to https://webdesign.tutsplus.com/tutorials/7-non-raster-approaches-for-making-the-hamburger-menu-icon--cms-21686 for the UTF reference code & idea-->
+                &#9776; <!-- thanks to https://webdesign.tutsplus.com/tutorials/7-non-raster-approaches-for-making-the-hamburger-menu-icon-cms-21686 for the UTF reference code & idea-->
               </a>
         </nav> 
         
         <main> <!--SV 12-01 Moved <main> down to fix the nav bar-->
             <section>
+                <h2 class="blagtitle">JOIN US! We are the answer</h2><!--JD 12-02-->
                 <article>
-                    <h2 id = jointitle>JOIN US! We are the answer</h2><!--JD 12/02-->
-                        <div class="getinvolvedElement1"><h3 class = "underlineTitle">Passion Drives Us</h3> <!--JD 12/02 Description of why to join us-->
-                        <p>Here at LASD, we pride ourselves in what we do and carry out our work everyday with a sense of love and duty. For out of this mentality, we've become a team
-                            of hard (and smart) working professionals who rely and learn from each other, and who, in the direst of situations and tightest of deadlines, always get the
-                            job done and grow from that experience. If this sounds like a crew you can vibe with, we at LASD, implore you to join our growing team of passionate GIS 
-                            professionals. And if that hasn't convinced you, kindly glance over the benefits we offer.</p></div>
-                        <div class="getinvolvedElement1"><h3 class = "underlineTitle">Benefits</h3> <!--JD 12/02 Small Description of benefits-->
-                            <p>Here at LASD we understand that you're an emotional being with needs. Although we love our work, WE are MORE than our WORK. In order to keep our employees working for us
-                            at maximum efficiency, we do our best to take care of their physical and mental health.</p>
-                        
-                            <h4 class="getinvolvedElement2 subtitle">Health Care</h4>
-                                <p>We offer an comprehensive health care program which includes travel insurance, chiropractic, dental, vision, disability accessibility and injury remediation to all
-                                    full-time employees. These benefits extend to family and any dependants. We care about our employees ability to work for us at maximum efficiency, and during those
-                                    strenuous efforts when rushing to meet a last-minute deadline, health should be the LASD thing on your mind.</p>
-                                
-                            <h4 class="getinvolvedElement2 subtitle">Work-Life Balanace</h4>
-                                <p>We offer flexible working hours and five weeks of paid vacation per year in order to get that well deserved break. This is done with hopes of encouraging our team members
-                                    to live beyond their work and contribute to good in this world. We also cover the costs for further education and professional development that team members
-                                    wish to pursue in order to bring back and contribute to our mission. Here at LASD, we believe in growing our collective skillset to remain relevant in the ever-evolving 
-                                    technical landscape that is GIS.</p>
-                                
-                            <h4 class="getinvolvedElement2 subtitle">Recreation</h4>
-                                <p>Nothing builds that sense of comraderie better than engaging in fun, team-bonding activities. Here at LASD, we commit our team members to take part in weekly team exercies
-                                    and sports such as Escape Rooms, recreation sport leagues (Soccer, Basketball, Hockey), rock climbing, archery tag, paintball and so much more.</p>
-                                
-                            <h4 class="getinvolvedElement2 subtitle">Convenient Finances</h4>
-                                <p>Here at LASD, you're entitled to annual salary increases of up to 20 percent. Additionally, we offer bi-weekly RRSP contributions via a collaborative retirement savings
-                                    program to facilitate those golden years we all yearn for.</p>      
-                        </div>                            
-                        <div class="getinvolvedElement1"><h3 class = "underlineTitle">Current Opportunities</h3> <!--JD 12/02 Listing current job openings. Add a link box with a deadlink functionality-->
-                        <p>Interested in joining? We are currently accepting applications for the following opportunities. We implore any enthusiastic individual to submit an application or inquire about
-                            more upcoming oppurtunities with our team by sending an email to <a class=deadlink>hrinquest@lasd.ca</a>. We hope to hear from you soon!</p>
+                    <div class="getinvolvedElement1"><h3 class = "underlineTitle">Passion Drives Us</h3> <!--JD 12/02 Description of why to join us-->
+                        <p class="intropara">Here at LASD, we pride ourselves in what we do and carry out our work everyday with a sense of love and duty. For out of this mentality, we've become a team
+                        of hard (and smart) working professionals who rely and learn from each other, and who, in the direst of situations and tightest of deadlines, always get the
+                        job done and grow from that experience. If this sounds like a crew you can vibe with, we at LASD, implore you to join our growing team of passionate GIS 
+                        professionals. And if that hasn't convinced you, kindly glance over the <a href ="#benefits">benefits we offer</a>. When you are ready, please review our current opportunities 
+                        <a href ="#Career">below.</a></p><!-- JD 12-06 Create links to subpages SOURCE: https://www.w3schools.com/html/html_links_bookmarks.asp -->
+                        <figure class="getinvolvedElement2"><img src="images/drone/selfiegeo.jpg" alt="selfie" class="selfie"></figure>
+                    </div>
+                    <div class="getinvolvedElement1"><h3 class = "underlineTitle" id = "benefits">Benefits</h3> <!--JD 12/02 Small Description of benefits-->
+                        <p class="intropara">Here at LASD we understand that you're an emotional being with needs. Although we love our work, we understand that <a class="bold">WE are MORE than our WORK</a>. In order to keep our employees working for us
+                        at maximum efficiency, we do our best to take care of their physical and mental health.</p>
+                        <figure class="getinvolvedElement2"><img src="images/headerimages/puffinreserve3.JPG" alt="puffinreserve" class="selfie"></figure>
+                        <h4 class="getinvolvedElement2 subtitle">Health Care</h4>
+                            <p>We offer an comprehensive health care program which includes <a class="bold">travel insurance, chiropractic, dental, vision, disability accessibility</a> and <a class="bold">injury remediation</a> to all
+                                full-time employees. These benefits extend to family and any dependants. We care about our employees ability to work for us at maximum efficiency, and we know that during those
+                                strenuous efforts when rushing to meet those last-minute deadlines, health should be the LASD thing on your mind.</p>
+                            
+                        <h4 class="getinvolvedElement2 subtitle">Work-Life Balanace</h4>
+                            <p>We offer flexible working hours and five weeks of paid vacation per year in order to get that well deserved break. This is done with hopes of encouraging our team members
+                                to live beyond their work and contribute to good in this world. We also cover the costs for further education and professional development that team members
+                                wish to pursue in order to bring back and contribute to our mission. Here at LASD, we believe in growing our collective skillset to remain relevant in the ever-evolving 
+                                technical landscape that is GIS.</p>
+                            
+                        <h4 class="getinvolvedElement2 subtitle">Recreation</h4>
+                            <p>Nothing builds that sense of comraderie better than engaging in fun, team-bonding activities. Here at LASD, we commit our team members to take part in weekly team exercies
+                                and sports such as Escape Rooms, recreation sport leagues (Soccer, Basketball, Hockey), rock climbing, archery tag, paintball and so much more.</p> 
+                            <p><br>When we're back in the office, we even do a "Bring your Pet to Work" Day every friday - even we know Friday afternoons tend to be unproductive, might as well make 
+                                it unproductive with our furry friends!</p>
+                            
+                        <h4 class="getinvolvedElement2 subtitle">Convenient Finances</h4>
+                            <p>Here at LASD, you're entitled to annual salary increases of up to 20 percent. Additionally, we offer bi-weekly RRSP contributions via a collaborative retirement savings
+                                program to facilitate those golden years we all yearn for.</p>      
+                    </div>                            
+                    <div class="getinvolvedElement1"><h3 class = "underlineTitle" id ="Career">Current Opportunities</h3> <!--JD 12/02 Listing current job openings. Add a link box with a deadlink functionality-->
+                        <figure><img src="images/headerimages/passion.jpg" alt="passion" class="selfie"></figure>
+                        <p class="intropara">Interested in joining? We are currently accepting applications for the following opportunities. We implore any enthusiastic individual to submit an application or inquire about
+                        more upcoming oppurtunities with our team by sending an email to <a class=deadlink>hrinquest@lasd.ca</a>. We are constantly expanding and are committed to garnering the talent and
+                        and skills to foster more growth. We hope to hear from you soon!</p>
                         <p class="getinvolvedElement1 ConWithUs jobwrap"><a class="joblink">Web Development Assistant</a><a class="joblink">Junior CAD specialist</a><a class="joblink">Project Coordinator</a>
-                            <a class="joblink">Field Technician</a><a class="joblink">Custodian</a><a class="joblink">Nutritional Manager and Cook</a><a class="joblink">Personal Fitness Instructor</a></p>
-                        
-                        </div>
+                            <a class="joblink">Field Technician</a><a class="joblink">Custodian</a><a class="joblink">Nutritional Manager and Cook</a><a class="joblink">Personal Fitness Instructor</a>
+                            <a class="joblink">Dog Walker</a><a class="joblink">Administrative Assistant</a><a class="joblink">Sr. Logistics Officer</a></p>
+                    </div>
                 </article>
             </section>
                 <aside id="ConWithUs"><!--AH 11-14 - adds the right column -->
