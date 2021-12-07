@@ -148,7 +148,9 @@ aside { /* AH - modified 11-14 by SV - sets <aside> to stay to the right of main
     order: 2;
     flex: 20vw;
 }
-
+.projects{
+    text-align: center;   
+}
 footer { /* JD 11-15 - footer formatting sourced from https://www.w3schools.com/cssref/pr_class_clear.asp */
     background-color: #D6D4A9;
 	border-top: 1px solid gray;
@@ -366,6 +368,14 @@ p.library{
 /* CP 12-05 -------------- Projects Page Styling  -------------- */
 
 /* CP 12-05 - Based heavily on Services Page Styling.  Order reversed */
+#ProjectsAside { /* CP 12-07 - Overriding styling for the aside box to allow for bullets */
+    padding: 15px;
+    margin: 1vw;
+    margin-left: 0;
+    text-align: left;
+    order: 2;
+    flex: 20vw;
+}
 article.rightText h5 {
     text-align: right;
 }
@@ -373,7 +383,7 @@ article.rightText h5 {
 article.leftText h5 {
     text-align: left;
 }
- 
+
 
 /* ---------------- JD 12-05 Get Involved Styling ------------------- */
 
