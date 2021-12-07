@@ -238,7 +238,9 @@ h5.blags{
 /* GR 11-25 center align blag page title */
 .blagtitle{
     text-align: center;
-    margin:20px;
+    margin-top:20px;
+    margin-bottom:20px;
+    color: rgb(27, 29, 66);
 }
 
 /* GR 12-03 Style individual blags in cards CSS SOURCE: https://www.w3schools.com/howto/howto_css_profile_card.asp*/ 
@@ -374,13 +376,6 @@ article.leftText h5 {
  
 
 /* ---------------- JD 12-05 Get Involved Styling ------------------- */
-
-#jointitle { /* JD 12-06 - centers title */
-    text-align: center;
-    margin-top: 20px;
-    margin-bottom: 20px;
-    color: rgb(27, 29, 66);
-}
 
 #ConWithUs { /* JD 12-06 - Overriding styling for the aside box to fit more content */
     padding: 15px;
