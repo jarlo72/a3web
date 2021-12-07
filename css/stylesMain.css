@@ -295,9 +295,14 @@ a.author:hover {
     background-color: #D6BFC3;
 }
 
-p.library{
+li.library{
     text-align: left;
     margin: 5px;
+    color: black;
+}
+
+ul.library{
+    list-style-type: circle;
 }
    
 /* -------------- Services Page Styling -------------- */
