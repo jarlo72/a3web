@@ -25,7 +25,7 @@ TRIAD 2: mauve #8F787C sand #D6D4A9 pink #D6BFC3 grey-blue #B2CCD6 blue #497B8F 
 h1 { /* CP, moved to new tag 11-14 by SV */
     font-size: 5vw;
     margin-left: 2vw;
-    color: white; /* SV 11-23 */
+    color: #44546A; /* SV 11-23 */
 }
 h2 { /* SV 11-23 */
     font-size: 20pt;
@@ -74,7 +74,7 @@ header { /* SV 11-14 - a modification of AH's work for our header info*/
     font-size: 0.4em;
 }
 
-.quote{
+.quote{ /* JD 12-08 Quotation styling */
     padding: 25px;
     color: black;
     text-align: center;
@@ -213,6 +213,35 @@ footer { /* JD 11-15 - footer formatting sourced from https://www.w3schools.com/
     margin-top: 20px;
 }
 
+/* -------------- Blag Page Styling (OLD) -------------- */ 
+/* GR 12-3 - Hey Christie, I have changed my style for my blags, but I know you were using this CSS for your page
+if you are still using it go ahead, if not feel free to delete
+where this CSS is not used for blags anymore, I would alter the .classes so they reflect your content */
+
+/* GR 11-25 center align blag page title */
+/* .blagtitle{
+    text-align: center;
+    margin:30px;
+} */
+
+/*--GR 11-25 set style for each person's article for background colour, border colour, margin, and padding --*/
+/* article.blagcont {
+    background-color:lightgray;
+    border: 2px solid #D6D4A9;
+    padding: 25px;
+    margin: 20px;
+} */
+
+/* GR 11-26 set style of title, subtitle and date of blags*/
+/* h3.blags{
+    margin:10px
+} */
+
+/* h5.blags{
+    margin-left:15px;
+} */
+
+
 
 /* -------------- Blag Page Styling -------------- */ 
 
@@ -241,7 +270,7 @@ h3.blags{
 }
   
 .subtitle {
-    color: #497B8F;
+    color: #44546A;
     margin: 10px;
 }
 
@@ -266,13 +295,13 @@ p.authorp{
 }
 
 a.author {
-    background-color:  #8F787C;
+    background-color: #8F787C;
     color: white;
     text-decoration: none;
     padding: 5px;
 }
 a.author:hover {
-    background-color: #8F787C;
+    background-color: #D6BFC3;
 }
 
 li.library{
@@ -388,11 +417,10 @@ ul.library{
 article.rightText h5 { /* CP - to have right-aligned text for the articles*/
     text-align: right;
 }
-/*
-article.leftText h5 { /* CP - to have left-aligned text for the articles
+
+article.leftText h5 { /* CP - to have left-aligned text for the articles*/
     text-align: left;
 }
-*/
 
 
 /* ---------------- JD 12-05 Get Involved Styling ------------------- */
