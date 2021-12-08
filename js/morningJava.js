@@ -39,10 +39,10 @@ function toggleFunction(){
 }
 
 /* SV 12-08 - a basic script for highlighting a random team member */
-window.onload = choosePic; /* inspiration: https://www.peachpit.com/articles/article.aspx?p=2239154&seqNum=10 */
-var teamPics = new Array("images/profiles/amanda.jpg", "images/profiles/jmd121.jpg", "images/profiles/profileChristie121.jpg", "images/profiles/profilegabby121.jpg", "images/profiles/Stephen121.jpg", "images/profiles/squirrels121.jpg");
+ /* inspiration: https://www.peachpit.com/articles/article.aspx?p=2239154&seqNum=10 */
+//var teamPics = new Array("images/profiles/amanda.jpg", "images/profiles/jmd121.jpg", "images/profiles/profileChristie121.jpg", "images/profiles/profilegabby121.jpg", "images/profiles/Stephen121.jpg", "images/profiles/squirrels121.jpg");
 
 function choosePic() {
-  var randomNum = Math.floor(Math.random() * teamPics.length);
-  document.getElementById("TeamSnap").src = teamPics[randomNum];
+  document.getElementById("TeamSnap").src = "images/profiles/amanda.jpg";
 }
+window.addEventListener('load', choosePic, false);
