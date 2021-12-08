@@ -172,6 +172,10 @@ footer { /* JD 11-15 - footer formatting sourced from https://www.w3schools.com/
 	text-decoration: underline;
     cursor:pointer;
 } 
+.source {
+    font-size: 7pt;
+    font-style: italic;
+}
 
 /* -------------- Landing (index) Page Styling -------------- */ 
 
