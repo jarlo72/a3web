@@ -343,6 +343,16 @@ ul.library{
 .rightText h3 {
     text-align: right;
 }
+.serviceSidebar {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    padding-top: 1vh;   
+}
+.serviceSidebar li{
+    padding-top: 1vh;
+    
+}
 
     /* -------------- About Us Page Styling -------------- */
 
