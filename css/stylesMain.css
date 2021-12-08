@@ -259,7 +259,7 @@ p.Blags {
 
 
 
-/* GR 06-12 Stylying for aside */
+/* GR 06-12 Styling for the blag aside */
 
 /* GR 06-12 Header stylying consistent with other pages with underline and margin space after header */
 h4.BlagAside {
@@ -339,13 +339,25 @@ h4.BlagAside {
     text-align: right;
 }
 .serviceSidebar {
-    list-style-type: none;
     margin: 0;
-    padding: 0;
+    padding: 0.5 vw;
     padding-top: 1vh;   
+}
+.serviceSidebar ul {
+    list-style-type: none;
+    padding: inherit;
 }
 .serviceSidebar li{
     padding-top: 1vh;
+}
+.serviceSidebar p {
+    text-align: justify;
+}
+.serviceSidebar h4 {
+    margin-top: 1vw;
+}
+p.rightP {
+    text-align: right;
 }
 #TeamSnap {
     height: 18vw;
