@@ -25,7 +25,7 @@ TRIAD 2: mauve #8F787C sand #D6D4A9 pink #D6BFC3 grey-blue #B2CCD6 blue #497B8F 
 h1 { /* CP, moved to new tag 11-14 by SV */
     font-size: 5vw;
     margin-left: 2vw;
-    color: white; /* SV 11-23 */
+    color: #44546a; /* SV 11-23 */
 }
 h2 { /* SV 11-23 */
     font-size: 20pt;
@@ -66,7 +66,7 @@ header { /* SV 11-14 - a modification of AH's work for our header info*/
 }
 
 #slogan { /* JD 12-02 Using flexbox to allow slogan underneath title */
-    color: white; 
+    color: #44546a; 
     font-style:italic;
     align-items: center;
     display: flex;
@@ -89,7 +89,7 @@ header { /* SV 11-14 - a modification of AH's work for our header info*/
 
 nav { /* CP - modified SV 11-14 - Changed the width as part of moving <nav> from the top to the left */
     font-size: 12pt;
-    background-color: #8F787C;     /* GR 11-22 colour palette */
+    background-color: #665558;     /* GR 11-22 colour palette */
     overflow: hidden; /* SV 12-02 - as per https://www.w3schools.com/howto/howto_js_mobile_navbar.asp */
 }
 nav a { /* CP */
@@ -490,7 +490,6 @@ article.leftText h5 { /* CP - to have left-aligned text for the articles
         flex-direction: row;
         justify-content: center;
         font-size: 12pt;
-        background-color: #8F787C;     /* GR 11-22 colour palette */
         overflow: hidden; /* SV 12-02 - as per https://www.w3schools.com/howto/howto_js_mobile_navbar.asp */
     }
     nav a { /* CP mod SV 12-01 - adjusts size of nav bar when screen size increases */
