@@ -175,7 +175,7 @@ footer { /* JD 11-15 - footer formatting sourced from https://www.w3schools.com/
 .source {
     font-size: 10pt;
     font-style: italic;
-    padding: 5px;
+    margin: 10px;
 }
 
 /* -------------- Landing (index) Page Styling -------------- */ 
