@@ -213,35 +213,6 @@ footer { /* JD 11-15 - footer formatting sourced from https://www.w3schools.com/
     margin-top: 20px;
 }
 
-/* -------------- Blag Page Styling (OLD) -------------- */ 
-/* GR 12-3 - Hey Christie, I have changed my style for my blags, but I know you were using this CSS for your page
-if you are still using it go ahead, if not feel free to delete
-where this CSS is not used for blags anymore, I would alter the .classes so they reflect your content */
-
-/* GR 11-25 center align blag page title */
-/* .blagtitle{
-    text-align: center;
-    margin:30px;
-} */
-
-/*--GR 11-25 set style for each person's article for background colour, border colour, margin, and padding --*/
-/* article.blagcont {
-    background-color:lightgray;
-    border: 2px solid #D6D4A9;
-    padding: 25px;
-    margin: 20px;
-} */
-
-/* GR 11-26 set style of title, subtitle and date of blags*/
-/* h3.blags{
-    margin:10px
-} */
-
-/* h5.blags{
-    margin-left:15px;
-} */
-
-
 
 /* -------------- Blag Page Styling -------------- */ 
 
