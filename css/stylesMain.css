@@ -292,13 +292,13 @@ p.authorp{
 }
 
 a.author {
-    background-color: #8F787C;
+    background-color:  #8F787C;
     color: white;
     text-decoration: none;
     padding: 5px;
 }
 a.author:hover {
-    background-color: #D6BFC3;
+    background-color: #8F787C;
 }
 
 li.library{
