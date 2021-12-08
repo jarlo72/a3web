@@ -34,14 +34,12 @@ h3 { /* SV 11-23 */
     font-size: 16pt;
     float: none;
 }
-<<<<<<< HEAD
 h5 { /* SV 11-23 */
     font-size: 10pt;
     float: none;
-=======
+}
 h4 {
     font-size: 14pt;
->>>>>>> 69f5b1df7abe7061e4a65db5ab50a02ddbf313c7
 }
 p { /* SV 11-23 */
     font-size: 12pt;
@@ -422,19 +420,6 @@ ul.library{
 article.rightText h5 { /* CP - to have right-aligned text for the articles*/
     text-align: right;
 }
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-/*
-article.leftText h5 { /* CP - to have left-aligned text for the articles
-=======
-
-article.leftText h5 { /* CP - to have left-aligned text for the articles*/
->>>>>>> 4da32dd6fa2bf2abb3449075d9b04b97762447fe
-    text-align: left;
-}
-
->>>>>>> 69f5b1df7abe7061e4a65db5ab50a02ddbf313c7
 
 /* ---------------- JD 12-05 Get Involved Styling ------------------- */
 
