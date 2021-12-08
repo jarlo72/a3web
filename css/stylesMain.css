@@ -301,7 +301,7 @@ a.author {
     padding: 5px;
 }
 a.author:hover {
-    background-color: #D6BFC3;
+    background-color: #8F787C;
 }
 
 li.library{
@@ -531,7 +531,7 @@ article.leftText h5 { /* CP - to have left-aligned text for the articles*/
         padding-right: 15px;    
     }
     nav a:hover { /* CP */
-        background-color: #D6BFC3; /* GR 11-22 colour palette */
+        background-color: #8F787C; /* GR 11-22 colour palette */
     }          
     nav.active { /* CP */
         background-color: #497B8F; /* GR 11-22 colour palette  */
