@@ -1,37 +1,22 @@
 <!DOCTYPE html>
-<html lang="en"> <!-- SV 11-23 added english language-->
+<html lang="en"> <!-- common  setup for all pages-->
     <head>
-        <meta name="viewport" content="width=device-width, initial-scale=1.0"><!--AH 11-14 Responsive onto it all -->
-        <meta charset="UTF-8"> <!-- SV 11-23 added character encoding set-->
-        <title>LASD's Splendid Projects</title> <!--CP 11-26-->   
-        <link rel="stylesheet" href="css/stylesMain.css"> <!-- CP 11-14 -->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"><!-- Responsive onto it all -->
+        <meta charset="UTF-8"> <!-- added character encoding set-->
+        <title>LASD's Splendid Projects</title> <!--Title to show on tab-->   
+        <link rel="stylesheet" href="css/stylesMain.css"> <!-- where to find the master css -->
         <!-- Just placing link here for convenience https://jarlo72.github.io/a3web/projects.html JD 11-16-->
     </head>
-    <!--
-        Stephen 11-14 - Before we get into things, a brief style guide reminder.
-        Comments for communication use your full name, like in this one.
-        For comments that need to stick around through the submission, initial and date.
-        Please initial and date if you modify someone else's code, unless it's very minor.
-
-        When using this template to create subpages, remember:
-        USE SEMANTIC HTML.
-        Change the <title> above.
-        If you need to modify the CSS of an element for your page (ie, <h1>) make sure you
-        use a Class or ID for it, so you don't break everyone else's page!
-
-        Oh, also, for each new page you get to delete all the comments from here - they only
-        apply to the template doc, not your individual page.
-    -->
     <body>
         <header>
-            <figure> <!--JD 11-17 - logo semantic element in header-->
+            <figure> <!-- logo semantic element in header-->
                 <a class=deadlink href="index.html">
                 <img src="images/headerimages/logo_v2.svg" alt="LASD logo" style="max-height:100%;" id="logo"></a>
             </figure>
             <h1>Projects</h1> 
         </header>
 
-        <!--<nav class="topnav" id="myTopnav" SV 12-02 - modifications for the hamburger menu-->
+        <!--<nav class="topnav" id="myTopnav" with modifications for the hamburger menu for smaller screens-->
             <nav class="topnav" id="myTopnav">
             <a href="index.html">Home</a> 
             <a href="AboutUs.html">About Us</a> 
@@ -47,8 +32,8 @@
         <main> 
             <section>
                 <h2 class="blagtitle">Project Summaries</h2> <!-- JD 12-07 If we're using section semantics, we should have a header here to avoid warnings on validator -->    
-                <!--Christie's projects page reverses the order of Services page, for fun--> 
-                <article class="serve rightText">
+                <!--Christie's projects page reverses the layout order when compared to the Services page, for fun--> 
+                <article class="serve rightText"><!--this article is right aligned-->
                     <div class="textZone">
                         <h3>Database Creation</h3>    
                         <h5>Municipal Staff Collaboration 2021</h5>
@@ -65,12 +50,12 @@
                         <p>Municipal staff were so thrilled that LASD will be retained in 2022 to design additional 
                         databases for other park amenities.</p>  
                     </div>
-                    <figure class="picBox">
-                        <img src="images/projectimages/databasePhotoOfTree-2.jpg" alt="Tree" class="picSet">
+                    <figure class="picBox">  <!-- because every bunch of text should have a photo to liven up the page-->
+                        <img src="images/projectimages/databasePhotoOfTree-2.jpg" alt="Tree" class="picSet"><!--alternative text in case there is an error loading pic.-->
                     </figure>   
 
                 </article>
-                <!--Gabby's project--> 
+                <!--This article is left-aligned--> 
                 <article class="serve leftText">
                     <div class="textZone">
                         <h3>Spatial Analysis</h3>
@@ -84,11 +69,10 @@
                         to identify key habitat for W. designanius and insure the ecological integrity of the park is maintained. </p>
                     </div>
                     <figure class="picBox">
-                        <img src="images/projectimages/SpatialAnalysisPic.PNG" alt="Spatial" class="picSet">
+                        <img src="images/projectimages/SpatialAnalysisPic.PNG" alt="Spatial" class="picSet"><!--picset class describes how image is to portray on screen -->
                     </figure>
                 </article>
-
-                <!--Amanda's project-->     
+                <!-- this article is connected via hyperlink from the Services page using the "droneProj" id-->
                 <article id="droneProj" class="serve rightText">
                     <div class="textZone">
                         <h3>Remote Surveying</h3>
@@ -103,7 +87,7 @@
                     </figure>  
                 </article>
 
-                <!--Jon's project-->          
+                <!-- this article is connected via hyperlink from the Services page using the "surveyProj" id-->          
                 <article id="surveyProj" class="serve leftText">
                     <div class="textZone">
                         <h3>Bark Lake Traverse</h3>
@@ -118,7 +102,7 @@
                     </figure>
                 </article>
 
-                <!--Stephen's project-->     
+                <!-- this article is connected via hyperlink from the Services page using the "codeProj" id-->     
                 <article id="codeProj" class="serve rightText"> 
                     <div class="textZone">
                         <h3>Software Programming and Geoprocessing</h3>
@@ -136,7 +120,7 @@
                 </article>
             </section> 
 
-            <aside id="ProjectsAside"><!--CP 11-26 - not so sure we want to keep the right column but it's up to what the team wants-->
+            <aside id="ProjectsAside"><!--providing an alternate aside view-->
                 <h4>Our projects have spanned </h4>
                 <ul>
                     <li>5 continents
@@ -177,11 +161,11 @@
             </aside>
         </main>
 
-        <footer> <!-- JD 11-15 - Inspired by content-based websites which often state the creator's name, affiliate links, etc. Semantic element, footer-->
+        <footer> <!-- Inspired by content-based websites which often state the creator's name, affiliate links, etc. Semantic element, footer-->
             <p class="footernotes">@2021. Land Air Sea Digital Inc. All Rights Reserved. Any Land Air Sea Digital products are Trademarks owned by Group 1 of GEOM102 Web Design Programming</p>
             <p class="footernotes">Email: <a class=deadlink>infoinquest@lasd.ca</a> | Phone: <a class=deadlink>(416) 888-8888</a> | <a class=deadlink>Terms of Use</a> | <a class=deadlink>Privacy Statement</a> | <a class=deadlink>Accessibility</a></p>
         </footer>
 
-        <script src="js/morningJava.js"></script> <!-- SV 12-02 - mod 12-06 - updated to single JS file for all coffee drinkers-->
+        <script src="js/morningJava.js"></script> <!--updated to single JS file for all coffee drinkers.  I myself prefer a shot of espresso in mine-->
     </body>
 </html>
