@@ -393,6 +393,11 @@ ul.library{
     order: 2;
     flex: 20vw;
 }
+.contactheaders { /* CP - to centre the title in the aside box */
+    margin-top: 10px;
+    text-align: center;
+    padding:5px;
+}
 article.rightText h5 {
     text-align: right;
 }
