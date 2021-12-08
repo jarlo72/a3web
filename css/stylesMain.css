@@ -338,14 +338,15 @@ h4.BlagAside {
 .rightText h3 {
     text-align: right;
 }
+/* sv 12-08 Attributes for the sidebar text */
 .serviceSidebar {
     margin: 0;
-    padding: 0.5 vw;
-    padding-top: 1vh;   
+    padding: 1vw;   
 }
 .serviceSidebar ul {
     list-style-type: none;
-    padding: inherit;
+    padding: 0;
+    margin: inherit;
 }
 .serviceSidebar li{
     padding-top: 1vh;
@@ -353,15 +354,15 @@ h4.BlagAside {
 .serviceSidebar p {
     text-align: justify;
 }
+#giveMeMoreSpace {
+    margin-top: 2.5vw;
+}
 .serviceSidebar h4 {
     margin-top: 1vw;
 }
+/* SV 12-08 - sets the name of the writer of the testimonial to the right */
 p.rightP {
     text-align: right;
-}
-#TeamSnap {
-    height: 18vw;
-    width: 18vw;
 }
 
     /* -------------- About Us Page Styling -------------- */
