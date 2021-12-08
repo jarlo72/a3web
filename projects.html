@@ -28,11 +28,10 @@
                 &#9776; <!-- thanks to https://webdesign.tutsplus.com/tutorials/7-non-raster-approaches-for-making-the-hamburger-menu-icon-cms-21686 for the UTF reference code & idea-->
               </a>
         </nav> 
-
         <main> 
             <section>
                 <h2 class="blagtitle">Project Summaries</h2> <!-- JD 12-07 If we're using section semantics, we should have a header here to avoid warnings on validator -->    
-                <!--Christie's projects page reverses the layout order when compared to the Services page, for fun--> 
+                <!--Christie's projects page reverses the layout order for articles when compared to the Services page, for fun--> 
                 <article class="serve rightText"><!--this article is right aligned-->
                     <div class="textZone">
                         <h3>Database Creation</h3>    
@@ -53,7 +52,6 @@
                     <figure class="picBox">  <!-- because every bunch of text should have a photo to liven up the page-->
                         <img src="images/projectimages/databasePhotoOfTree-2.jpg" alt="Tree" class="picSet"><!--alternative text in case there is an error loading pic.-->
                     </figure>   
-
                 </article>
                 <!--This article is left-aligned--> 
                 <article class="serve leftText">
@@ -72,7 +70,7 @@
                         <img src="images/projectimages/SpatialAnalysisPic.PNG" alt="Spatial" class="picSet"><!--picset class describes how image is to portray on screen -->
                     </figure>
                 </article>
-                <!-- this article is connected via hyperlink from the Services page using the "droneProj" id-->
+                <!-- a hyperlink in the services page connects to this article using the "droneProj" id-->
                 <article id="droneProj" class="serve rightText">
                     <div class="textZone">
                         <h3>Remote Surveying</h3>
@@ -86,8 +84,7 @@
                         <img src="images/drone/keeley3.jpg" alt="Keely" class="picSet">
                     </figure>  
                 </article>
-
-                <!-- this article is connected via hyperlink from the Services page using the "surveyProj" id-->          
+                <!-- a hyperlink in the services page connects to this article using the "surveyProj" id-->          
                 <article id="surveyProj" class="serve leftText">
                     <div class="textZone">
                         <h3>Bark Lake Traverse</h3>
@@ -101,8 +98,7 @@
                         <img src="images/projectimages/SurveyProjectPicJMD.png" alt="CADplot" class="picSet">
                     </figure>
                 </article>
-
-                <!-- this article is connected via hyperlink from the Services page using the "codeProj" id-->     
+                <!-- a hyperlink in the services page connects to this article using the "codeProj" id-->     
                 <article id="codeProj" class="serve rightText"> 
                     <div class="textZone">
                         <h3>Software Programming and Geoprocessing</h3>
@@ -119,8 +115,7 @@
                     </figure>
                 </article>
             </section> 
-
-            <aside id="ProjectsAside"><!--using cascading list for aside-->
+            <aside id="ProjectsAside"><!--using cascading list for aside.  Inspired by teh urge to do something different than the other pages-->
                 <h3 class="contactheaders underlineTitle">Our projects have spanned</h3>
                 <ul>
                     <li>5 continents
@@ -160,12 +155,10 @@
                 </ul>
             </aside>
         </main>
-
         <footer> <!-- Inspired by content-based websites which often state the creator's name, affiliate links, etc. Semantic element, footer-->
             <p class="footernotes">&#169;2021. Land Air Sea Digital Inc. All Rights Reserved. Any Land Air Sea Digital products are Trademarks owned by Group 1 of GEOM102 Web Design Programming</p>
             <p class="footernotes">Email: <a class=deadlink>infoinquest@lasd.ca</a> | Phone: <a class=deadlink>(416) 888-8888</a> | <a class=deadlink>Terms of Use</a> | <a class=deadlink>Privacy Statement</a> | <a class=deadlink>Accessibility</a></p>
         </footer>
-
         <script src="js/morningJava.js"></script> <!--updated to single JS file for all coffee drinkers.  I myself prefer a shot of espresso in mine-->
     </body>
 </html>
