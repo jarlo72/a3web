@@ -34,6 +34,10 @@ h3 { /* SV 11-23 */
     font-size: 16pt;
     float: none;
 }
+h5 { /* SV 11-23 */
+    font-size: 10pt;
+    float: none;
+}
 p { /* SV 11-23 */
     font-size: 12pt;
 }
@@ -395,7 +399,6 @@ ul.library{
     text-align: justify;
 }
 /* CP  -------------- Projects Page Styling  -------------- */
-
 /* CP - Based heavily on Services Page Styling.  Order reversed */
 #ProjectsAside { /* CP  - Overriding styling for the aside box to allow for bullets */
     padding: 15px;
@@ -413,11 +416,6 @@ ul.library{
 article.rightText h5 { /* CP - to have right-aligned text for the articles*/
     text-align: right;
 }
-
-article.leftText h5 { /* CP - to have left-aligned text for the articles*/
-    text-align: left;
-}
-
 
 /* ---------------- JD 12-05 Get Involved Styling ------------------- */
 
