@@ -316,7 +316,7 @@ ul.library{
     top: 0;
     margin-top: 1vw;
     align-self: flex-start; /* This is to make it work with our flexbox layout; thanks to https://newbedev.com/my-position-sticky-element-isn-t-sticky-when-using-flexbox */
-    min-width: 40%;
+    min-width: 30%;
 }   
 /* -------------- Services Page Styling -------------- */
 
