@@ -41,7 +41,7 @@ p { /* SV 11-23 */
 /* -------------- section settings -------------- */
 
 body {
-    background-color: #ffefc8;
+    background-color: #fff9ea;
 }
 header { /* SV 11-14 - a modification of AH's work for our header info*/
     /* 11-22 GR colour palette */
@@ -557,4 +557,9 @@ article.leftText h5 {
     .profiles:hover { /* AH/SV 12-04 - bio images switch to colour on mouseover */
         filter: none;
     }
-}
+    #ConWithUs {
+        max-height:100vh;
+        overflow: auto;
+    }
+    
+    }
