@@ -309,7 +309,15 @@ li.library{
 ul.library{
     list-style-type: circle;
 }
-   
+
+#blagaside { /* JD 12-06 - using flexbox to organize the job link boxes */
+    position: sticky;
+    position: -webkit-sticky; /* to make it work in Safari, for all those Mac nerds */
+    top: 0;
+    margin-top: 1vw;
+    align-self: flex-start; /* This is to make it work with our flexbox layout; thanks to https://newbedev.com/my-position-sticky-element-isn-t-sticky-when-using-flexbox */
+    min-width: 40%;
+}   
 /* -------------- Services Page Styling -------------- */
 
 /* SV 12-01 - Stole the centre titling from Blag Page */
