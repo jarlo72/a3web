@@ -417,10 +417,11 @@ ul.library{
 article.rightText h5 { /* CP - to have right-aligned text for the articles*/
     text-align: right;
 }
-
-article.leftText h5 { /* CP - to have left-aligned text for the articles*/
+/*
+article.leftText h5 { /* CP - to have left-aligned text for the articles
     text-align: left;
 }
+*/
 
 
 /* ---------------- JD 12-05 Get Involved Styling ------------------- */
