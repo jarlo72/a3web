@@ -294,27 +294,29 @@ h4.BlagAside {
 /* GR 06-12 Stylying for aside */
 /* Header styling from Jon Marlo Delicano, to include line under heading to visually organize sections on aside */
 /* GR 06-12 styling for link button to About Us page */
-p.authorp{
+.authorp{
     margin-top: 10px
 }
 
-a.author {
+/* Meet the author link to About us page, create button appearance with colour */
+.author {
     background-color:  #665558;
     color: white;
     text-decoration: none;
     padding: 5px;
 }
-a.author:hover {
+/* Meet the author link to About us page styling hover colour */
+.author:hover {
     background-color: #8F787C;
 }
 
-li.library{
+.library{
     text-align: left;
     margin: 5px;
     color: black;
 }
 
-ul.library{
+.library{
     list-style-type: circle;
 }
 
