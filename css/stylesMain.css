@@ -172,6 +172,10 @@ footer { /* JD 11-15 - footer formatting sourced from https://www.w3schools.com/
 	text-decoration: underline;
     cursor:pointer;
 } 
+.source {
+    font-size: 7pt;
+    font-style: italic;
+}
 
 /* -------------- Landing (index) Page Styling -------------- */ 
 
@@ -382,10 +386,10 @@ ul.library{
 .justify { /* AH/SV 12-04 - sets the paragraphs to justify instead of centre */
     text-align: justify;
 }
-/* CP 12-05 -------------- Projects Page Styling  -------------- */
+/* CP  -------------- Projects Page Styling  -------------- */
 
-/* CP 12-05 - Based heavily on Services Page Styling.  Order reversed */
-#ProjectsAside { /* CP 12-07 - Overriding styling for the aside box to allow for bullets */
+/* CP - Based heavily on Services Page Styling.  Order reversed */
+#ProjectsAside { /* CP  - Overriding styling for the aside box to allow for bullets */
     padding: 15px;
     margin: 1vw;
     margin-left: 0;
@@ -398,11 +402,11 @@ ul.library{
     text-align: center;
     padding:5px;
 }
-article.rightText h5 {
+article.rightText h5 { /* CP - to have right-aligned text for the articles*/
     text-align: right;
 }
 
-article.leftText h5 {
+article.leftText h5 { /* CP - to have left-aligned text for the articles*/
     text-align: left;
 }
 
