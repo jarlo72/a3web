@@ -65,8 +65,8 @@ header { /* SV 11-14 - a modification of AH's work for our header info*/
     justify-content: center;
     align-items: center;
 }
-#logo {
-    height: 8vw;
+#logo { /* JD 12-02 logo styling to be consistent on all pgs. */
+    height: 8vw; 
 }
 
 #slogan { /* JD 12-02 Using flexbox to allow slogan underneath title */
@@ -409,7 +409,7 @@ article.rightText h5 { /* CP - to have right-aligned text for the articles*/
     min-width: 35%;
 }
 
-.intropara {
+.intropara { /* JD 12-07 - Different styling first first paragraph in subpage for distinction */
     padding-top:15px;
     padding-bottom:15px;
 }
@@ -454,7 +454,7 @@ article.rightText h5 { /* CP - to have right-aligned text for the articles*/
     margin: 0;
 }
 
-.selfie {
+.selfie { /* JD 12-07 - Image styling for this specific section */
     width: 100%;
     border-radius: 10px;
 }
@@ -547,7 +547,7 @@ article.rightText h5 { /* CP - to have right-aligned text for the articles*/
     .profiles:hover { /* AH/SV 12-04 - bio images switch to colour on mouseover */
         filter: none;
     }
-    #ConWithUs {
+    #ConWithUs { /* JD 12-08 - Avoids the cut-off for the Getinvolved Aside by adding a scrolling feature and maintaining responsive design */
         max-height:100vh;
         overflow: auto;
     }
