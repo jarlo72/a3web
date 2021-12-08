@@ -34,12 +34,12 @@ h3 { /* SV 11-23 */
     font-size: 16pt;
     float: none;
 }
+h4 {
+    font-size: 14pt;
+}
 h5 { /* SV 11-23 */
     font-size: 10pt;
     float: none;
-}
-h4 {
-    font-size: 14pt;
 }
 p { /* SV 11-23 */
     font-size: 12pt;
