@@ -34,6 +34,9 @@ h3 { /* SV 11-23 */
     font-size: 16pt;
     float: none;
 }
+h4 {
+    font-size: 14pt;
+}
 p { /* SV 11-23 */
     font-size: 12pt;
 }
@@ -41,7 +44,7 @@ p { /* SV 11-23 */
 /* -------------- section settings -------------- */
 
 body {
-    background-color: #ffefc8;
+    background-color: #fff9ea;
 }
 header { /* SV 11-14 - a modification of AH's work for our header info*/
     /* 11-22 GR colour palette */
@@ -175,7 +178,7 @@ footer { /* JD 11-15 - footer formatting sourced from https://www.w3schools.com/
 .source {
     font-size: 10pt;
     font-style: italic;
-    margin: 10px;
+    padding: 5px;
 }
 
 /* -------------- Landing (index) Page Styling -------------- */ 
@@ -414,10 +417,11 @@ ul.library{
 article.rightText h5 { /* CP - to have right-aligned text for the articles*/
     text-align: right;
 }
-
-article.leftText h5 { /* CP - to have left-aligned text for the articles*/
+/*
+article.leftText h5 { /* CP - to have left-aligned text for the articles
     text-align: left;
 }
+*/
 
 
 /* ---------------- JD 12-05 Get Involved Styling ------------------- */
@@ -546,6 +550,7 @@ article.leftText h5 { /* CP - to have left-aligned text for the articles*/
         top: 0;
         margin-top: 1vw;
         align-self: flex-start; /* This is to make it work with our flexbox layout; thanks to https://newbedev.com/my-position-sticky-element-isn-t-sticky-when-using-flexbox for fixing the damn thing */
+
     }
     /* ---------- Services styling for large pages ---------- */
     .serve {
@@ -570,4 +575,9 @@ article.leftText h5 { /* CP - to have left-aligned text for the articles*/
     .profiles:hover { /* AH/SV 12-04 - bio images switch to colour on mouseover */
         filter: none;
     }
-}
+    #ConWithUs {
+        max-height:100vh;
+        overflow: auto;
+    }
+    
+    }
