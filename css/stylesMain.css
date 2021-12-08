@@ -34,6 +34,9 @@ h3 { /* SV 11-23 */
     font-size: 16pt;
     float: none;
 }
+h4 {
+    font-size: 14pt;
+}
 p { /* SV 11-23 */
     font-size: 12pt;
 }
@@ -175,7 +178,7 @@ footer { /* JD 11-15 - footer formatting sourced from https://www.w3schools.com/
 .source {
     font-size: 10pt;
     font-style: italic;
-    margin: 10px;
+    padding: 5px;
 }
 
 /* -------------- Landing (index) Page Styling -------------- */ 
@@ -546,6 +549,7 @@ article.leftText h5 { /* CP - to have left-aligned text for the articles*/
         top: 0;
         margin-top: 1vw;
         align-self: flex-start; /* This is to make it work with our flexbox layout; thanks to https://newbedev.com/my-position-sticky-element-isn-t-sticky-when-using-flexbox for fixing the damn thing */
+
     }
     /* ---------- Services styling for large pages ---------- */
     .serve {
