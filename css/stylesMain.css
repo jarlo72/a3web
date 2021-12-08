@@ -65,8 +65,8 @@ header { /* SV 11-14 - a modification of AH's work for our header info*/
     justify-content: center;
     align-items: center;
 }
-#logo {
-    height: 8vw;
+#logo { /* JD 12-02 logo styling to be consistent on all pgs. */
+    height: 8vw; 
 }
 
 #slogan { /* JD 12-02 Using flexbox to allow slogan underneath title */
@@ -217,35 +217,6 @@ footer { /* JD 11-15 - footer formatting sourced from https://www.w3schools.com/
     margin-top: 20px;
 }
 
-/* -------------- Blag Page Styling (OLD) -------------- */ 
-/* GR 12-3 - Hey Christie, I have changed my style for my blags, but I know you were using this CSS for your page
-if you are still using it go ahead, if not feel free to delete
-where this CSS is not used for blags anymore, I would alter the .classes so they reflect your content */
-
-/* GR 11-25 center align blag page title */
-/* .blagtitle{
-    text-align: center;
-    margin:30px;
-} */
-
-/*--GR 11-25 set style for each person's article for background colour, border colour, margin, and padding --*/
-/* article.blagcont {
-    background-color:lightgray;
-    border: 2px solid #D6D4A9;
-    padding: 25px;
-    margin: 20px;
-} */
-
-/* GR 11-26 set style of title, subtitle and date of blags*/
-/* h3.blags{
-    margin:10px
-} */
-
-/* h5.blags{
-    margin-left:15px;
-} */
-
-
 
 /* -------------- Blag Page Styling -------------- */ 
 
@@ -257,9 +228,8 @@ where this CSS is not used for blags anymore, I would alter the .classes so they
     color: rgb(27, 29, 66);
 }
 
+/* Inspiration for blag design SOURCE: https://www.worldwildlife.org/blogs  */
 /* GR 12-03 Style individual blags in cards CSS SOURCE: https://www.w3schools.com/howto/howto_css_profile_card.asp*/ 
-/* Inspiration for design SOURCE: https://www.worldwildlife.org/blogs  */
-
 div.card {
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
     max-width: 90%;
@@ -268,31 +238,34 @@ div.card {
     font-family: arial;
     background-color:white;
 }
-
+/* set the main title of the blag to have margin in div.card */
 h3.blags{
     margin:10px
 }
-  
+/* GR 12-03 set the sub-title including author name and date of the blag to have margin consistent margin like h3.blags and change text colour */
 .subtitle {
     color: #44546A;
     margin: 10px;
 }
-
+/* GR 12-03 include margin for summary */
 summary.blags {
       margin:10px;
 }
 
+/* GR 12-03 include margin for text elements in summary */
 p.Blags {
     margin:20px;
 }
 
+
+
+/* GR 06-12 Stylying for aside */
+
+/* GR 06-12 Header stylying consistent with other pages with underline and margin space after header */
 h4.BlagAside {
     text-decoration: underline;
     margin-bottom: 10px;
 }
-
-/* GR 06-12 Stylying for aside */
-/* Header styling from Jon Marlo Delicano, to include line under heading to visually organize sections on aside */
 /* GR 06-12 styling for link button to About Us page */
 .authorp{
     margin-top: 10px
@@ -305,22 +278,22 @@ h4.BlagAside {
     text-decoration: none;
     padding: 5px;
 }
-/* Meet the author link to About us page styling hover colour */
+/* Meet the author link to 'About Us' page styling hover colour */
 .author:hover {
     background-color: #8F787C;
 }
-
+/* Style blag titles to the left with a margin to make blag division clear*/
 .library{
     text-align: left;
     margin: 5px;
     color: black;
 }
-
+/* style the bookmark links to have circle bullet indication each blag */
 .library{
     list-style-type: circle;
 }
 
-#blagaside { /* JD 12-06 - using flexbox to organize the job link boxes */
+#blagaside { /* GR 12-08 - using flexbox to organize aside content, use ID to make aside wider than in other pages */
     position: sticky;
     position: -webkit-sticky; /* to make it work in Safari, for all those Mac nerds */
     top: 0;
