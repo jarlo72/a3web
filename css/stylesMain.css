@@ -172,6 +172,11 @@ footer { /* JD 11-15 - footer formatting sourced from https://www.w3schools.com/
 	text-decoration: underline;
     cursor:pointer;
 } 
+.source {
+    font-size: 10pt;
+    font-style: italic;
+    margin: 10px;
+}
 
 /* -------------- Landing (index) Page Styling -------------- */ 
 
@@ -211,27 +216,27 @@ if you are still using it go ahead, if not feel free to delete
 where this CSS is not used for blags anymore, I would alter the .classes so they reflect your content */
 
 /* GR 11-25 center align blag page title */
-.blagtitle{
+/* .blagtitle{
     text-align: center;
     margin:30px;
-}
+} */
 
 /*--GR 11-25 set style for each person's article for background colour, border colour, margin, and padding --*/
-article.blagcont {
+/* article.blagcont {
     background-color:lightgray;
     border: 2px solid #D6D4A9;
     padding: 25px;
     margin: 20px;
-}
+} */
 
 /* GR 11-26 set style of title, subtitle and date of blags*/
-h3.blags{
+/* h3.blags{
     margin:10px
-}
+} */
 
-h5.blags{
+/* h5.blags{
     margin-left:15px;
-}
+} */
 
 
 
@@ -305,7 +310,15 @@ li.library{
 ul.library{
     list-style-type: circle;
 }
-   
+
+#blagaside { /* JD 12-06 - using flexbox to organize the job link boxes */
+    position: sticky;
+    position: -webkit-sticky; /* to make it work in Safari, for all those Mac nerds */
+    top: 0;
+    margin-top: 1vw;
+    align-self: flex-start; /* This is to make it work with our flexbox layout; thanks to https://newbedev.com/my-position-sticky-element-isn-t-sticky-when-using-flexbox */
+    min-width: 30%;
+}   
 /* -------------- Services Page Styling -------------- */
 
 /* SV 12-01 - Stole the centre titling from Blag Page */
@@ -382,10 +395,10 @@ ul.library{
 .justify { /* AH/SV 12-04 - sets the paragraphs to justify instead of centre */
     text-align: justify;
 }
-/* CP 12-05 -------------- Projects Page Styling  -------------- */
+/* CP  -------------- Projects Page Styling  -------------- */
 
-/* CP 12-05 - Based heavily on Services Page Styling.  Order reversed */
-#ProjectsAside { /* CP 12-07 - Overriding styling for the aside box to allow for bullets */
+/* CP - Based heavily on Services Page Styling.  Order reversed */
+#ProjectsAside { /* CP  - Overriding styling for the aside box to allow for bullets */
     padding: 15px;
     margin: 1vw;
     margin-left: 0;
@@ -398,11 +411,11 @@ ul.library{
     text-align: center;
     padding:5px;
 }
-article.rightText h5 {
+article.rightText h5 { /* CP - to have right-aligned text for the articles*/
     text-align: right;
 }
 
-article.leftText h5 {
+article.leftText h5 { /* CP - to have left-aligned text for the articles*/
     text-align: left;
 }
 
