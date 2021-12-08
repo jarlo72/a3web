@@ -65,8 +65,8 @@ header { /* SV 11-14 - a modification of AH's work for our header info*/
     justify-content: center;
     align-items: center;
 }
-#logo {
-    height: 8vw;
+#logo { /* JD 12-02 logo styling to be consistent on all pgs. */
+    height: 8vw; 
 }
 
 #slogan { /* JD 12-02 Using flexbox to allow slogan underneath title */
