@@ -257,11 +257,9 @@ p.Blags {
     margin:20px;
 }
 
-
-
 /* GR 06-12 Styling for the blag aside */
 
-/* GR 06-12 Header stylying consistent with other pages with underline and margin space after header */
+/* GR 06-12 Header styling consistent with other pages with underline and margin space after header */
 h4.BlagAside {
     text-decoration: underline;
     margin-bottom: 10px;
@@ -292,7 +290,6 @@ h4.BlagAside {
 .library{
     list-style-type: circle;
 }
-
 #blagaside { /* GR 12-08 - using flexbox to organize aside content, use ID to make aside wider than in other pages */
     position: sticky;
     position: -webkit-sticky; /* to make it work in Safari, for all those Mac nerds */
@@ -304,70 +301,67 @@ h4.BlagAside {
 /* -------------- Services Page Styling -------------- */
 
 /* SV 12-01 - Stole the centre titling from Blag Page */
-.serve {
-    display: flex;
+
+.serve {                /* SV 12-01 - Sets the aside so that the text will centre on the image, or vise-versa depending on screen size */
+    display: flex;      /* SV 12-01 - Also establishes the container to flexbox for future formatting */
     height:max-content;
     align-items: center;
     margin-top: 10vw;
 }
-.serve p {
+.serve p {              /* SV 12-01 - the text looks nicer when it lines up on both edges */
     text-align:justify;
 }
-.serve:first-child {
+.serve:first-child {    /* SV 12-01 - Removes the spacing on the first element so we don't get weird gaps */
     margin-top: 0;
     padding-top: 0;
 }
-.picBox {
+.picBox {               /* SV 12-01 - Sets the image width for the page at any resolution, but hides it for small screens */
     width: 30vw;
     display: none;
 }
-.picSet {
+.picSet {               /* SV 12-01 - Setting the image max-sizing, which also controls the article size on large screens, and rounds the corners*/
     max-width: 28vw;
     max-height: 300px;
     border-radius: 10px;
 }
-/* SV 12-01 - Left-aligned sections use default attributes */
-.leftText {
+.leftText {             /* SV 12-01 - Left-aligned sections use default attributes */
     flex-direction: row;
 }
-/* SV 12-01 - Attributes for right-aligned sections: */
-.rightText {
+.rightText {            /* SV 12-01 - Attributes for right-aligned sections: */
     flex-direction: row-reverse;
 }
-
 .rightText h3 {
     text-align: right;
 }
-/* sv 12-08 Attributes for the sidebar text */
-.serviceSidebar {
+.serviceSidebar {       /* SV 12-08 Attributes for the sidebar */
     margin: 0;
     padding: 1vw;   
 }
-.serviceSidebar ul {
-    list-style-type: none;
+.serviceSidebar ul {    /* SV 12-08 - Positions the list within the sidebar */
     padding: 0;
-    margin: inherit;
+    padding-left: 1vw;
 }
-.serviceSidebar li{
-    padding-top: 1vh;
+.serviceSidebar li {    /* SV 12-08 - Lines up the list in an orderly fashion */
+    text-align: left;
+    margin-top: 0.5vh;
 }
-.serviceSidebar p {
+.serviceSidebar p {     /* SV 12-08 - widen the testimonial text */
     text-align: justify;
 }
-#giveMeMoreSpace {
+#giveMeMoreSpace {      /* SV 12-08 - Move the testimonials down a bit to reduce crowding */
     margin-top: 2.5vw;
 }
-.serviceSidebar h4 {
+.serviceSidebar h4 {    /* SV 12-08 - Space out the testimonials */
     margin-top: 1vw;
 }
-/* SV 12-08 - sets the name of the writer of the testimonial to the right */
-p.rightP {
+p.rightP {              /* SV 12-08 - override the widening, move the signatures to the right */
     text-align: right;
+}
+#hideSmall {            /* SV 12-08 - hides the references to the photos on small screens, since the photos are hidden */
+    display: none;
 }
 
     /* -------------- About Us Page Styling -------------- */
-
-
 
 .spacecadetbaby { margin-top: 1vh; } /*AH 12-04 Spacing between paragraphs*/
 
@@ -394,8 +388,6 @@ p.rightP {
 
 /* CP  -------------- Projects Page Styling  -------------- */
 /* CP - Based heavily on Services Page Styling.  Order reversed */
-
-
 
 #ProjectsAside { /* CP  - Overriding styling for the aside box to allow for bullets */
     padding: 15px;
@@ -539,6 +531,8 @@ article.rightText h5 { /* CP - to have right-aligned text for the articles*/
         top: 0;
         margin-top: 1vw;
         align-self: flex-start; /* This is to make it work with our flexbox layout; thanks to https://newbedev.com/my-position-sticky-element-isn-t-sticky-when-using-flexbox for fixing the damn thing */
+        max-height:100vh;   /* JD 12-08, moved here by SV to apply to all asides, as necessary */
+        overflow: auto;     /* these two elements set a scroll bar if the aside becomes longer than the visible screen */
 
     }
     /* ---------- Services styling for large pages ---------- */
@@ -555,6 +549,12 @@ article.rightText h5 { /* CP - to have right-aligned text for the articles*/
         margin-left: 0;
         margin-right: 1vw;
     }
+    #hideSmall {
+        display: block;
+        margin-top: 1vw;
+    }
+
+     /* ---------- About Us styling for large pages ---------- */
     .bio { /* AH/SV 12-04 - Sets the width of the bio boxes so that three fit on a larger screen */
         width: 23.5vw;
     }
@@ -564,9 +564,4 @@ article.rightText h5 { /* CP - to have right-aligned text for the articles*/
     .profiles:hover { /* AH/SV 12-04 - bio images switch to colour on mouseover */
         filter: none;
     }
-    #ConWithUs { /* JD 12-08 - Avoids the cut-off for the Getinvolved Aside by adding a scrolling feature and maintaining responsive design */
-        max-height:100vh;
-        overflow: auto;
-    }
-    
-    }
+}
