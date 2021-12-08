@@ -34,9 +34,14 @@ h3 { /* SV 11-23 */
     font-size: 16pt;
     float: none;
 }
+<<<<<<< HEAD
 h5 { /* SV 11-23 */
     font-size: 10pt;
     float: none;
+=======
+h4 {
+    font-size: 14pt;
+>>>>>>> 69f5b1df7abe7061e4a65db5ab50a02ddbf313c7
 }
 p { /* SV 11-23 */
     font-size: 12pt;
@@ -45,7 +50,7 @@ p { /* SV 11-23 */
 /* -------------- section settings -------------- */
 
 body {
-    background-color: #ffefc8;
+    background-color: #fff9ea;
 }
 header { /* SV 11-14 - a modification of AH's work for our header info*/
     /* 11-22 GR colour palette */
@@ -179,6 +184,7 @@ footer { /* JD 11-15 - footer formatting sourced from https://www.w3schools.com/
 .source {
     font-size: 10pt;
     font-style: italic;
+    padding: 5px;
 }
 
 /* -------------- Landing (index) Page Styling -------------- */ 
@@ -219,27 +225,27 @@ if you are still using it go ahead, if not feel free to delete
 where this CSS is not used for blags anymore, I would alter the .classes so they reflect your content */
 
 /* GR 11-25 center align blag page title */
-.blagtitle{
+/* .blagtitle{
     text-align: center;
     margin:30px;
-}
+} */
 
 /*--GR 11-25 set style for each person's article for background colour, border colour, margin, and padding --*/
-article.blagcont {
+/* article.blagcont {
     background-color:lightgray;
     border: 2px solid #D6D4A9;
     padding: 25px;
     margin: 20px;
-}
+} */
 
 /* GR 11-26 set style of title, subtitle and date of blags*/
-h3.blags{
+/* h3.blags{
     margin:10px
-}
+} */
 
-h5.blags{
+/* h5.blags{
     margin-left:15px;
-}
+} */
 
 
 
@@ -320,7 +326,7 @@ ul.library{
     top: 0;
     margin-top: 1vw;
     align-self: flex-start; /* This is to make it work with our flexbox layout; thanks to https://newbedev.com/my-position-sticky-element-isn-t-sticky-when-using-flexbox */
-    min-width: 40%;
+    min-width: 30%;
 }   
 /* -------------- Services Page Styling -------------- */
 
@@ -416,6 +422,15 @@ ul.library{
 article.rightText h5 { /* CP - to have right-aligned text for the articles*/
     text-align: right;
 }
+<<<<<<< HEAD
+=======
+/*
+article.leftText h5 { /* CP - to have left-aligned text for the articles
+    text-align: left;
+}
+*/
+
+>>>>>>> 69f5b1df7abe7061e4a65db5ab50a02ddbf313c7
 
 /* ---------------- JD 12-05 Get Involved Styling ------------------- */
 
@@ -543,6 +558,7 @@ article.rightText h5 { /* CP - to have right-aligned text for the articles*/
         top: 0;
         margin-top: 1vw;
         align-self: flex-start; /* This is to make it work with our flexbox layout; thanks to https://newbedev.com/my-position-sticky-element-isn-t-sticky-when-using-flexbox for fixing the damn thing */
+
     }
     /* ---------- Services styling for large pages ---------- */
     .serve {
@@ -567,4 +583,9 @@ article.rightText h5 { /* CP - to have right-aligned text for the articles*/
     .profiles:hover { /* AH/SV 12-04 - bio images switch to colour on mouseover */
         filter: none;
     }
-}
+    #ConWithUs {
+        max-height:100vh;
+        overflow: auto;
+    }
+    
+    }
