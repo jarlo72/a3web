@@ -224,7 +224,7 @@ footer { /* JD 11-15 - footer formatting sourced from https://www.w3schools.com/
     text-align: center;
     margin-top:20px;
     margin-bottom:20px;
-    color: rgb(27, 29, 66);
+    color: #44546A;;
 }
 
 /* Inspiration for blag design SOURCE: https://www.worldwildlife.org/blogs  */
@@ -243,7 +243,7 @@ h3.blags{
 }
 /* GR 12-03 set the sub-title including author name and date of the blag to have margin consistent margin like h3.blags and change text colour */
 .subtitle {
-    color: #44546A;
+    color: #3b5d8d;
     margin: 10px;
 }
 /* GR 12-03 include margin for summary */
