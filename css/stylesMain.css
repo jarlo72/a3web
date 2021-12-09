@@ -150,7 +150,6 @@ aside { /* AH - modified 11-14 by SV - sets <aside> to stay to the right of main
     background-color: #B2CCD6; /* GR 11-22 colour palette */  
     padding: 15px;
     margin: 1vw;
-    margin-left: 0;
     text-align: center;
     order: 2;
     flex: 20vw;
@@ -293,7 +292,6 @@ h4.BlagAside {
     position: sticky;
     position: -webkit-sticky; /* to make it work in Safari, for all those Mac nerds */
     top: 0;
-    margin-top: 1vw;
     align-self: flex-start; /* This is to make it work with our flexbox layout; thanks to https://newbedev.com/my-position-sticky-element-isn-t-sticky-when-using-flexbox */
     min-width: 30%;
 }   
@@ -333,7 +331,6 @@ h4.BlagAside {
     text-align: right;
 }
 .serviceSidebar {       /* SV 12-08 Attributes for the sidebar */
-    margin: 0;
     padding: 1vw;   
 }
 .serviceSidebar ul {    /* SV 12-08 - Positions the list within the sidebar */
@@ -390,8 +387,6 @@ p.rightP {              /* SV 12-08 - override the widening, move the signatures
 
 #ProjectsAside { /* CP  - Overriding styling for the aside box to allow for bullets */
     padding: 15px;
-    margin: 1vw;
-    margin-left: 0;
     text-align: left;
     order: 2;
     flex: 20vw;
@@ -409,7 +404,6 @@ article.rightText h5 { /* CP - to have right-aligned text for the articles*/
 
 #ConWithUs { /* JD 12-06 - Overriding styling for the aside box to fit more content */
     padding: 15px;
-    margin: 1vw;
     margin-left: 0;
     text-align: center;
     order: 2;
@@ -528,7 +522,6 @@ article.rightText h5 { /* CP - to have right-aligned text for the articles*/
         position: sticky;
         position: -webkit-sticky; /* to make it work in Safari, for all those Mac nerds */
         top: 0;
-        margin-top: 1vw;
         align-self: flex-start; /* This is to make it work with our flexbox layout; thanks to https://newbedev.com/my-position-sticky-element-isn-t-sticky-when-using-flexbox for fixing the damn thing */
         max-height:100vh;   /* JD 12-08, moved here by SV to apply to all asides, as necessary */
         overflow: auto;     /* these two elements set a scroll bar if the aside becomes longer than the visible screen */
